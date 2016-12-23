@@ -2,7 +2,7 @@
 layout: post
 title:  "A different perspective of contemporary programming"
 date:   2016-01-02 19:45:31 +0530
-categories: ["tech", "computer science", "impression"]
+categories: ["tech", "cs", "impression"]
 author: "Sai Kiran"
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "TO BE A PROGRAMMING LANGUAGE POET"
 date:   2015-09-28 19:45:31 +0530
-categories: ["computer science", "impression"]
+categories: ["cs", "impression"]
 author: "Sai Kiran"
 ---
 
