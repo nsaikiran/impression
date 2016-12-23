@@ -6,7 +6,7 @@ categories: ["computer science", "impression"]
 author: "Sai Kiran"
 ---
 
-Learning a programming language is same as __learning any natural language__. Except programming language have negligible amount of  special
+Learning a programming language is same as `learning any natural language`. Except programming language have negligible amount of  special
 words and no ambiguity. `Grammar` and `language specification/standard` are major ingredients here.
 
 You can be a poet on the other side of the language, but to reach there
