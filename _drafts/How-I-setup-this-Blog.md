@@ -5,12 +5,11 @@ categories: ["tech"]
 author: "Sai Kiran"
 ---
 ## Got domain name
-I bought `saikiran.blog` for my personal blog. 
+Bought `saikiran.blog`. 
 
 ## Host the site
 I heard about [Github pages][Link to Github Pages], and [Jekyll][Link to Jekyll] and came to know that Github pages are powered by Jekyll.
 So, I wanted to host my blog in Github using Jekyll.
-
 
 After understanding Github pages structure, I wanted to host my blog as project site, not as user site.
 Because, If I set up my blog as user site, then `http://saikiran.blog` should point to`https://nsaikiran.github.io`. 
@@ -18,25 +17,26 @@ Suppose If I want to have a page for any of my repositories, then that(`https://
 
 Then I chose a Jekyll theme. I created a [repository][blog-repo] for my blog. And pushed all the code to a specially named branch called `gh-pages` . 
 I can access my blog from `https://nsaikiran.github.io/blog`.
- 
-During customization I faced many issues as I'm new to Jekyll and using Github project site.
-There was an issue with generating URLs. Because my blog doesn't live at root (https://nsaikiran.github.io),
-rather it will be in sub-directory of root (https://nsaikiran.github.io/blog).
 
 ### Useful references
 1. Go through the [Jekyll doc][Link to Jekyll doc]
 2. [clarification about site.baseurl][Link to url clarification]. 
 3. Proper configurations [Configuring Jekyll for User and Project GitHub Pages][Configuring Jekyll for User and Project GitHub Pages]
 4. [Absolute vs. Relative Paths/Links][Absolute vs. Relative Paths/Links]. 
+ 
+I'm new to Jekyll and using Github project site.
+There was an issue with generating URLs. Because my blog doesn't live at root (https://nsaikiran.github.io),
+rather it will be in sub-directory of root (https://nsaikiran.github.io/blog). 
 
-In `_config.yml` we can set `url`,`baseurl`, we use these variables to generate links, so these should be
- properly set.
+In `_config.yml` we can set `url` and `baseurl` with other variables. 
+We use these variables to generate URLs/links, so these should be configured properly. 
+The above links helped me setting up the site properly as well as customizing it.
 
+You can check your site locally with `jekyll serve`. Then the `url` will set to `http://localhost:4000`, overriding the value we set.
 
-If you are checking your site locally with `jekyll serve`, url will set to "http://localhost:4000", overriding
- the value we set.
-
-You may use `site.github.url` which will be available while in Github environment, for more info Refer [Project Page URL Structure][Project Page URL Structure].
+If you want to avoid the confusion in using and not using `baseurl`. Unset the `baseurl`. And
+instead of `site.url` use `site.github.url` which will be set to `https://*your-account*.github.io/*repository-name*` while in Github environment. 
+For more information refer [Project Page URL Structure][Project Page URL Structure].
 
 In my case `site.github.url` was set to `https://nsaikiran.github.io/blog`. And you don't need to set `site.baseurl`.
 
