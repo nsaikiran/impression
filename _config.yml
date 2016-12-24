@@ -10,7 +10,7 @@ title: Leap
 email: saikiran.naragam@gmail.com
 description: Computer Science.Technology.Impression
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "saikiran.blog" # the base hostname & protocol for your site
+url: "http://saikiran.blog" # the base hostname & protocol for your site
 twitter_username:
 github_username:  nsaikiran
 paginate: 5
