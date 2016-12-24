@@ -4,52 +4,34 @@ title:  "How I setup this blog"
 categories: ["tech"]
 author: "Sai Kiran"
 ---
+## Got domain name
+I bought `saikiran.blog` for my personal blog. 
 
-I bought `saikiran.blog` for my personal blog. I heard about [Github pages][Link to Github Pages], and [Jekyll][Link to Jekyll]. 
+## Host the site
+I heard about [Github pages][Link to Github Pages], and [Jekyll][Link to Jekyll] and came to know that Github pages are powered by Jekyll.
+So, I wanted to host my blog in Github using Jekyll.
 
-I came to know that Github pages are powered by Jekyll. Then I wanted to host my blog in Github using Jekyll.
 
-I can host my blog as user site or project site. All the sites (user sites and project sites) associated 
-with a user or organization are served from a special url tied to user/organization. It looks like 
-`https://*your-account*.github.io` where *your-account* is replaced with username of gihthub.
+After understanding Github pages structure, I wanted to host my blog as project site, not as user site.
+Because, If I set up my blog as user site, then `http://saikiran.blog` should point to`https://nsaikiran.github.io`. 
+Suppose If I want to have a page for any of my repositories, then that(`https://nsaikiran.github.io/*repository*`) will live at  `http://saikiran.blog/*repository*`, which I didn't like. 
 
-So, user/organization site will be `https://*your-account*.github.io` . And project sites will be 
+Then I chose a Jekyll theme. I created a [repository][blog-repo] for my blog. And pushed all the code to a specially named branch called `gh-pages` . 
+I can access my blog from `https://nsaikiran.github.io/blog`.
  
-`https://*your-account*.github.io/*repository-name*` where *repository-name* is replaced with project's repository name.
-
-In case of user/organization site the site's code will live in `master` branch of special repository with name `your-account*.github.io` . 
-For project sites, the site's code will live in special branch named `gh-pages` of the project repository.
-
-After looking at this structure, I wanted to hosted my blog as project site, not as user site.
-Because If I set up my blog as user site, then 
-`https://nsaikiran.github.io` will be `http://saikiran.blog`. 
-`https://nsaikiran.github.io/*project*` will be `http://saikiran.blog/*project*`, If I wanted to have a page for any of my projects.
-I didn't like it.
-
-
-
-So decided to have my blog as project page. In my case `https://nsaikiran.github.io/blog`. 
-I used `http://saikiran.blog` for `https://nsaikiran.github.io/blog` .
-
-
-Then I took a Jekyll theme. During customization I faced many issues as I'm new to Jekyll and using Github project site.
-
+During customization I faced many issues as I'm new to Jekyll and using Github project site.
 There was an issue with generating URLs. Because my blog doesn't live at root (https://nsaikiran.github.io),
-rather it will be in sub-directory of root (https://nsaikiran.github.io/blog). 
+rather it will be in sub-directory of root (https://nsaikiran.github.io/blog).
 
-Go through the [Jekyll doc][Link to Jekyll doc] and [clarification about site.baseurl][Link to url clarification]. 
-Tips for proper configurations are available at [Configuring Jekyll for User and Project GitHub Pages][Configuring Jekyll for User and Project GitHub Pages] and [Absolute vs. Relative Paths/Links][Absolute vs. Relative Paths/Links]. 
+### Useful references
+1. Go through the [Jekyll doc][Link to Jekyll doc]
+2. [clarification about site.baseurl][Link to url clarification]. 
+3. Proper configurations [Configuring Jekyll for User and Project GitHub Pages][Configuring Jekyll for User and Project GitHub Pages]
+4. [Absolute vs. Relative Paths/Links][Absolute vs. Relative Paths/Links]. 
 
 In `_config.yml` we can set `url`,`baseurl`, we use these variables to generate links, so these should be
  properly set.
 
-If you are hosting your blog as user site then 
-url = https://nsaikiran.github.io
-baseurl = ""
-
-If you are hosting your blog as project site then 
-url = https://nsaikiran.github.io
-baseurl = "/blog"
 
 If you are checking your site locally with `jekyll serve`, url will set to "http://localhost:4000", overriding
  the value we set.
@@ -58,7 +40,24 @@ You may use `site.github.url` which will be available while in Github environmen
 
 In my case `site.github.url` was set to `https://nsaikiran.github.io/blog`. And you don't need to set `site.baseurl`.
 
+I used `site.github.url` but then I moved to `baseurl` to make it more generalize.
 
+## Setup Custom domain
+
+1. Follwed [Configuring a GoDaddy domain name with GitHub pages][Configuring a GoDaddy domain name with GitHub pages] to
+ used my custom domain to the blog.
+2. Change `url` in `_config.yml` to  `http://saikiran.blog`. 
+3. Then the `url` and `github.url` in Github environment were set to `http://saikiran.blog`.
+    Thereby resulting broken links. I had to unset `site.baseurl`, to fix them.
+
+
+If you are hosting your blog as user site then 
+url = https://nsaikiran.github.io
+baseurl = ""
+
+If you are hosting your blog as project site then 
+url = https://nsaikiran.github.io
+baseurl = "/blog"
 
 Use site.url and site.baseurl while generating links. So that you can configure links from 
 Hosting a blog is possible because of [Github Pages][Link to Github Pages].
@@ -102,6 +101,26 @@ site.url will be set to that custom domain name
 site.baseurl will be considered from _config.yml. Don't set it. 
 In my case I'm using custom domain (`saikiran.blog`)
 
+
+----------------
+
+So decided to have my blog as project page. In my case `https://nsaikiran.github.io/blog`. 
+I used `http://saikiran.blog` for `https://nsaikiran.github.io/blog` .
+
+
+I can host my blog as user site or project site. All the sites (user sites and project sites) associated 
+with a user or organization are served from a special url tied to user/organization. It looks like 
+`https://*your-account*.github.io` where *your-account* is replaced with username of gihthub.
+
+So, user/organization site will be `https://*your-account*.github.io` . And project sites will be 
+ 
+`https://*your-account*.github.io/*repository-name*` where *repository-name* is replaced with project's repository name.
+
+In case of user/organization site the site's code will live in `master` branch of special repository with name `your-account*.github.io` . 
+For project sites, the site's code will live in special branch named `gh-pages` of the project repository.
+
+----------------
+
 [Link to Github Pages]: https://pages.github.com/
 [Link to Jekyll]: https://jekyllrb.com/
 [Link to url clarification]: https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/
@@ -109,3 +128,5 @@ In my case I'm using custom domain (`saikiran.blog`)
 [Project Page URL Structure]: https://jekyllrb.com/docs/github-pages/#project-page-url-structure
 [Configuring Jekyll for User and Project GitHub Pages]: http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
 [Absolute vs. Relative Paths/Links]: http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/
+[Configuring a GoDaddy domain name with GitHub pages]: http://mycyberuniverse.com/web/configuring-a-godaddy-domain-name-with-github-pages.html
+[blog-repo]: https://github.com/nsaikiran/blog
