@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How did I setup this blog"
+title:  "How did I setup this blog?"
 categories: ["tech"]
 author: "Sai Kiran"
 ---
