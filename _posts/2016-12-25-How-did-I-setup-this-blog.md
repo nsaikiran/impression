@@ -40,13 +40,16 @@ For more information refer [Project Page URL Structure][Project Page URL Structu
 ## Setup custom domain
 
 Bought a domain name under recently released  top-level domain `.blog`.
-Steps:  
-* [Configuring a GoDaddy domain name with GitHub pages][Configuring a GoDaddy domain name with GitHub pages].  
-* If you used `site.github.url` in link generation, you no need to do anything.  
-* If you used `url` and `baseurl` in link generation, set`url` to the custom domain, in my case `http://saikiran.blog` and unset `baseurl`  
+Steps: 
+
+* [Configuring a GoDaddy domain name with GitHub pages][Configuring a GoDaddy domain name with GitHub pages].
+* If you used `site.github.url` in link generation, you no need to do anything.
+* If you used `url` and `baseurl` in link generation, set`url` to the custom domain, in my case `http://saikiran.blog` and unset `baseurl`.
+
 
 You have your site up and running. 
 Now you can maintain the source code of your site like any other project codebase.
+
 
 [Link to Github Pages]: https://pages.github.com/
 [Link to Jekyll]: https://jekyllrb.com/
