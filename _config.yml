@@ -12,7 +12,7 @@ description: Computer Science.Technology.Impression
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://saikiran.blog" # the base hostname & protocol for your site
 twitter_username: saikiran638
-facebook_username: saikiran638
+facebook_username:
 github_username:  nsaikiran
 paginate: 5
 
