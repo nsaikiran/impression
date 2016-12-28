@@ -3,7 +3,14 @@
 ---
 @charset "utf-8";
 
+@font-face {font-family: 'Computer Modern Serif'; src: url('cm-unicode-0.7.0/cmunrm.ttf'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Computer Modern Serif'; src: url('cm-unicode-0.7.0/cmunti.ttf'); font-weight: normal; font-style: italic;}
+@font-face {font-family: 'Computer Modern Serif'; src: url('cm-unicode-0.7.0/cmunbi.ttf'); font-weight: bold; font-style: italic;}
 
+@font-face {font-family: 'Computer Modern Sans'; src: url('cm-unicode-0.7.0/cmunss.ttf'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Computer Modern Sans'; src: url('cm-unicode-0.7.0/cmunsx.ttf'); font-weight: bold; font-style: normal;}
+@font-face {font-family: 'Computer Modern Sans'; src: url('cm-unicode-0.7.0/cmunsi.ttf'); font-weight: normal; font-style: italic;}
+@font-face {font-family: 'Computer Modern Sans'; src: url('cm-unicode-0.7.0/cmunso.ttf'); font-weight: bold; font-style: italic;}
 
 // Our variables
 $base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -290,7 +297,7 @@ pre {
 }
 
 .post {
-  font-family: "Source Sans Pro";
+  font-family: "Computer Modern Sans";
   font-size: 18px;
   font-weight: 300;
   padding-top: 0;
