@@ -359,7 +359,13 @@ pre {
   text-indent: 2px;
 }
 .postTag {
-  float: right;
+  float: left;
+  //text-transform: uppercase;
+  font-family: "Computer Modern Sans";
+  font-size: 16px;
+  font-weight: 300;
+  //letter-spacing: 2px;
+  //text-indent: 2px;
 }
 .postTitle {
   font-weight: 400;

@@ -12,13 +12,19 @@ layout: default
                   itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}
             </time>
         </div>
-        <div class="postTag">
-            {{post.tag}}
-        </div>
         <br>
         <div class="postTitle">
             <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         </div>
+
+        {% if post.categories %}
+        <div class="postTag">
+            Posted in
+            {% for category in post.categories%}
+            <span><i>{{ category }}</i></span>
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
 
     {% endfor %}
