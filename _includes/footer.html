@@ -21,13 +21,13 @@
                 <ul class="social-media-list">
                     {% if site.github_username %}
                     <li>
-                        <a href={{"http://github.com/"|append: site.github_username}}><p><i class="fa fa-github"></i></p>{{site.github_username}}</a>
+                        <a href={{"http://github.com/"|append: site.github_username}}><i class="fa fa-github"></i>{{site.github_username|prepend: " "}}</a>
                     </li>
                     {% endif %}
 
                     {% if site.twitter_username %}
                     <li>
-                        <a href={{"http://twitter.com/"|append: site.twitter_username}}><i class="fa fa-twitter" aria-hidden="true"></i>{{site.twitter_username}}</a>
+                        <a href={{"http://twitter.com/"|append: site.twitter_username}}><i class="fa fa-twitter" aria-hidden="true"></i>{{site.twitter_username|prepend: " "}}</a>
                     </li>
                     {% endif %}
                 </ul>
