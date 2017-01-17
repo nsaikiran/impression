@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+env/*
+!env/sample.sh
+tmp

@@ -1,0 +1,19 @@
+title: "Leap"
+description: Computer Science. Technology. Impression
+baseurl: ""
+url: "http://saikiran.blog"
+
+gems: [jekyll-paginate, kramdown]
+
+# Build settings
+markdown: kramdown
+google_analytics_id: UA-89879231-1
+
+sass:
+  style: compressed
+
+images:
+  root_url: "/img"
+
+disqus:
+  shortname: "nsaikiran"
