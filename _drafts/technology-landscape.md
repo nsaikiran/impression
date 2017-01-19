@@ -38,4 +38,14 @@ from existing ones.
 
 # Opinion 4
 You have to do it. Otherwise you will be fired from the industry.
+Understanding the latest tech trends, and adopting the same is very important 
+to prove your fitness in industry. So, do whatever you can do to achieve that.
+
+# Opinion 5
+What about a specialist? 
+As a specialist we might be working on a specific domain or technology. One has to sustain the speciality by 
+adopting the new trends in the respective domains/technologies. At the end specialists are really important 
+to have bigger picture and successful product. Because some of the opinions suggest that industry is looking 
+for generalists, those who can adopt/work with breadth of technologies, than specialists to welcome agility in 
+the flow take advantage of the latest technology tools.
 
