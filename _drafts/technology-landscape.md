@@ -7,15 +7,24 @@ author: "Sai Kiran"
 
 
 
-Trying to understand this fast pacing technology prolifiration that I feel bothering many people. Is everyone working
+Trying to understand this fast pacing technology proliferation that I feel bothering many people. Is everyone working
  in the industry is trying to keep up with this? How to understand this? As a developer should I need to understand 
- every new library/technology that is coming every day atleast in my domain? What about the people those have worked 
+ every new library/technology that is coming every day at least in my domain? What about the people those have worked 
  exclusively on particular technology stack. What they have to ?
  
 At the end we have to update ourselves with the latest technology trends. But you may want to look 
 
 
- 
+Here is a listing of opinions collected. These can be input for better understanding.
+
+The question:
+
+What is your opinion on this fast pacing technologies?
+Overwhelming number of technologies to pick.
+Short life time of tech/library.
+Frequent updates with new features.
+
+
 # Opinion 1
 Each domain has it specific tools to solve the problems. If we consider all the tools that are available it seems we have too many tools to master.
 But we have to understand that we have good number of options to solve a problem in a domain.
@@ -48,4 +57,3 @@ adopting the new trends in the respective domains/technologies. At the end speci
 to have bigger picture and successful product. Because some of the opinions suggest that industry is looking 
 for generalists, those who can adopt/work with breadth of technologies, than specialists to welcome agility in 
 the flow take advantage of the latest technology tools.
-
