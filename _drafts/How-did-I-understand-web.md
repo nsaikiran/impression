@@ -5,6 +5,11 @@ categories: ["tech"]
 author: "Sai Kiran"
 ---
 
+----------------
+
+Webpage is marked up using tags
+
+-----------------
 That was really fun playing with html during the early days of engineering.
 But after sometime I was starting to work with web. Understanding how web 
 pages are created. 
@@ -16,24 +21,45 @@ languages, to create a web page. What? I didn't know that. So, wanted to
 figure out *why*. 
 
 When we describe [HTML][] &mdash; *[Hypertext][] [Markup][] Language*, it 
-seemed it can alone define a webpage &mdash; including elements, styles and in my opinion &mdash; dynamic behavior 
-as well.
+seemed it can alone define a webpage &mdash; including elements, styles and 
+in my opinion &mdash; dynamic behavior as well.
 
 
 So, why should we learn three different languages. Finally I found the answer 
-here at [Web Standards][].
+here at [Web Standards][] &mdash; And it says `They’re simply an evolution of the web`.
 
 
 We have HTML, CSS and JavaScript &mdash; the building blocks of 
 the World Wide Web, to create stylish and interactive webpages.
   
+First came HTML, with structure and styles and layout. Then Styles and layout 
+were separated in to CSS.
+
+CSS was born by seperation of layout information from the *then* HTML.
+
+JavaScript was born to provide interactivity to the web pages. It is mainly used for 
+DOM manipulations &mdash; Changing webpage's content, style and layout based on user's 
+interaction.
  
- HTML is used to build the skeleton. CSS is used to position and color the components of the page. Finally, JavaScript
- is used for DOM manipulations (It was intended for tasks for which Java was too heavy).
- 
- So I referred definitions. Then I felt there should not be 3 different languages because
- the acronym HTML -- Hypertext Markup Language, according to its name it should have features
- of CSS and JavaScript as well. *Because we are using CSS and JavaScript for **Markup***
+You specify `what` in HTML and `how` in CSS and JavaScript, depending on the what you are 
+trying to do: styling and layout, or behavior.
+
+HTML is just like manuscript markup.
+
+Sometimes we tend to write CSS and/or JavaScript in HTML file. It seems OK but not. 
+Because then rather than *what* you are writing *how*. Then the file will be clumsy with 
+*what* and *how*.
+
+That is the reason they are separated.
+
+-----------
+ HTML is used to build the skeleton. CSS is used to position and color the 
+ components of the page. Finally, JavaScript is used for DOM manipulations 
+ (It was intended for tasks for which Java was too heavy).
+----------- 
+ So I referred definitions. Then I felt there should not be 3 different 
+ languages because the acronym HTML -- Hypertext Markup Language, according 
+ to its name it should have features of CSS and JavaScript as well. *Because we are using CSS and JavaScript for **Markup***
  
  
  The evolution of these technologies is different.
@@ -61,3 +87,5 @@ Ref:
 [Markup]: https://en.wikipedia.org/wiki/Markup_language#Etymology_and_origin
 [Web Standards]: https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
 [CSS]: https://www.w3.org/Style/LieBos2e/history/Overview.html
+[CSS Timeline]: https://www.w3.org/Style/CSS20/
+[CSS History]: https://www.w3.org/Style/CSS20/history.html
