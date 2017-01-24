@@ -39,7 +39,7 @@ CSS was born by seperation of layout information from the *then* HTML.
 
 JavaScript was born to provide interactivity to the web pages. It is mainly used for 
 DOM manipulations &mdash; Changing webpage's content, style and layout based on user's 
-interaction.
+interaction. It was intended for tasks for which Java was too heavy.
  
 You specify `what` in HTML and `how` in CSS and JavaScript, depending on the what you are 
 trying to do: styling and layout, or behavior.
@@ -51,22 +51,6 @@ Because then rather than *what* you are writing *how*. Then the file will be clu
 *what* and *how*.
 
 That is the reason they are separated.
-
------------
- HTML is used to build the skeleton. CSS is used to position and color the 
- components of the page. Finally, JavaScript is used for DOM manipulations 
- (It was intended for tasks for which Java was too heavy).
------------ 
- So I referred definitions. Then I felt there should not be 3 different 
- languages because the acronym HTML -- Hypertext Markup Language, according 
- to its name it should have features of CSS and JavaScript as well. *Because we are using CSS and JavaScript for **Markup***
- 
- 
- The evolution of these technologies is different.
-Componets of web: HTML CSS Javascript.
-
-First I wanted to have a clear idea of what is HTML and what is not.
-Clear separation of these technologies. I don't know why I wanted to do that. But I wanted. And I started
 
 Ref:
 
@@ -89,3 +73,20 @@ Ref:
 [CSS]: https://www.w3.org/Style/LieBos2e/history/Overview.html
 [CSS Timeline]: https://www.w3.org/Style/CSS20/
 [CSS History]: https://www.w3.org/Style/CSS20/history.html
+
+-------------------------------
+
+ HTML is used to build the skeleton. CSS is used to position and color the 
+ components of the page. Finally, JavaScript is used for DOM manipulations 
+ (It was intended for tasks for which Java was too heavy).
+
+ So I referred definitions. Then I felt there should not be 3 different 
+ languages because the acronym HTML -- Hypertext Markup Language, according 
+ to its name it should have features of CSS and JavaScript as well. *Because we are using CSS and JavaScript for **Markup***
+ 
+ 
+ The evolution of these technologies is different.
+Componets of web: HTML CSS Javascript.
+
+First I wanted to have a clear idea of what is HTML and what is not.
+Clear separation of these technologies. I don't know why I wanted to do that. But I wanted. And I started
