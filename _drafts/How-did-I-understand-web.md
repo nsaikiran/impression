@@ -46,6 +46,8 @@ trying to do: styling and layout, or behavior.
 
 HTML is just like manuscript markup.
 
+> Remember that without a HTML tag, *no* CSS and *no* JavaScript can work.
+
 Sometimes we tend to write CSS and/or JavaScript in HTML file. It seems OK but not. 
 Because then rather than *what* you are writing *how*. Then the file will be clumsy with 
 *what* and *how*.
@@ -53,8 +55,6 @@ Because then rather than *what* you are writing *how*. Then the file will be clu
 That is the reason they are separated.
 
 Ref:
-
-
 
 
 [Web Style Sheets](https://www.w3.org/Style/)
