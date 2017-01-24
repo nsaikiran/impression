@@ -54,6 +54,11 @@ Because then rather than *what* you are writing *how*. Then the file will be clu
 
 That is the reason they are separated.
 
+
+**Demo** can be created.
+> 1. Take a plain text
+> 2. Markup that with HTML.
+
 Ref:
 
 
