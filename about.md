@@ -3,4 +3,8 @@ layout: page
 title: About
 ---
 
-I'm `Sai Kiran Naragam`, software developer at <a href="https://www.thoughtworks.com">`ThoughtWorks`</a>.
+## Sai Kiran Naragam
+
+##### Software creator. Artist. Writer. Photographer.
+
+Currently, software developer at <a href="https://www.thoughtworks.com">`ThoughtWorks`</a>.
