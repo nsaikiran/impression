@@ -57,3 +57,10 @@ adopting the new trends in the respective domains/technologies. At the end speci
 to have bigger picture and successful product. Because some of the opinions suggest that industry is looking 
 for generalists, those who can adopt/work with breadth of technologies, than specialists to welcome agility in 
 the flow take advantage of the latest technology tools.
+
+
+Checkout [The evolution of evolutionary architecture][],to understand about evolutionary 
+acrchitecture.
+
+
+[The evolution of evolutionary architecture]: https://www.oreilly.com/ideas/the-evolution-of-evolutionary-architecture-2016?utm_source=youtube&utm_medium=video&utm_content=sanyc2016&utm_campaign=inbound_video
