@@ -15,6 +15,9 @@ But after sometime I was starting to work with web. Understanding how web
 pages are created. 
 
 **Write something  more here**
+**Write about DOM**
+
+> [DOM][] is the actual representation of webpage in memory. 
 
 It seemed I have to learn HTML, [CSS][] and JavaScript &mdash; 3 different 
 languages, to create a web page. What? I didn't know that. So, wanted to 
@@ -40,6 +43,8 @@ CSS was born by seperation of layout information from the *then* HTML.
 JavaScript was born to provide interactivity to the web pages. It is mainly used for 
 DOM manipulations &mdash; Changing webpage's content, style and layout based on user's 
 interaction. It was intended for tasks for which Java was too heavy.
+
+Check out [Scott Hanselman, "Virtual Machines, JavaScript and Assembler" - Fluent 2014 Keynote][]
  
 You specify `what` in HTML and `how` in CSS and JavaScript, depending on the what you are 
 trying to do: styling and layout, or behavior.
@@ -59,8 +64,9 @@ That is the reason they are separated.
 > 1. Take a plain text
 > 2. Markup that with HTML.
 
-Ref:
+All topics in [Web Fundamentals][] will help you develop better web applications.
 
+Reference:
 
 [Web Style Sheets](https://www.w3.org/Style/)
 
@@ -68,7 +74,7 @@ Ref:
 
 [History of CSS](https://www.w3.org/Style/LieBos2e/history/Overview.html)
 
-
+[Web Fundamentals][]: To understand everything related to Web development.
 
 
 [HTML]: https://www.w3.org/WhatIs.html
@@ -78,6 +84,10 @@ Ref:
 [CSS]: https://www.w3.org/Style/LieBos2e/history/Overview.html
 [CSS Timeline]: https://www.w3.org/Style/CSS20/
 [CSS History]: https://www.w3.org/Style/CSS20/history.html
+
+[DOM]: https://www.w3.org/TR/DOM-Level-2-Core/introduction.html
+[Scott Hanselman, "Virtual Machines, JavaScript and Assembler" - Fluent 2014 Keynote]: https://www.youtube.com/watch?v=UzyoT4DziQ4&feature=youtu.be
+[Web Fundamentals]: https://developers.google.com/web/fundamentals/
 
 -------------------------------
 
