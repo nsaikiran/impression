@@ -58,12 +58,12 @@ the user feel "Owwww....!".
 All topics in [Web Fundamentals][] will help you develop better web applications keeping 
 performance in mind.
 
-Few more resources: [Web Style Sheets](https://www.w3.org/Style/), [Blink tag](https://www.w3.org/Style/customdtd), [History of CSS](https://www.w3.org/Style/LieBos2e/history/Overview.html)
+Few more resources: [W3C Community Wiki](https://www.w3.org/community/webed/wiki/Main_Page), [Web Style Sheets](https://www.w3.org/Style/), [Blink tag](https://www.w3.org/Style/customdtd), [History of CSS](https://www.w3.org/Style/LieBos2e/history/Overview.html)
 
 
 [Hypertext]: https://www.w3.org/WhatIs.html
 [Markup]: https://en.wikipedia.org/wiki/Markup_language#Etymology_and_origin
-[Web Standards]: https://www.w3.org/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
+[Web Standards]: https://www.w3.org/community/webed/wiki/The_web_standards_model_-_HTML_CSS_and_JavaScript
 [CSS]: https://www.w3.org/Style/LieBos2e/history/Overview.html
 [CSS Timeline]: https://www.w3.org/Style/CSS20/
 [CSS History]: https://www.w3.org/Style/CSS20/history.html
