@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How did I understand web page?"
+title:  "How did I understand a web page?"
 date:   2017-01-27
 categories: ["tech"]
 author: "Sai Kiran"
@@ -11,7 +11,7 @@ in a web page, during the early days of college education.
 
 But few years later, in my undergraduate course, I was trying to understand &mdash; 
 how we write web pages and &mdash; how browsers render them.
-It seemed I have to learn HTML, [CSS][] and JavaScript &mdash; 3 different 
+It seemed I had to learn HTML, [CSS][] and JavaScript &mdash; 3 different 
 languages, to create a web page. What? I didn't know that. So, wanted to 
 figure out *why*.
 
