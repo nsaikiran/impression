@@ -10,6 +10,7 @@ Everything does seem to *change*. We can't rely on something for longtime.
 In response to that and for better understanding &mdash; I started discussing. 
 
 Here is the listing of `opinions` that are shared with me regarding
+
 > ## Proliferation and fast pacing development of technologies.
 
 
@@ -50,6 +51,7 @@ Specialists should enchance their fitness with trends.
 ---
 
 Anyway, this discussion is about **my** technology**landscape**.
+
 > `Update your technology landscape! It is important.`
 
 I also feel that the urge to go to market before anyone else does with the similar 
