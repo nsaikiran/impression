@@ -56,36 +56,7 @@ I also feel that the urge to go to market before anyone else does with the simil
 technology is also a reason. Creators want to let the people know &mdash; as early as possible, 
 that there is a technology available. And let it *evolve* over time.
 
-
 [The evolution of evolutionary architecture][], helps to understand 
 *why* the architecture should be *evolving*.
 
 [The evolution of evolutionary architecture]: https://www.oreilly.com/ideas/the-evolution-of-evolutionary-architecture-2016?utm_source=youtube&utm_medium=video&utm_content=sanyc2016&utm_campaign=inbound_video
-
-
----
-What about the people those have worked exclusively on particular 
-technology stack. It won't be so easy for them to adapt any other.
- 
-At the end we have to update ourselves with the latest technology trends. 
-
-Overwhelming number of technologies to pick.
-Short life time of tech/library.
-Frequent updates with new features. 
-
-
- Why software with frequent updates?
-
-
-
-As a specialist one might be working on a specific domain or technology. 
-One has to sustain the speciality by adapting the new trends in the respective domains/technologies. 
-Because some of the opinions suggest that industry is looking 
-for generalists, those who can adapt/work with breadth of technologies, than specialists to welcome agility in 
-the flow take advantage of the latest technology tools.
-
-
-Understanding the latest tech trends, and adapting the same is very important 
-to prove your fitness in industry. So, do whatever you can do to achieve that.
-
----
