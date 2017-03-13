@@ -11,13 +11,18 @@ highlighter: rouge
 
 # Reason
 # https://github.com/jekyll/jekyll/issues/3641
+# https://github.com/jneen/rouge/issues/229
 # https://github.com/jekyll/jekyll/issues/4619
 kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
     block:
       line_numbers: true
+      start_line: 1
 
 
 google_analytics_id: UA-89879231-1
