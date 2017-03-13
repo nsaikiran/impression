@@ -9,6 +9,17 @@ gems: [jekyll-paginate, kramdown,rouge]
 markdown: kramdown
 highlighter: rouge
 
+# Reason
+# https://github.com/jekyll/jekyll/issues/3641
+# https://github.com/jekyll/jekyll/issues/4619
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+
 google_analytics_id: UA-89879231-1
 
 sass:
