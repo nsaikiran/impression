@@ -34,11 +34,12 @@ you can use those easy to use data-types it provides with a single
 Python instruction. 
 Like
 
-~~~ python
+{% highlight python %}
 data = list()    
 data.append("hello")
 data.append(23)
-~~~
+{% endhighlight %}
+
 We should not think these are to be understood by the computer (bare
 machine). These are understood by intermediate systems and they modify
 them such that the computer can understand. We are just programming
