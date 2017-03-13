@@ -3,10 +3,12 @@ description: Computer Science. Technology. Impression
 baseurl: ""
 url: "http://saikiran.blog"
 
-gems: [jekyll-paginate, kramdown]
+gems: [jekyll-paginate, kramdown,rouge]
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
 google_analytics_id: UA-89879231-1
 
 sass:
