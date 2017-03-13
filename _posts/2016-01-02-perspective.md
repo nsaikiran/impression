@@ -35,9 +35,9 @@ Python instruction.
 Like
 
 ```python
-    data = list()    
-    data.append("hello")
-    data.append(23)
+data = list()    
+data.append("hello")
+data.append(23)
 ```
 We should not think these are to be understood by the computer (bare
 machine). These are understood by intermediate systems and they modify
