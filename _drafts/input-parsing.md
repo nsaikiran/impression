@@ -8,9 +8,10 @@ author: "Sai Kiran"
 ## Follow the guidelines to be understood
 You are about to accomplish something. 
 You know 'clearly' what you want. 
-You are gonna need help in this process. You know who can help. 
-Then you need to know how to communicate you need. 
-The crucial part is how you are going to communicate your need. 
+You are gonna need help in this process. 
+You know who can help. 
+Then you need to know how to communicate you need.  
+The crucial part is how you are going to communicate your need.  
 
 If that is a computer you are trying to communicate with, 
 you are expected to follow some `guidelines` to be understood properly.
@@ -19,12 +20,20 @@ Those `guidelines` are everything for computers.
 Those guidelines need to be properly designed, understood and used.
 
 The point I'm trying to make here is, one can use this guidelines concept to 
-better interfaces.
+better understand the interfaces.
 
-The programs, configuration files and all of the software that I know has concrete `guidelines` 
-to communicate with them.
+The programs, configuration files and all of the software that 
+I know has concrete `guidelines` to communicate with them.
 
-> And we are expected to follow the `guidelines`.
+> And we are expected to follow the `guidelines` for an accomplishment.
+
+Why you experience, any sort of error during software production and execution?
+
+Have you tried configuring/customizing any software you are using? 
+In that process what you observe?
+
+Have you worked with these so called frameworks that are born to assist the software development?
+
 
 ## The way of perceiving
 - How data is interpreted? 
@@ -45,9 +54,16 @@ have same representation in memory. But the way of perceiving is different, whic
 
 > The specification of file format is a happy handshake between encoder and decoder.
 
+
+We have different file formats for different types of files like text, video, image etc.
+Or same type of file with added guidelines html, py etc.
+
+
+We can come up with lot many examples, but this post is intended to give an idea.
+
 -----------
 
-Those guidelines are defined by readers. 
+Those guidelines are defined by readers.  
 Readers are designed in such way that they work with 
 If you don't follow the guidelines they yell at you. 
 You are expected to follow those guidelines for an accomplishment.
@@ -76,11 +92,10 @@ Have you worked with these so called frameworks that are born to assist the soft
 Even we find intermediate systems that ensures all the assumptions are properly met before actually passing on to subsequent system.
 Because assumptions in way makes good systems.
 
-  
+
 Why this discussion?
 It will be really helpful, to understand `whatever you are expected to do`
 while dealing with something.
-
 
 
 I'm trying to explain the interfaces.
