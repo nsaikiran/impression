@@ -5,24 +5,23 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
-#Annotations
+# Annotations
 Annotations have been very handy in influence the definitions. Now we use them everywhere. 
 Especially in configuring Spring. 
 I was curious to know how those annotations work on our piece of code. I came to know that this is a weird and unusual concept.
 Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
-##Bookmarks
+## Bookmarks
 - [How do annotations work internally][How do annotations work internally]
 
-#Spring
-##Bookmarks
+# Spring
+## Bookmarks
 - [Spring Reference][Spring Link 1]
 
-#SpringBoot
+# SpringBoot
 They say it is a opinionated configuration of Spring. You can change that by customizing.
-Checkout these two videos:
-##Bookmarks
+## Bookmarks
 - [Spring Boot Reference][Springboot Link 1]
-###Videos
+### Videos
 - [Demystifying SpringBoot Magic][Demystifying SpringBoot Magic].
 - [Zero Effort Spring][Zero Effort Spring].
 
