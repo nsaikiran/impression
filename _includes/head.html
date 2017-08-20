@@ -1,22 +1,28 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Sai Kiran Naragam" />
 
-  {% if page.title %}
-    <title>{{ page.title }} - Leap</title>
-  {% else %}
-    <title>{{ site.title }}</title>
-  {% endif %}
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <!--This is breaking the code-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Feed Me! -->
+    <link rel="alternate" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url}}" type="application/rss+xml"
+          title="{{ site.title }}">
 
-  {% if jekyll.environment == 'production' %}
-  {% include google_analytics.html %}
-  {% endif %}
+    <!-- Feed Me! -->
+    <link rel="alternate" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url}}" type="application/rss+xml" title="{{ site.title }}">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    {% if jekyll.environment == 'production' %}
+    {% include google_analytics.html %}
+    {% endif %}
 
 </head>

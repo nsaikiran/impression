@@ -1,0 +1,99 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    *font-size: small;
+    line-height: 1.5;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    padding: .5em;
+}
+
+a {
+    color: #f27154;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(242, 113, 84, 0.6);
+}
+
+/*a:visited {*/
+    /*color: #f27154;*/
+/*}*/
+
+.site {
+    font-size: 110%;
+    text-align: justify;
+    width: 42em;
+    margin: 3em auto 2em auto;
+    line-height: 1.5em;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 2.25rem;
+    line-height: 1.3333333333;
+}
+
+.header-tag {
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #aaa;
+}
+
+.main-nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+.social {
+    margin-bottom: 1em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    font-weight: bold;
+}
+
+.copyright, .disclaimer {
+    font-size: .75em;
+    color: #aaa;
+}
+

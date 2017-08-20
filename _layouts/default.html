@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+{% include head.html %}
+
+<body>
+
+    <div class="site">
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </div>
+
+</body>
+
 </html>
