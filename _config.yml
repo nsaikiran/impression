@@ -1,9 +1,24 @@
 title: "Leap"
 description: Computer Science. Technology. Impression
-baseurl: ""
 url: "http://saikiran.blog"
+baseurl: ""
 
+markdown: kramdown
 gems: [jekyll-paginate, kramdown,rouge]
+
+#GitHub variables start
+# Set by GitHub, Can't override
+# So, use in local as well
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+   noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+# GitHub variables end
 
 google_analytics_id: UA-89879231-1
 
