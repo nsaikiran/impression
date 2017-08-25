@@ -18,8 +18,11 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
     font-weight: bold;
+}
+
+h1 {
+    color: #f27154;
 }
 
 
@@ -116,8 +119,6 @@ a:hover {
 }
 
 .post h1 {
-    font-size: 1.5rem;
-    color: #f27154;
     margin-bottom: 0;
 }
 
@@ -127,14 +128,25 @@ a:hover {
     font-size: 1rem;
 }
 
+.post img {
+    width: 100%;
+}
+
 blockquote {
+    font-size: 1.2rem;
+    color: #ccc;
     text-decoration-color: black;
-    border-left: .1em solid #ccc;
+    border-left: .3em solid #ccc;
     margin-left: 0;
     padding: 0 .5em;
 }
+
+blockquote h2 {
+    color: black;
+}
+
 code {
-    font-family: Consolas, "Courier New", monospace;
+    /*font-family: Consolas, "Courier New", monospace;*/
 }
 
 p > code, li > code {

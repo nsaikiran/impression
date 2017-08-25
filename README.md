@@ -9,5 +9,10 @@ You may not reuse anything therein without my permission:
 
 All other directories and files are MIT Licensed.
 
+
+## Technical information
+`Kramdown` markdown parser.
+`rouge` syntax highlighter.
+
 [Gravity Home]: https://github.com/hemangsk/Gravity
 
