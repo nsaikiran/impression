@@ -127,6 +127,22 @@ a:hover {
     font-size: 1rem;
 }
 
+blockquote {
+    text-decoration-color: black;
+    border-left: .1em solid #ccc;
+    margin-left: 0;
+    padding: 0 .5em;
+}
+code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+p > code, li > code {
+    padding: .2em;
+    background-color: #fdf6e3;
+    color: #586e75;
+}
+
 /*****************************************************************************/
 /*
 /* Footer
