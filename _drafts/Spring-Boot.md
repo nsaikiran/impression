@@ -5,32 +5,27 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
+*Aim of this post is not to give specific details about Spring and its eco system, rather to give a generic idea of Spring **framework**, its extensibility.*
+
 # Annotations
 Annotations have been very handy in influence the definitions. Now we use them everywhere. 
 Especially in configuring Spring. 
 I was curious to know how those annotations work on our piece of code. I came to know that this is a weird and unusual concept.
 
-```javascript
-// server.js
-var server = express();
-
-server.use(function(req, res) {
-  var appHtml = React.renderToString(<App />);
-  var html = injectIntoHtml({app: appHtml});
-  res.send(html);
-});
-```
-
-```javascript
-// client.js
-React.render(<App />, document.getElementById('app'));
-```
 
 Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
 ## Bookmarks
 - [How do annotations work internally][How do annotations work internally]
 
+# Inversion of Control
+//TODO: Talk about frameworks. How inversion of control works.
+
+
 # Spring
+Foundational concepts of Spring 
+http://springtutorials.com/spring-tutorial-1/ It has good concepts.
+
+
 ## Bookmarks
 - [Spring Reference][Spring Link 1]
 
