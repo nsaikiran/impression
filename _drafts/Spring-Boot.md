@@ -28,7 +28,18 @@ Anyway, [Annotation Processing][Annotation Processing 101] gives some insights i
 //TODO: Talk about frameworks. How inversion of control works.
 
 
-# Spring
+# Spring Framework
+When we are developing applications with using Spring Framework. Lot of questions arise. 
+When you feel the magic, naturally you'll want to know &mdash; How things are happening under the hood.
+
+I've the same feeling. So, started to understand Spring Framework.
+
+[Spring over view][SpringOverView] gives a bigger picture.
+[Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
+[Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
+has good explanation of core feature of Spring Framework.
+
+
 Foundational concepts of Spring 
 http://springtutorials.com/spring-tutorial-1/ It has good concepts.
 
@@ -57,6 +68,9 @@ I hope I've tried to uncover at least few of the magic curtains if not some.
 [How do annotations work internally]: https://stackoverflow.com/questions/18189980/how-do-annotations-work-internally
 
 [Spring Link 1]: http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
+[SpringOverView]: https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html
+[SpringVideo1]: https://www.youtube.com/watch?v=kSITVsOUvLU
+[SpringVideo2]: https://www.youtube.com/watch?v=u3axrmN-wrE
 [Springboot Link 1]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 [Demystifying SpringBoot Magic]: https://spring.io/blog/2016/12/14/spring-tips-demystifying-bootiful-magic
 [Zero Effort Spring]: https://www.youtube.com/watch?v=cTPAKMIm_pM&list=PLgGXSWYM2FpOa_FTla-x5Wd10dpmgrRC4
