@@ -5,7 +5,14 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
+Understanding Spring Framework.
+
 *Aim of this post is not to give specific details about Spring and its eco system, rather to give a generic idea of Spring **framework**, its extensibility.*
+
+
+Understanding Spring Framework. not any specific spring project that uses framework/core.
+Focus on core. How it is extensible? How other projects like security/data access/mvc are connected to spring-core?
+
 
 # Annotations
 Annotations have been very handy in influence the definitions. Now we use them everywhere. 
