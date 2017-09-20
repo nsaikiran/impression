@@ -9,6 +9,17 @@ Understanding Spring Framework.
 
 *Aim of this post is not to give specific details about Spring and its eco system, rather to give a generic idea of Spring **framework**, its extensibility.*
 
+Boilerplate code!, whenever we observe we'll try not to copy the same code in several places. 
+We extract that out and invoke from where ever we want that functionality. 
+
+If that piece of code is boilerplate code for most of the developers, then it will be a part of library or framework.
+
+
+You probably know the difference between library and framework. Using libraries won't be intriguing or irritating but using a framework does. 
+Because guidelines that one needs to follow to use framework or more when compared to library. 
+
+> TODO picture of skeleton > framework, full picture for application
+
 
 Understanding Spring Framework. not any specific spring project that uses framework/core.
 Focus on core. How it is extensible? How other projects like security/data access/mvc are connected to spring-core?
