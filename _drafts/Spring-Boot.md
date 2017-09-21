@@ -20,35 +20,50 @@ Because guidelines that one needs to follow to use framework or more when compar
 
 > TODO picture of skeleton > framework, full picture for application
 
-
-Understanding Spring Framework. not any specific spring project that uses framework/core.
-Focus on core. How it is extensible? How other projects like security/data access/mvc are connected to spring-core?
+# Inversion of Control
+//TODO: Talk about frameworks. How inversion of control works.
 
 
 # Annotations
 Annotations have been very handy in influence the definitions. Now we use them everywhere. 
 Especially in configuring Spring. 
-I was curious to know how those annotations work on our piece of code. I came to know that this is a weird and unusual concept.
-
+I was curious to know how those annotations work on our piece of code. 
+I came to know that this is a weird and unusual concept.
 
 Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
 ## Bookmarks
 - [How do annotations work internally][How do annotations work internally]
 
-# Inversion of Control
-//TODO: Talk about frameworks. How inversion of control works.
-
 
 # Spring Framework
+
+
 When we are developing applications with using Spring Framework. Lot of questions arise. 
 When you feel the magic, naturally you'll want to know &mdash; How things are happening under the hood.
 
 I've the same feeling. So, started to understand Spring Framework.
 
-[Spring over view][SpringOverView] gives a bigger picture.
+I found the [Overview of Spring Framework][SpringOverView] very helpful to at least uncover some part of the gray area.
+There described the anatomy of framework. 
+
+You might also want to go through the complete reference manual of framework except that it is lenghty. But that'll be very useful.
+
+Some of the questions I tried to chase are answered there are:
+- What is the minimal spring you can use?
+- How the *minimal spring* extended with other essential modules ?
+- What are all the modules of the framework?
+
+
+And as we were mentioning *what* boilerplate code is provided by the framework ?
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
-has good explanation of core feature of Spring Framework.
+has good explanation of core features of Spring Framework. All other features of the framework are described in reference manual.
+
+
+
+Understanding Spring Framework. not any specific spring project that uses framework/core.
+Focus on core. How it is extensible? How other projects like security/data access/mvc are connected to spring-core?
+
 
 
 Foundational concepts of Spring 
