@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: in-draft
+---
+<section>
+  <ul class="post-list">
+    {% for post in site.drafts %}
+      <li>
+        <a class="post-item" href="{{ post.url }}">
+          <div class="post-title">{{ post.title | append: "*" }}</div>
+          <div class="post-date">{{ post.date | date: "%d %B, %Y" }}</div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

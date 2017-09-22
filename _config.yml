@@ -20,6 +20,13 @@ kramdown:
   syntax_highlighter: rouge
 # GitHub variables end
 
+
+#Collections
+collections:
+  drafts:
+    output: true
+    permalink: /:collection/:name
+
 google_analytics_id: UA-89879231-1
 
 disqus:
