@@ -30,6 +30,8 @@ Especially in configuring Spring.
 I was curious to know how those annotations work on our piece of code. 
 I came to know that this is a weird and unusual concept.
 
+In python we have similar language construct called `decorator`. Where you can influence the wrapped (annotated) function.
+
 Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
 ## Bookmarks
 - [How do annotations work internally][How do annotations work internally]
@@ -43,8 +45,10 @@ When you feel the magic, naturally you'll want to know &mdash; How things are ha
 
 I've the same feeling. So, started to understand Spring Framework.
 
-I found the [Overview of Spring Framework][SpringOverView] very helpful to at least uncover some part of the gray area.
-There described the anatomy of framework. 
+I found [Overview of the Spring Framework][Framework Modules] very helpful to at least uncover some part of the gray area.
+There the anatomy of the framework is described. 
+The latest release of Spring Framework came with the updated reference document which described what they mean by [*'Spring and Spring Framework'*][Spring and Spring Framework].
+
 
 You might also want to go through the complete reference manual of framework except that it is lenghty. But that'll be very useful.
 
@@ -95,6 +99,8 @@ I hope I've tried to uncover at least few of the magic curtains if not some.
 
 [Spring Link 1]: http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
 [SpringOverView]: https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html
+[Framework Modules]: https://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#overview-modules
+[Spring and Spring Framework]: https://docs.spring.io/spring/docs/5.0.x/spring-framework-reference/overview.html#what-we-mean-by-spring
 [SpringVideo1]: https://www.youtube.com/watch?v=kSITVsOUvLU
 [SpringVideo2]: https://www.youtube.com/watch?v=u3axrmN-wrE
 [Springboot Link 1]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
