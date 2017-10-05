@@ -40,35 +40,47 @@ Anyway, [Annotation Processing][Annotation Processing 101] gives some insights i
 # Spring Framework
 
 
-When we are developing applications with using Spring Framework. Lot of questions arise. 
+When we are developing applications with using Spring Framework. 
+Lot of questions arise. 
 When you feel the magic, naturally you'll want to know &mdash; How things are happening under the hood.
 
 I've the same feeling. So, started to understand Spring Framework.
 
-I found [Overview of the Spring Framework][Framework Modules] very helpful to at least uncover some part of the gray area.
-There the anatomy of the framework is described. 
 The latest release of Spring Framework came with the updated reference document which described what they mean by [*'Spring and Spring Framework'*][Spring and Spring Framework].
-
+So, lets talk about Spring *Framework*.
 
 You might also want to go through the complete reference manual of framework except that it is lenghty. But that'll be very useful.
 
-Some of the questions I tried to chase are answered there are:
-- What is the minimal spring you can use?
-- How the *minimal spring* extended with other essential modules ?
-- What are all the modules of the framework?
+Ask these questions to yourself and you'll be right on track to understand:
 
+- Why Spring Framework?
+- What is Spring Framework and What are its components?
+- What is the minimal Spring Framework I can use?
+- What are the projects built on Spring Framework?
 
+## Why Spring Framework?
 And as we were mentioning *what* boilerplate code is provided by the framework ?
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
 has good explanation of core features of Spring Framework. All other features of the framework are described in reference manual.
 
+## What is Spring Framework and What are its components?
+Spring Framework project is foundation for all other Spring projects. 
+You can check the list of all projects at [https://spring.io/projects][https://spring.io/projects]. 
+Each project contains several modules. 
+For example Spring Framework contains `spring-core`, `spring-beans`, `spring-context` and many others.
 
+I found [Overview of the Spring Framework][Framework Modules] very helpful to at least uncover some part of the gray area.
+There the anatomy of the framework is described. 
+ 
+To know more related to the modules, check [Source Code of Spring Framework][https://github.com/spring-projects/spring-framework]. 
+Also you might want to check the build script of each module to figure out dependency tree of those modules.
 
-Understanding Spring Framework. not any specific spring project that uses framework/core.
-Focus on core. How it is extensible? How other projects like security/data access/mvc are connected to spring-core?
+## What is the minimal Spring Framework I can use?
+The recommended *minimal* Spring Framework to use is `spring-context`. Find out features and how-to-use [here][http://projects.spring.io/spring-framework/].
 
-
+## What are the projects built on Spring Framework?
+You can find in Spring Projects page.
 
 Foundational concepts of Spring 
 http://springtutorials.com/spring-tutorial-1/ It has good concepts.
