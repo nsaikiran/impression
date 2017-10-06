@@ -25,7 +25,7 @@ and proper use.
 //TODO: Talk about frameworks. How inversion of control works.
 
 
-# Annotations
+## Annotations
 Annotations have been very handy in influence the definitions. Now we use them everywhere. 
 Especially in configuring Spring. 
 I was curious to know how those annotations work on our piece of code. 
@@ -34,12 +34,11 @@ I came to know that this is a weird and unusual concept.
 In python we have similar language construct called `decorator`. Where you can influence the wrapped (annotated) function.
 
 Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
-## Bookmarks
+### Bookmarks
 - [How do annotations work internally][How do annotations work internally]
 
 
-# Spring Framework
-
+## Spring Framework
 
 When we are developing applications with using Spring Framework. 
 Lot of questions arise. 
@@ -59,13 +58,13 @@ Ask these questions to yourself and you'll be right on track to understand:
 - What is the minimal Spring Framework I can use?
 - What are the projects built on Spring Framework?
 
-## Why Spring Framework?
+### Why Spring Framework?
 And as we were mentioning *what* boilerplate code is provided by the framework ?
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
 [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
 has good explanation of core features of Spring Framework. All other features of the framework are described in reference manual.
 
-## What is Spring Framework and What are its components?
+### What is Spring Framework and What are its components?
 Spring Framework project is foundation for all other Spring projects. 
 You can check the list of all projects at [https://spring.io/projects][https://spring.io/projects]. 
 Each project contains several modules. 
@@ -77,22 +76,22 @@ There the anatomy of the framework is described.
 To know more related to the modules, check [Source Code of Spring Framework][https://github.com/spring-projects/spring-framework]. 
 Also you might want to check the build script of each module to figure out dependency tree of those modules.
 
-## What is the minimal Spring Framework I can use?
+### What is the minimal Spring Framework I can use?
 The recommended *minimal* Spring Framework to use is `spring-context`. Find out features and how-to-use [here][http://projects.spring.io/spring-framework/].
 
-## What are the projects built on Spring Framework?
+### What are the projects built on Spring Framework?
 You can find in Spring Projects page.
 
 Foundational concepts of Spring 
 http://springtutorials.com/spring-tutorial-1/ It has good concepts.
 
 
-## Bookmarks
+### Bookmarks
 - [Spring Reference][Spring Link 1]
 
-# SpringBoot
+## SpringBoot
 They say it is a opinionated configuration of Spring. You can change that by customizing.
-## Bookmarks
+### Bookmarks
 - [Spring Boot Reference][Springboot Link 1]
 
 ### Videos
