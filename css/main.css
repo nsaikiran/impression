@@ -12,17 +12,17 @@ body{
     font-variant-numeric: normal;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 1.5rem;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+
+h1, h2 {
+    color: #f27154;
 }
 
 h1 {
-    color: #f27154;
+    margin-bottom: 0;
 }
 
 
@@ -45,7 +45,6 @@ a:hover {
     text-align: justify;
     width: 40em;
     margin: 2em auto 2em auto;
-    line-height: 1.5em;
 }
 
 .header {
@@ -118,9 +117,6 @@ a:hover {
     
 }
 
-.post h1 {
-    margin-bottom: 0;
-}
 
 
 .post-date {
@@ -128,6 +124,9 @@ a:hover {
     font-size: 1rem;
 }
 
+.post {
+    line-height: 1.5rem;
+}
 .post img {
     width: 100%;
 }
