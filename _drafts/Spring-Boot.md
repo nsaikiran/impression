@@ -15,8 +15,9 @@ We extract that out and invoke from where ever we want that functionality.
 If that piece of code is boilerplate code for most of the developers, then it will be a part of library or framework.
 
 
-You probably know the difference between library and framework. Using libraries won't be intriguing or irritating but using a framework does. 
-Because guidelines that one needs to follow to use framework or more when compared to library. 
+You probably know the difference between library and framework. 
+And you need to be through with the *[guidelines][GuidelinesPOST]* needs to be followed for an effective 
+and proper use.
 
 > TODO picture of skeleton > framework, full picture for application
 
@@ -118,3 +119,6 @@ I hope I've tried to uncover at least few of the magic curtains if not some.
 [Springboot Link 1]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 [Demystifying SpringBoot Magic]: https://spring.io/blog/2016/12/14/spring-tips-demystifying-bootiful-magic
 [Zero Effort Spring]: https://www.youtube.com/watch?v=cTPAKMIm_pM&list=PLgGXSWYM2FpOa_FTla-x5Wd10dpmgrRC4
+
+------
+[GuidelinesPOST]: http://saikiran.blog/cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html
