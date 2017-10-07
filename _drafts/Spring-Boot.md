@@ -5,38 +5,35 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
-When we enjoy the benefits of a system, 
-without the knowledge of *how* it does, 
+When we enjoy benefits of a system, 
+without knowledge on *how* it works, 
 we will naturally have desire to explore. 
 *Behind the magic curtains* is a series of writings about such systems. 
 This post is the first of this series. 
 Below described is my experience while trying to understand Spring Framework, projects built on Spring Framework and one of those projects: Spring Boot.
 
- 
-After realizing that the Spring ecosystem is very big and my experience with it considerably low. 
-I wanted to try to understand at least basic idea on how Spring components are organized and used &mdash; at high level.
-
 ---
 
 ## Spring Framework
+ 
+After realizing that the Spring ecosystem is very big and my experience with it considerably low. 
+I wanted to try to understand at least the basic idea on how Spring components are organized and used &mdash; at high level.
 
-
-Ask these questions to yourself and you'll be right on track to understand:
-
+Now we will follow the answers to the below questions:
 - Why Spring Framework?
-- What is Spring Framework and What are its components?
+- What is Spring Framework and what are its components?
 - What is the minimal Spring Framework I can use?
 - What are the projects built on Spring Framework?
 
 ### Why Spring Framework?
 
 > Whenever we observe boilerplate code, 
-> we extract that out and invoke from where ever we want that functionality. 
-> If that piece of code is boilerplate code for most of the developers, then it will be a part of library or framework.
->And you need to be through with the *[guidelines][GuidelinesPOST]* 
+> we extract that out and invoke that from whereever we want that functionality. 
+> If that piece of code is boilerplate code for most of the developers, then it will be part of a library or a framework.
+> And you need to be through with the *[guidelines][GuidelinesPOST]* 
 > for an effective and proper use of a framework or a library.
 
-Spring Framework required because it provides lot of boilerplate code. 
+Spring Framework is required because it provides lot of boilerplate code. 
 Going through below videos will help in figuring out *what* boilerplate code it provies. 
 - [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
 - [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
@@ -50,7 +47,7 @@ There the anatomy of the framework is described.
 
 Spring Framework contains modules such as `spring-core`, `spring-beans`, `spring-context` and many others.
 To know more related to the modules, check [Source Code of Spring Framework][Source Code of Spring Framework]. 
-Have a glance at build scripts of those modules, to figure out how those modules make up framework.
+Have a glance at build scripts of those modules, to figure out how those modules make up the framework.
 
 ### What is the minimal Spring Framework I can use?
 The recommended *minimal* Spring Framework to use is `spring-context`. 
@@ -60,15 +57,9 @@ Find out features of and how-to-use the framework [here][Spring Framework Projec
 You can find them in [Spring Projects Page][Spring Projects].
 
 
-----
-
-Foundational concepts of Spring 
-http://springtutorials.com/spring-tutorial-1/ It has good concepts.
-
-----
-
 ### Bookmarks
 - [Spring Reference][Spring Link 1]
+- [Introduction to Spring Modules][Introduction to Spring Modules]
 
 ---
 
@@ -83,8 +74,8 @@ these configuration methods available &mdash; xml, java configuration and annota
 Now, SpringBoot will (conditionally)configure our application context by *convention* unless we come up with 
 our own configuration. 
 Allowing us to get started with the application quickly. 
-It will check your classpath for what module/project you want to use 
-in your application and configures it for you. 
+It will check your classpath for module/project you want to use 
+in your application and configures that for you. 
 
 It also provides many features other than configuring like &mdash; embedded servlet container &mdash; to create standalone application. 
 The way it works is so cool and easy to understand. 
@@ -96,6 +87,7 @@ demonstrate how SpringBoot does all the magic.
 
 ### Bookmarks
 - [Spring Boot Reference][Springboot Link 1]
+- [Introduction to SpringBoot][SpringBoot by Siva]
 
 ### Videos
 - [Demystifying SpringBoot Magic][Demystifying SpringBoot Magic].
@@ -104,17 +96,16 @@ demonstrate how SpringBoot does all the magic.
 ---
 
 ## Annotations
-Java annotations also seemed interesting for me after doing all this Spring stuff. 
-Just keep an annotation on an element and that's it, you will see that element being affected as promised by the annotation. 
+Java's annotations also seemed interesting for me after doing all this Spring stuff. 
+Just keep an annotation on an element and that's it, you will see the element being affected as promised by the annotation. 
 
 I was curious to know how those annotations work on our piece of code. 
 And the concept seemed a bit weird and unusual. 
 Providing our own annotation is not so simple. 
 But annotations are handy.
 
-Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
-
-In python we have similar language construct called `decorator`. 
+[Annotation Processing][Annotation Processing 101] gives some insights on annotations.
+In Python we have a similar language construct called `decorator`. 
 
 ### Bookmarks
 - [How do annotations work internally][How do annotations work internally]
@@ -138,6 +129,8 @@ In python we have similar language construct called `decorator`.
 [Spring Boot project page]: http://projects.spring.io/spring-boot/
 [Demystifying SpringBoot Magic]: https://spring.io/blog/2016/12/14/spring-tips-demystifying-bootiful-magic
 [Zero Effort Spring]: https://www.youtube.com/watch?v=cTPAKMIm_pM&list=PLgGXSWYM2FpOa_FTla-x5Wd10dpmgrRC4
+[SpringBoot by Siva]: http://sivalabs.in/2014/07/springboot-introducing-springboot/
+[Introduction to Spring Modules]: http://springtutorials.com/introduction-to-spring-modules/
 
 ------
 [GuidelinesPOST]: http://saikiran.blog/cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html
