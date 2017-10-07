@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Behind the magic curtains: Spring Boot"
-categories: ["cs"]
+categories: ["tech"]
 author: "Sai Kiran"
 ---
 
