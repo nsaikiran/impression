@@ -5,40 +5,21 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
-Wanted to travel and understand the Spring ecosystem. 
-After realizing it is very big and my experience with it considerably low. 
-I wanted to try to understand at least basic idea and how Spring components can be organized and used &mdash; at high level.
+When we enjoy the benefits of a system, 
+without the knowledge of *how* it does, 
+we will naturally have desire to explore. 
+*Behind the magic curtains* is a series of writings about such systems. 
+This post is the first of this series. 
+Below described is my experience while trying to understand Spring Framework, projects built on Spring Framework and one of those projects: Spring Boot.
+
  
-
-Boilerplate code!, whenever we observe we'll try not to copy the same code in several places. 
-We extract that out and invoke from where ever we want that functionality. 
-
-If that piece of code is boilerplate code for most of the developers, then it will be a part of library or framework.
-
-
-You probably know the difference between library and framework. 
-And you need to be through with the *[guidelines][GuidelinesPOST]* needs to be followed for an effective 
-and proper use.
-
-> TODO picture of skeleton > framework, full picture for application
-
-# Inversion of Control
-//TODO: Talk about frameworks. How inversion of control works.
+After realizing that the Spring ecosystem is very big and my experience with it considerably low. 
+I wanted to try to understand at least basic idea on how Spring components are organized and used &mdash; at high level.
 
 ---
 
 ## Spring Framework
 
-When we are developing applications with using Spring Framework. 
-Lot of questions arise. 
-When you feel the magic, naturally you'll want to know &mdash; How things are happening under the hood.
-
-I've the same feeling. So, started to understand Spring Framework.
-
-The latest release of Spring Framework came with the updated reference document which described what they mean by [*'Spring and Spring Framework'*][Spring and Spring Framework].
-So, lets talk about Spring *Framework*.
-
-You might also want to go through the complete reference manual of framework except that it is lenghty. But that'll be very useful.
 
 Ask these questions to yourself and you'll be right on track to understand:
 
@@ -48,22 +29,28 @@ Ask these questions to yourself and you'll be right on track to understand:
 - What are the projects built on Spring Framework?
 
 ### Why Spring Framework?
-And as we were mentioning *what* boilerplate code is provided by the framework ?
-[Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
-[Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
-has good explanation of core features of Spring Framework. All other features of the framework are described in reference manual.
+
+> Whenever we observe boilerplate code, 
+> we extract that out and invoke from where ever we want that functionality. 
+> If that piece of code is boilerplate code for most of the developers, then it will be a part of library or framework.
+>And you need to be through with the *[guidelines][GuidelinesPOST]* 
+> for an effective and proper use of a framework or a library.
+
+Spring Framework required because it provides lot of boilerplate code. 
+Going through below videos will help in figuring out *what* boilerplate code it provies. 
+- [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
+- [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
+
+All other features of the framework are described in a lengthy [reference manual][Spring Link 2]. But that'll be very useful.
 
 ### What is Spring Framework and What are its components?
-Spring Framework project is foundation for all other Spring projects. 
-You can check the list of all projects at [Spring Projects][Spring Projects]. 
-Each project contains several modules. 
-For example Spring Framework contains `spring-core`, `spring-beans`, `spring-context` and many others.
-
-I found [Overview of the Spring Framework][Framework Modules] very helpful to at least uncover some part of the gray area.
+[Spring Framework project][Spring Framework Project] is foundation for all other Spring projects.
+[Overview of the Spring Framework][Framework Modules] was very helpful to uncover some parts of the gray area.
 There the anatomy of the framework is described. 
- 
-To know more related to the modules, check [Source Code of Spring Framework][Source Code of Spring Framework].  
-Also you might want to check the build script of each module to figure out dependency tree of those modules.
+
+Spring Framework contains modules such as `spring-core`, `spring-beans`, `spring-context` and many others.
+To know more related to the modules, check [Source Code of Spring Framework][Source Code of Spring Framework]. 
+Have a glance at build scripts of those modules, to figure out how those modules make up framework.
 
 ### What is the minimal Spring Framework I can use?
 The recommended *minimal* Spring Framework to use is `spring-context`. 
@@ -138,6 +125,7 @@ In python we have similar language construct called `decorator`.
 [How do annotations work internally]: https://stackoverflow.com/questions/18189980/how-do-annotations-work-internally
 
 [Spring Link 1]: http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/
+[Spring Link 2]: https://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/
 [SpringOverView]: https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html
 [Framework Modules]: https://docs.spring.io/spring/docs/4.3.9.RELEASE/spring-framework-reference/htmlsingle/#overview-modules
 [Spring and Spring Framework]: https://docs.spring.io/spring/docs/5.0.x/spring-framework-reference/overview.html#what-we-mean-by-spring
