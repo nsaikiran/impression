@@ -5,9 +5,10 @@ categories: ["cs"]
 author: "Sai Kiran"
 ---
 
-Understanding Spring Framework.
-
-*Aim of this post is not to give specific details about Spring and its eco system, rather to give a generic idea of Spring **framework**, its extensibility.*
+Wanted to travel and understand the Spring ecosystem. 
+After realizing it is very big and my experience with it considerably low. 
+I wanted to try to understand at least basic idea and how Spring components can be organized and used &mdash; at high level.
+ 
 
 Boilerplate code!, whenever we observe we'll try not to copy the same code in several places. 
 We extract that out and invoke from where ever we want that functionality. 
@@ -24,19 +25,7 @@ and proper use.
 # Inversion of Control
 //TODO: Talk about frameworks. How inversion of control works.
 
-
-## Annotations
-Annotations have been very handy in influence the definitions. Now we use them everywhere. 
-Especially in configuring Spring. 
-I was curious to know how those annotations work on our piece of code. 
-I came to know that this is a weird and unusual concept.
-
-In python we have similar language construct called `decorator`. Where you can influence the wrapped (annotated) function.
-
-Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
-### Bookmarks
-- [How do annotations work internally][How do annotations work internally]
-
+---
 
 ## Spring Framework
 
@@ -94,6 +83,8 @@ http://springtutorials.com/spring-tutorial-1/ It has good concepts.
 ### Bookmarks
 - [Spring Reference][Spring Link 1]
 
+---
+
 ## SpringBoot
 It is one of the Spring projects built on Spring Framework. 
 Find more here at [Spring Boot project page][Spring Boot project page].
@@ -122,6 +113,24 @@ demonstrate how SpringBoot does all the magic.
 ### Videos
 - [Demystifying SpringBoot Magic][Demystifying SpringBoot Magic].
 - [Zero Effort Spring][Zero Effort Spring].
+
+---
+
+## Annotations
+Java annotations also seemed interesting for me after doing all this Spring stuff. 
+Just keep an annotation on an element and that's it, you will see that element being affected as promised by the annotation. 
+
+I was curious to know how those annotations work on our piece of code. 
+And the concept seemed a bit weird and unusual. 
+Providing our own annotation is not so simple. 
+But annotations are handy.
+
+Anyway, [Annotation Processing][Annotation Processing 101] gives some insights in "processing" annotations.
+
+In python we have similar language construct called `decorator`. 
+
+### Bookmarks
+- [How do annotations work internally][How do annotations work internally]
 
 
 
