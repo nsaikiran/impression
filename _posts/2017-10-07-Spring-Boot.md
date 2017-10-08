@@ -28,13 +28,13 @@ Now we will follow the answers to the below questions:
 ### Why Spring Framework?
 
 > Whenever we observe boilerplate code, 
-> we extract that out and invoke that from whereever we want that functionality. 
+> we extract that out and invoke that from wherever we want that functionality. 
 > If that piece of code is boilerplate code for most of the developers, then it will be part of a library or a framework.
-> And you need to be through with the *[guidelines][GuidelinesPOST]* 
+> And you need to be thorough with the *[guidelines][GuidelinesPOST]* 
 > for an effective and proper use of a framework or a library.
 
 Spring Framework is required because it provides lot of boilerplate code. 
-Going through below videos will help in figuring out *what* boilerplate code it provies. 
+Going through below videos will help in figuring out *what* boilerplate code it provides. 
 - [Getting Started with Spring and SpringSource Tool Suite (STS) Part 1][SpringVideo1], 
 - [Getting Started with Spring and SpringSource Tool Suite (STS) Part 2][SpringVideo2]
 
