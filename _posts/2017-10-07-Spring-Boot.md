@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Behind the magic curtains: Spring Boot"
+description: "Understanding Spring and Spring Boot"
 categories: ["tech"]
 author: "Sai Kiran"
 ---

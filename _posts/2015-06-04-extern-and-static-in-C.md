@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Significance of extern and static keywords in C"
+description: "Modular programming in the C programming language"
 categories: ["cs"]
 author: "Sai Kiran"
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "A difficult thing for beginners"
+description: "Getting used to high level languages"
 date:   2015-01-07 19:45:31 +0530
 categories: ["cs"]
 author: "Sai Kiran"

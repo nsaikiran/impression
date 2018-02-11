@@ -31,3 +31,11 @@ google_analytics_id: UA-89879231-1
 
 disqus:
   shortname: "nsaikiran"
+
+social:
+  name: Sai Kiran Naragam
+  links:
+    - https://twitter.com/saikiran638
+    - https://www.facebook.com/saikiran638
+    - https://www.linkedin.com/in/saikiran638
+    - https://github.com/nsaikiran

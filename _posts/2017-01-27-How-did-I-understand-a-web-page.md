@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How did I understand a web page?"
+description: "Understanding web technologies"
 date:   2017-01-27
 categories: ["tech"]
 author: "Sai Kiran"

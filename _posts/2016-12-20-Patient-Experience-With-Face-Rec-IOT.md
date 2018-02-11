@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Imagining Patient Experiences with Face Recognition, IoT and OCR"
+description: "Using Machine Learning and IoT in Health sector"
 categories: ["tech"]
 author: "Sai Kiran"
 ---

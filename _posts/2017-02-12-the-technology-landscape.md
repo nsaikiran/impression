@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The technology landscape"
+description: "What to do with the proliferation of technologies"
 categories: ["tech","impression"]
 author: "Sai Kiran"
 ---

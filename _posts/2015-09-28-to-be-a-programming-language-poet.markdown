@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "To be a programming language poet"
+description: "To be a programming language poet"
 date:   2015-09-28 19:45:31 +0530
 categories: ["cs", "impression"]
 author: "Sai Kiran"

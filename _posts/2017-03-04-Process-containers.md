@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Process Containers"
+description: "Understanding container technology"
 categories: ["tech"]
 author: "Sai Kiran"
 ---

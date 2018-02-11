@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How did I setup this blog?"
+description: "Setting up blog in GithubPages"
 categories: ["tech"]
 author: "Sai Kiran"
 ---

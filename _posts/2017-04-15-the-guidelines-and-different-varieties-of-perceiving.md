@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "The guidelines and different varieties of perceiving"
+description: "Understanding data types and configuration files"
 categories: ["cs"]
 author: "Sai Kiran"
 ---
