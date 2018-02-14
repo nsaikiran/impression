@@ -3,6 +3,7 @@ layout: post
 title:  "Process Containers"
 description: "Understanding container technology"
 categories: ["tech"]
+tags: ["container", "docker", "kubernetes"]
 author: "Sai Kiran"
 ---
 
