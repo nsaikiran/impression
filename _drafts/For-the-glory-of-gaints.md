@@ -7,10 +7,13 @@ tags: ["tribute"]
 author: "Sai Kiran"
 ---
 
-[**If I have seen further it is by standing on the shoulders of Giants.**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
-should explain the title.
 
-I should have wrote this few years ago, during my graduate studies.
+_[**If I have seen further it is by standing on the shoulders of Giants.**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
+should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
+Even you don't remember the giants you've learned from. But they shall be remembered.
+_
+
+I should have wrote this few years ago, during my undergraduate studies.
 Because it was then I felt this.
 
 See, for everything to be understood there needs a tiny spark of thought
@@ -27,15 +30,17 @@ Later introduced to C programming language. Felt unusual because at that
 time transiting from Python to C is [difficult](2015-01-07-A-Difficult-thing-for-beginners.md)
 
 As I was exploring C, I understood many concepts that make up software systems as we see them today.
-Reading [ The C Programming Language ](https://www.goodreads.com/book/show/515601.The_C_Programming_Language) helped me soo much.
+[ The C Programming Language ](https://www.goodreads.com/book/show/515601.The_C_Programming_Language)
+book by Dennis M. Ritchie and Brian Kernighan helped me soo much. It explains C language in conjunction with UNIX concepts.
 That book is concise, precise and always top my favorite books list.
 In fact every book by [Brian Kernighan ](https://www.cs.princeton.edu/~bwk/) is worth reading.
 
-After knowing all this. I had to do this drawing and stick in my class room.
+Soon after I've learned the still living impact of C language and UNIX philosophy,
+I had to do this drawing and stick in my class room.
 
 ![DMR](../assets/images/dmr Pic.jpg)
 
-And now UNIX. C language also played important role in development of UNIX operating system.
+C language also played important role in development of UNIX operating system.
 Developed by  Ken Thompson, Dennis Ritchie and others.
 We all know that the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) will definitely guide us through better software development.
 
@@ -68,8 +73,6 @@ Dennis M. Ritchie:
 
 But here I'm talking only about a couple of people not even people
 
-There are so many giants. Everyone I've learned from counts and I don't even know their names.
-Even you don't remember the giants you've learned from. But they shall be remembered.
 
 
 
