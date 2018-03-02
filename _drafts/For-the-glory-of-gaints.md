@@ -8,10 +8,11 @@ author: "Sai Kiran"
 ---
 
 
-_[**If I have seen further it is by standing on the shoulders of Giants.**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
+*[**If I have seen further it is by standing on the shoulders of Giants**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
 should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
-Even you don't remember the giants you've learned from. But they shall be remembered.
-_
+Even you don't remember the giants you've learned from. But they shall be remembered.*
+
+
 
 I should have wrote this few years ago, during my undergraduate studies.
 Because it was then I felt this.
@@ -67,6 +68,8 @@ Unix Tutorials:
 
 Dennis M. Ritchie:
 - [Dennis M. Ritchie](https://www.bell-labs.com/usr/dmr/www/)
+- [Dennis Ritchie's video interview June 2011 by DennisRitchie.in](https://www.youtube.com/watch?v=umF6SNYaJNw)
+
 
 [Japan Prize Ceremony for Ken Thompson](https://www.youtube.com/watch?v=p-kWw0UTD2A)
 
