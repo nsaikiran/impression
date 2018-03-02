@@ -7,6 +7,8 @@ tags: ["java", "spring", "spring boot"]
 author: "Sai Kiran"
 ---
 
+**If I have seen further it is by standing on the shoulders of Giants.**
+
 I should have wrote this few years ago, when I was studying my graduation.
 Because it was then I did all this.
 
@@ -56,3 +58,11 @@ About C language:
 
 
 
+- [Dennis M. Ritchie](https://www.bell-labs.com/usr/dmr/www/)
+
+There are so many gaints and I don't even know their names even you don't.
+But they shall be remembered.
+
+
+
+[CHRONOLOGICAL LISTING OF A.M. TURING AWARD WINNERS](https://amturing.acm.org/byyear.cfm)
