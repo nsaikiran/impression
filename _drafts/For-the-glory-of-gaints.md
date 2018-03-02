@@ -7,11 +7,13 @@ tags: ["tribute"]
 author: "Sai Kiran"
 ---
 
+----
 
 *[**If I have seen further it is by standing on the shoulders of Giants**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
 should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
 Even you don't remember the giants you've learned from. But they shall be remembered.*
 
+-----
 
 
 I should have wrote this few years ago, during my undergraduate studies.
@@ -71,12 +73,14 @@ Dennis M. Ritchie:
 - [Dennis Ritchie's video interview June 2011 by DennisRitchie.in](https://www.youtube.com/watch?v=umF6SNYaJNw)
 
 
+
+To be continued ...
+
+
+
+-------------------
+
 [Japan Prize Ceremony for Ken Thompson](https://www.youtube.com/watch?v=p-kWw0UTD2A)
-
-
-But here I'm talking only about a couple of people not even people
-
-
 
 
 [CHRONOLOGICAL LISTING OF A.M. TURING AWARD WINNERS](https://amturing.acm.org/byyear.cfm)
