@@ -8,9 +8,10 @@ author: "Sai Kiran"
 ---
 
 [**If I have seen further it is by standing on the shoulders of Giants.**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
+should explain the title.
 
-I should have wrote this few years ago, when I was studying my graduation.
-Because it was then I did all this.
+I should have wrote this few years ago, during my graduate studies.
+Because it was then I felt this.
 
 See, for everything to be understood there needs a tiny spark of thought
 that convinces you. That spark is very important. If you managed to get that
@@ -26,15 +27,17 @@ Later introduced to C programming language. Felt unusual because at that
 time transiting from Python to C is [difficult](2015-01-07-A-Difficult-thing-for-beginners.md)
 
 As I was exploring C, I understood many concepts that make up software systems as we see them today.
-Reading [ The C Programming Language ](https://www.goodreads.com/book/show/515601.The_C_Programming_Language) helped me soo much. That will always top my favorite book list.
-It was so concise and precise.
+Reading [ The C Programming Language ](https://www.goodreads.com/book/show/515601.The_C_Programming_Language) helped me soo much.
+That book is concise, precise and always top my favorite books list.
+In fact every book by [Brian Kernighan ](https://www.cs.princeton.edu/~bwk/) is worth reading.
 
 After knowing all this. I had to do this drawing and stick in my class room.
 
 ![DMR](../assets/images/dmr Pic.jpg)
 
-And now UNIX. C language also played important role in developement of UNIX operating system.
-Developed by  Ken Thompson, Dennis Ritchie and others. We all know that the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) will definitely guide us through better software developement.
+And now UNIX. C language also played important role in development of UNIX operating system.
+Developed by  Ken Thompson, Dennis Ritchie and others.
+We all know that the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) will definitely guide us through better software development.
 
 You *must* see these videos about UNIX:
 - [UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories](https://www.youtube.com/watch?v=XvDZLjaCJuw)
@@ -51,7 +54,6 @@ About bell labs:
 About C language:
 - ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
 - [Why C is so Influential - Computerphile](https://www.youtube.com/watch?v=ci1PJexnfNE)
-
 - [The Development of the C Language](https://www.bell-labs.com/usr/dmr/www/chist.html)
 
 Unix Tutorials:
@@ -64,9 +66,10 @@ Dennis M. Ritchie:
 [Japan Prize Ceremony for Ken Thompson](https://www.youtube.com/watch?v=p-kWw0UTD2A)
 
 
-There are so many gaints and I don't even know their names even you don't.
-Everyone you learned form is a gaint.
-But they shall be remembered.
+But here I'm talking only about a couple of people not even people
+
+There are so many giants. Everyone I've learned from counts and I don't even know their names.
+Even you don't remember the giants you've learned from. But they shall be remembered.
 
 
 
