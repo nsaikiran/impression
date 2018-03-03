@@ -2,46 +2,33 @@
 layout: post
 title:  "For the glory of giants"
 description: "For the glory of giants"
-categories: ["cs","impression"]
+categories: ["tech","impression"]
 tags: ["tribute"]
 author: "Sai Kiran"
 ---
-
-----
 
 *[If I have seen further it is by standing on the shoulders of Giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
 should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
 Even you don't remember the giants you've learned from. But they shall be remembered.*
 
------
-
-
-I should have wrote this few years ago, during my undergraduate studies.
+I should have wrote this a couple of years ago, during my undergraduate studies.
 Because it was then I felt this.
 
-See, for everything to be understood there needs a tiny spark of thought
-that convinces you. That spark is very important. If you managed to get that
-it means you understood well.
+There are times where you'll dream of writing those complex applications while
+you are writing -- for example a program to add to two integers.
+But it will definitely take some time to realise that
+it'll take good amount of knowledge of underlying systems to work on
+complex applications.
 
-Generally I would give my first preference to a writing by the creator, if available.
-For better understanding.
+I was first introduced to Python.
+The feeling of [discomfort](2015-01-07-A-Difficult-thing-for-beginners.md)
+during transition from Python to C helped visualizing the implementation of Python's constructs.
 
-When we were spending lot of time on doing some stuff in HTML and feeling
-happy. And worked with Python. Loved it.
-
-Later introduced to C programming language. Felt unusual because at that
-time transiting from Python to C is [difficult](2015-01-07-A-Difficult-thing-for-beginners.md)
-
-As I was exploring C, I understood many concepts that make up software systems as we see them today.
+As I was exploring C, understood many concepts that make up software systems as we see them today.
 [ The C Programming Language ](https://www.goodreads.com/book/show/515601.The_C_Programming_Language)
 book by Dennis M. Ritchie and Brian Kernighan helped me soo much. It explains C language in conjunction with UNIX concepts.
 That book is concise, precise and always top my favorite books list.
 In fact every book by [Brian Kernighan ](https://www.cs.princeton.edu/~bwk/) is worth reading.
-
-Soon after I've learned the still living impact of C language and UNIX philosophy,
-I had to do this drawing and stick in my class room.
-
-![DMR](../assets/images/dmr Pic.jpg)
 
 C language also played important role in development of UNIX operating system.
 Developed by  Ken Thompson, Dennis Ritchie and others.
@@ -54,6 +41,11 @@ You *must* see these videos about UNIX:
 
 [UNIX pipe](https://en.wikipedia.org/wiki/Pipeline_(Unix)) contributed by Douglas McIlroy is still favorite of many people out there.
 - [Unix Pipeline (Brian Kernighan) - Computerphile](https://www.youtube.com/watch?v=bKzonnwoR2I)
+
+Soon after I've learned the still living impact of C language and UNIX philosophy,
+I had to do this drawing and stick in my class room.
+
+![DMR](../assets/images/dmr Pic.jpg)
 
 #### About C language:
 - ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
@@ -79,6 +71,20 @@ To be continued ...
 
 
 -------------------
+
+
+
+Generally I would give my first preference to a writing by the creator, if available.
+For better understanding.
+
+
+See, for everything to be understood there needs a tiny spark of thought
+that convinces you. That spark is very important. If you managed to get that
+it means you understood well.
+
+When transiting from Python from C, felt like downgrading
+
+
 
 [Japan Prize Ceremony for Ken Thompson](https://www.youtube.com/watch?v=p-kWw0UTD2A)
 
