@@ -9,7 +9,7 @@ author: "Sai Kiran"
 
 ----
 
-*[**If I have seen further it is by standing on the shoulders of Giants**](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
+*[If I have seen further it is by standing on the shoulders of Giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
 should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
 Even you don't remember the giants you've learned from. But they shall be remembered.*
 
@@ -55,22 +55,22 @@ You *must* see these videos about UNIX:
 [UNIX pipe](https://en.wikipedia.org/wiki/Pipeline_(Unix)) contributed by Douglas McIlroy is still favorite of many people out there.
 - [Unix Pipeline (Brian Kernighan) - Computerphile](https://www.youtube.com/watch?v=bKzonnwoR2I)
 
-About bell labs:
-- [The Factory of Ideas: Working at Bell Labs - Computerphile](https://www.youtube.com/watch?v=QFK6RG47bww)
-
-
-About C language:
+#### About C language:
 - ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
 - [Why C is so Influential - Computerphile](https://www.youtube.com/watch?v=ci1PJexnfNE)
 - [The Development of the C Language](https://www.bell-labs.com/usr/dmr/www/chist.html)
 
-Unix Tutorials:
+
+#### Unix Tutorials:
 - [UNIX tutorials](http://www.ee.surrey.ac.uk/Teaching/Unix/unixintro.html)
 
 
-Dennis M. Ritchie:
+#### Dennis M. Ritchie:
 - [Dennis M. Ritchie](https://www.bell-labs.com/usr/dmr/www/)
 - [Dennis Ritchie's video interview June 2011 by DennisRitchie.in](https://www.youtube.com/watch?v=umF6SNYaJNw)
+
+#### About bell labs:
+- [The Factory of Ideas: Working at Bell Labs - Computerphile](https://www.youtube.com/watch?v=QFK6RG47bww)
 
 
 
