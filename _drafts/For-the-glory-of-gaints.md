@@ -7,9 +7,11 @@ tags: ["tribute"]
 author: "Sai Kiran"
 ---
 
+<div style="border: dotted 1px black;" id="mydiv">
 *[If I have seen further it is by standing on the shoulders of Giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)
 should explain the title. There are so many giants. Everyone I've learned from counts and I don't even know their names.
 Even you don't remember the giants you've learned from. But they shall be remembered.*
+</div>
 
 I should have wrote this a couple of years ago, during my undergraduate studies.
 Because it was then I felt this.
