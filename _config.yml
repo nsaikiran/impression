@@ -18,6 +18,8 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+  # Parse markdown inside HTML div
+  parse_block_html: true
 # GitHub variables end
 
 
