@@ -4,7 +4,11 @@ url: "http://saikiran.blog"
 baseurl: ""
 
 markdown: kramdown
-plugins: [jekyll-paginate, kramdown,rouge, jekyll-seo-tag]
+plugins:
+  - jekyll-paginate
+  - kramdown
+  - rouge
+  - jekyll-seo-tag
 
 #GitHub variables start
 # Set by GitHub, Can't override
