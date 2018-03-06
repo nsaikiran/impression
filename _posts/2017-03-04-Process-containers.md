@@ -59,8 +59,8 @@ It made to think: Why do we need a base image,
 if the process in the container is using the same kernel of the host? 
 The answer is in the question itself. 
 Containers will only use the `kernel` of the host &mdash; not the `userland` software. 
-Base image contain the userland of the distribution on which we want our application 
-to run.
+[Base image contain the userland of the distribution on which we want our application
+to run.][Why Understanding User Space vs. Kernel Space Matters]
 Different linux distributions have different `userland` software. 
 
 We have another technology &mdash; kubernetes. [We need kubernetes because containers can't think outside the kernel][Kubernetes in 5 minutes]
@@ -84,3 +84,4 @@ We have another technology &mdash; kubernetes. [We need kubernetes because conta
 [Kernel ControlGroups]: https://lwn.net/Articles/621006/
 [Cgroups, namespaces, and beyond: what are containers made from?]: https://www.youtube.com/watch?v=sK5i-N34im8
 [Containers rated more secure than conventional apps]: https://www.theregister.co.uk/2016/07/15/containers_rated_more_secure_than_conventional_apps/
+[Why Understanding User Space vs. Kernel Space Matters]: https://rhelblog.redhat.com/2015/07/29/architecting-containers-part-1-user-space-vs-kernel-space/
