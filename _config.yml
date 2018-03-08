@@ -9,6 +9,8 @@ plugins:
   - kramdown
   - rouge
   - jekyll-seo-tag
+  - jekyll-relative-links
+  - jemoji
 
 #GitHub variables start
 # Set by GitHub, Can't override
