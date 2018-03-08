@@ -23,7 +23,7 @@ But it will definitely take some time to realise that
 it'll take good amount of knowledge of underlying systems to work on
 complex applications.
 
-There was a feeling of [discomfort](../posts/2015-01-07-A-Difficult-thing-for-beginners.md) for me
+There was a feeling of [discomfort](http://nsaikiran.github.io/blog/cs/2015/01/07/A-Difficult-thing-for-beginners.html) for me
 while learning C after practicing Python.
 Because Python seemed far easier than C with lot of built-in constructs.
 But that *discomfort* made me question those high-level constructs.
