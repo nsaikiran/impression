@@ -23,7 +23,7 @@ But it will definitely take some time to realise that
 it'll take good amount of knowledge of underlying systems to work on
 complex applications.
 
-There was a feeling of [discomfort](../posts/2015-01-07-A-Difficult-thing-for-beginners.md)
+There was a feeling of [discomfort](../posts/2015-01-07-A-Difficult-thing-for-beginners.md) for me
 while learning C after practicing Python.
 Because Python seemed far easier than C with lot of built-in constructs.
 But that *discomfort* made me question those high-level constructs.
@@ -41,14 +41,15 @@ C language also played an important role in development of the UNIX operating sy
 We all know that the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)
 is a good guide for software development.
 
-You *must* see these documentaries about UNIX:
-- [UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories](https://www.youtube.com/watch?v=XvDZLjaCJuw).
-- [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0)
-
 
 [UNIX pipe](https://en.wikipedia.org/wiki/Pipeline_(Unix)) contributed by Douglas McIlroy is still favorite of many people out there.
 - [Unix Pipeline (Brian Kernighan) - Computerphile](https://www.youtube.com/watch?v=bKzonnwoR2I).
     In this video  Brian Kernighan explains the motivation behind the UNIX pipe.
+
+
+Documentaries about UNIX:
+- [UNIX: Making Computers Easier To Use -- AT&T Archives film from 1982, Bell Laboratories](https://www.youtube.com/watch?v=XvDZLjaCJuw).
+- [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0)
 
 Soon after I've learned the still living impact of C language and the UNIX philosophy,
 I had to do this drawing and stick in my class room.
