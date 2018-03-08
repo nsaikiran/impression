@@ -127,6 +127,11 @@ a:hover {
 .post {
     line-height: 1.5rem;
 }
+
+.post .emoji {
+    width: auto;
+}
+
 .post img {
     width: 100%;
 }
