@@ -54,7 +54,7 @@ Documentaries about UNIX:
 Soon after I've learned the still living impact of C language and the UNIX philosophy,
 I had to do this drawing and stick in my class room.
 
-![DMR](../assets/images/dmr Pic.jpg)
+![DMR](/assets/images/dmr Pic.jpg)
 
 #### About C language:
 - ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
