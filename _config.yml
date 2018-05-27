@@ -1,7 +1,7 @@
 title: "Leap"
 description: Computer Science. Technology. Impression
-url: "http://saikiran.blog"
-baseurl: ""
+url: "http://nsaikiran.github.io"
+baseurl: "/blog"
 
 markdown: kramdown
 plugins:
