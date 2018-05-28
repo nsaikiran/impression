@@ -2,7 +2,7 @@
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <a class="post-item" href="{{ post.url }}">
+        <a class="post-item" href="{{ post.url | relative_url }}">
           <div class="post-title">{{ post.title }}</div>
           <div class="post-date">{{ post.date | date: "%d %B, %Y" }}</div>
         </a>

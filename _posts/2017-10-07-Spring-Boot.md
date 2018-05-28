@@ -135,4 +135,4 @@ In Python we have a similar language construct called `decorator`.
 [Introduction to Spring Modules]: http://springtutorials.com/introduction-to-spring-modules/
 
 ------
-[GuidelinesPOST]: http://nsaikiran.github.io/blog/cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html
+[GuidelinesPOST]: {{ '/cs/2017/04/15/the-guidelines-and-different-varieties-of-perceiving.html' | absolute_url }}

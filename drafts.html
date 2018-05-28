@@ -6,7 +6,7 @@ permalink: in-draft
   <ul class="post-list">
     {% for post in site.drafts %}
       <li>
-        <a class="post-item" href="{{ post.url }}">
+        <a class="post-item" href="{{ post.url | relative_url }}">
           <div class="post-title">{{ post.title | append: "*" }}</div>
           <div class="post-date">{{ post.date | date: "%d %B, %Y" }}</div>
         </a>

@@ -23,7 +23,7 @@ But it will definitely take some time to realise that
 it'll take good amount of knowledge of underlying systems to work on
 complex applications.
 
-There was a feeling of [discomfort](http://nsaikiran.github.io/blog/cs/2015/01/07/A-Difficult-thing-for-beginners.html) for me
+There was a feeling of [discomfort]({{'/cs/2015/01/07/A-Difficult-thing-for-beginners.html' | absolute_url }}) for me
 while learning C after practicing Python.
 Because Python seemed far easier than C with lot of built-in constructs.
 But that *discomfort* made me question those high-level constructs.
@@ -54,7 +54,7 @@ Documentaries about UNIX:
 Soon after I've learned the still living impact of C language and the UNIX philosophy,
 I had to do this drawing and stick in my class room.
 
-![DMR](/assets/images/dmr Pic.jpg)
+![DMR]({{'/assets/images/dmr Pic.jpg' | absolute_url }})
 
 #### About C language:
 - ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
