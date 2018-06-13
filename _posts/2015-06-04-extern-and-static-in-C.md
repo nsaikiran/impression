@@ -17,14 +17,14 @@ Consider a module in a C program.
 When I say a module ,it can be a piece of large project. 
 Let us call it as a translation unit. 
 
-![module]({{ site.url }}/assets/images/module.jpeg)
+![module](/assets/images/module.jpeg)
 
 Modular programming helps the programmers working on a large project. 
 We use `static` and `extern` keywords extensively.
 So, to understand these keywords, we need to understand *linkage* and *storage class*es in C. 
 Most of the times description of the above keywords confuse.
 
-![modular programming]({{ site.url }}/assets/images/modular_programming.jpeg)
+![modular programming](/assets/images/modular_programming.jpeg)
 
 ## Storage Classes
 There are two types of storage classes (describes the life time of the variable) in C. 
@@ -52,7 +52,7 @@ According to the standard all the variables defined external to all functions wi
 But,
 > If you want to define a variable internal to any function with *static storage class* then you need to use `static` keyword.
 
-![static storage for internal variable]({{ site.url }}/assets/images/static_storage_for_internal_variable.jpeg)
+![static storage for internal variable](/assets/images/static_storage_for_internal_variable.jpeg)
 ## Linkage
 Linkage determines whether the same name in another scope refers to the same object or function. You can have two types of linkages. Those are
 
@@ -82,7 +82,7 @@ A block-scope variable defined without `extern` will have no linkage.
 If the definition of the external variable occurs in the translation unit before its use in a particular function, 
 then there is no need for an *extern declaration* in the function. Because of this reason we are able to access global variables in functions.
 
-![Linkage]({{ site.url }}/assets/images/linkage.jpeg)
+![Linkage](/assets/images/linkage.jpeg)
 
 ## Specifying *storage class* & linkage
 Some keywords are used for syntactic convenience in C. That confuses a lot.
