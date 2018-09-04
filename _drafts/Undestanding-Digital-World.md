@@ -8,3 +8,6 @@ author: "Sai Kiran"
 This post will is review of the book: Understanding the digital world.
 
 Handbook of fundamentals of technology.
+
+
+[Q&A with Kernighan][https://press.princeton.edu/interviews/qa-10951]

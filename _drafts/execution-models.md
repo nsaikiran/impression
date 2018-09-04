@@ -1,6 +1,6 @@
 ---
 title:  "Execution models"
-description: "Understanding execution models"
+description: "Various execution models"
 categories: ["tech", "cs"]
 tags: ["execution-models"]
 author: "Sai Kiran"
@@ -20,6 +20,8 @@ You'll enjoy that presentation.
 ## Django
 
 #TODO: Communication between spring-web and Jetty.
+*Servlet* and *Servlet Container* spec.
+[Servlet Spec][Servlet Spec]
 
 #TODO: Execution model of Interpreted langs. and compiled langs.
 #Ex: python and C
@@ -37,3 +39,5 @@ You'll enjoy that presentation.
 [PHP execution model vs Python web]: https://blog.xoxzo.com/2012/05/02/php-execution-model-vs-python-web/
 
 [asynchronous]: https://www.webopedia.com/TERM/A/asynchronous.html
+
+[Servlet Spec]: https://jcp.org/aboutJava/communityprocess/final/jsr340/index.html
