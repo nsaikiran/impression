@@ -1,4 +1,5 @@
 ---
+layout: post
 title:  "Execution models"
 description: "Various execution models"
 categories: ["tech", "cs"]
