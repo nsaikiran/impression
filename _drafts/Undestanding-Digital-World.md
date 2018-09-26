@@ -12,67 +12,41 @@ Recently I've finished his book on technology around us,
 
 The author in his words at [Q&A with Kernighan][Q&A with Kernighan] explains,
 who might be interested in reading this book and what they would get.
-I was expecting to have a smooth explanation of digital world around us.
-There are so many terms, words, abbreviations that are buzzing around &mdash;
+Before starting to read this book, I was expecting two major things:
+smooth explanation of digital world around us, and introduction of new tech terms
+as well as simple explanation of terms I've been using.
+There are so many tech terms, abbreviations that are buzzing around &mdash;
 it is important that we know them and understand the context around them.
-Hence I was also thinking if I can get to know some of those buzz words to chase.
-As this book is intended for the people *not* necessarily having tech background,
-I wanted to understand at what detail he tried to explain.
+Apart from that I wanted also to understand the level of *technical* detail maintained,
+as this book is intended for the people *not* necessarily having tech background.
 
 
 
-right from the bare hardware to security/privacy issues we are facing currently.
-
-
-
-Organization of content in the book is simple.
+Organization of the content in this book is simple.
 It has three major parts: Hardware, Software and Communcations.
-With this content Kernighan introduces the digital world from the organization of computer hardware,
+With this content, Kernighan introduces the digital world right
+from the organization of computer hardware,
 through various levels of software,
-programming and programming languages, networks that made communication possible, the web as we see it today
-and security and privacy problems we are facing.
+programming, Internet, the web as we see it today,
+to the security and privacy related problems we are facing.
 Necessary history, recent events and his own opinions made the text more interesting.
 During explanation, he draws a historical timeline till where we are right now &mdash;
-And it is always interesting to know about evolution.
-He introduces the legal concepts in technical world.
+enjoyed the historical process of evolution.
+
+===
+He introduces several legal, security and privacy in technical world.
+Security and Privacy issues and some tips on mitigating them.
+===
 
 
-
-I got introduced to some new terms. Got good context around some terms I already know.
-I felt like revising most of concepts learned in college &mdash;
-I would consider this as a handbook.
-I would highly recommend it, if you wanted to know how the digital world works the way it is &mdash; with decent level of detail.
-Above all I enjoyed his writing.
-
-
+I've picked up some new tech terms to chase and got good context around some terms I already know.
+Felt like revising most of concepts learned in college.
+I would highly recommend it,
+if you wanted to know &mdash; with decent level of technical detail &mdash;
+how the digital world works the way it is.
+Above all, as usual, I've enjoyed his writing.
 
 -------------------
-
-
-
-
-This post will is review of the book: Understanding the digital world.
-
-
-I read this eventhough I felt reading this book won't give me much new technical insights.
-insights. I was sure I'll enjoy his writing.
-Wanted to know what he is going to tell.
-
-
-He explains terms that are unintuitive.
-
-
-I consider this as a Handbook of fundamentals of technology.
-
-I've noted some new terms to go after, to know more.
-
-
-
-
-As topics in communication is very visible to the end user. He explains the how we can
-work towards privacy, security. He gives some tips he follows.
-
-
 preface
 Para 1 why, audience, what he wanted to tell. You'll get to know the tech terms and explanations of the terms.
 Para 2 organization of book
