@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Understanding the digital world by Brain W. Kernighan"
-categories: ["cs"]
+categories: ["tech","impression"]
 author: "Sai Kiran"
 ---
 
@@ -18,7 +18,8 @@ as well as simple explanation of terms I've been using.
 There are so many tech terms, abbreviations that are buzzing around &mdash;
 it is important that we know them and understand the context around them.
 Apart from that I wanted also to understand the level of *technical* detail maintained,
-as this book is intended for the people *not* necessarily having tech background.
+as this book is intended for the people *not* necessarily having good
+technical background.
 
 
 
@@ -32,27 +33,20 @@ to the security and privacy related problems we are facing.
 Necessary history, recent events and his own opinions made the text more interesting.
 During explanation, he draws a historical timeline till where we are right now &mdash;
 enjoyed the historical process of evolution.
-
-===
-He introduces several legal, security and privacy in technical world.
-Security and Privacy issues and some tips on mitigating them.
-===
+He introduces several legal concepts and tips on mitigating security and
+privacy related issues we are facing.
 
 
 I've picked up some new tech terms to chase and got good context around some terms I already know.
-Felt like revising most of concepts learned in college.
+Felt like revising most of concepts learned in college. To be specific I've enjoyed
+the communications section, as I've found more new content than the other two sections.
 I would highly recommend it,
 if you wanted to know &mdash; with decent level of technical detail &mdash;
 how the digital world works the way it is.
+
 Above all, as usual, I've enjoyed his writing.
 
--------------------
-preface
-Para 1 why, audience, what he wanted to tell. You'll get to know the tech terms and explanations of the terms.
-Para 2 organization of book
-    hardware, software and communication
-Para 3 historical events
-    (mention some historical events I found interesting)
-    interesting
+
+
 
 [Q&A with Kernighan]:https://press.princeton.edu/interviews/qa-10951
