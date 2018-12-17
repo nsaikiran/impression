@@ -7,8 +7,9 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
+Execution models will help better usage of tools.
 
-#TODO: Event loop model of JS 
+# TODO: Event loop model of JS 
 ## JavaScript
 JavaScript execution model is better explained in [Concurrency model and Event Loop][Concurrency model and Event Loop].
 Because it runs on single thread it may needs to run instructions [asynchronously][asynchronous]; otherwise you'll end up in 
@@ -17,18 +18,22 @@ If you want to understand event loop properly
 then you would never want to miss this awesome presentation named *[In the Loop][In the Loop]*. 
 You'll enjoy that presentation.
 
-#TODO: WSGI. Communication between HTTP server and Django
+# Webframeworks
+[Web frameworks - an overview](https://www.ionos.com/digitalguide/websites/web-development/web-frameworks-an-overview/) explains bring vocabular related to webframeworks.
+
+## TODO: WSGI. Communication between HTTP server and Django
 ## Django
 
-#TODO: Communication between spring-web and Jetty.
+# TODO: Communication between spring-web and Jetty.
 *Servlet* and *Servlet Container* spec.
 [Servlet Spec][Servlet Spec]
 
-#TODO: Execution model of Interpreted langs. and compiled langs.
-#Ex: python and C
+# TODO: Execution model of Interpreted langs. and compiled langs.
+# Ex: python and C
 
 
-#Configurability
+# Configurability
+> Sometimes we just need to understand how a system works and should be able to configure it to match our needs.
 
 ## Drupal (Content Management System)
 
