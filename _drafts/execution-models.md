@@ -7,7 +7,8 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
-Execution models will help better usage of tools.
+Motivation: Execution models will help better usage of tools.
+Various types of execution models like event-driven(nginx?), process based(apache?). Gather other generic types of models and produce some examples for each.
 
 # Languages
 ## (TODO: Event loop model of JS )JavaScript
