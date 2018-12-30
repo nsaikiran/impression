@@ -7,6 +7,10 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
+
+>> The goal is to explain learning execution model means going to bigger picture. (Merge bigger picture post with this and make them one?.). Bigger picture drives. It convinces details of specific instance. Bigger picture is always simple.
+
+
 Motivation: Execution models will help better usage of tools.
 Various types of execution models like event-driven(nginx?), process based(apache?). Gather other generic types of models and produce some examples for each. Learning those generic concepts which will live logner will be a good investement. [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/) tries to explain that.
 
