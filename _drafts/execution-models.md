@@ -14,6 +14,11 @@ author: "Sai Kiran"
 Motivation: Execution models will help better usage of tools.
 Various types of execution models like event-driven(nginx?), process based(apache?). Gather other generic types of models and produce some examples for each. Learning those generic concepts which will live logner will be a good investement. [Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/) tries to explain that.
 
+Three major execution models are mentioned and explained [here](http://www.nettreo.com/2016/07/07/understanding-programming-language-execution-models/)
+
+Execution model of [Python web](https://blog.xoxzo.com/2012/05/02/php-execution-model-vs-python-web/)
+[Java] (https://docs.oracle.com/javase/specs/jls/se7/html/jls-12.html)
+[Apache vs Nginx](https://foxutech.com/apache-vs-nginx-architecture/)
 # Languages
 ## (TODO: Event loop model of JS )JavaScript
 JavaScript execution model is better explained in [Concurrency model and Event Loop][Concurrency model and Event Loop].
