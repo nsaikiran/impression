@@ -5,6 +5,23 @@ categories: ["impression"]
 author: "Sai Kiran"
 ---
 
+Computers are *dumb*, at least for now — your code is the **law** for them. For me, even the whole computing world is built with code.
+
+Your code may serve as critical infrastructure for other software systems or it may enable organizations use computing world to solve their problem or it may enhance people lives. Whatever it is supposed to do. It should be crafted well, considering all the scenarios of the problem being solved and the other scenario posed by the existing computing world in which it lives and interacts with.
+
+For several reasons, necessary care should be taken while crafting the code. Some of them are:
+We need to produce software quickly,
+we need to making sure it is not chaotic and
+we need to make sure it is in a  position to be amended as required.
+
+But the heaviest question, How much of care is being careful? You’ll know, just have constant urge to produce better code.
+
+The title is inspired from one of the dialogues of The Brethren Court Scene of Pirates of the carribbean at the world’s end.
+
+
+![CODEISLAW]({{'/assets/images/code-is-law.gif' | absolute_url }})
+
+
 Inspired by a dialogue in pirates of the caribbean.
 
 code is the law
