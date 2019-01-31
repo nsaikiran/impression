@@ -6,21 +6,21 @@ author: "Sai Kiran"
 ---
 
 *This post is in my drafts for a very long time.
-It expresses one of my opinion: everyone who produces code, is a lawmaker.*
+It expresses one of my opinion: everyone who produces code, is a lawmaker.*:pencil: :black_nib:
 
 ---
 
-For now, Computers are *dumb*.
-Your code is the **law** for them. For me, even the whole computing world is built with code.
+For now, computers are *dumb*.
+Your code is the **law** for them. Even the whole computing world is built with code.
 
 Your code may serve as critical
 infrastructure for other software systems;
-it may enable organizations use computing world
+it may enable organizations to use computing world
 to solve their problem; it may enhance people's lives.
 Whatever purpose it may serve,
 it should be crafted well by considering all
 the scenarios of the problem being solved and
-the other scenario posed by the existing computing world
+the other scenarios posed by the existing computing world
 in which it lives and interacts with.
 
 For several reasons, necessary care should be taken while crafting the code.
@@ -32,7 +32,7 @@ we need to make sure it is in a  position to be amended as required.
 
 But the heaviest question.
 How much of care is being careful?
-You’ll know, **if have constant urge to produce better code**.
+You’ll know, **if you have constant urge to produce better code**.
 
 
 *The title of this writing is inspired from one
