@@ -10,7 +10,8 @@ It expresses one of my opinion: everyone who produces code, is a lawmaker.*
 
 ---
 
-Computers are *dumb*, at least for now — your code is the **law** for them. For me, even the whole computing world is built with code.
+For now, Computers are *dumb*.
+Your code is the **law** for them. For me, even the whole computing world is built with code.
 
 Your code may serve as critical
 infrastructure for other software systems;
