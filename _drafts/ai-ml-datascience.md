@@ -8,3 +8,5 @@ author: "Sai Kiran"
 ---
 
 How my thought process is in sync with Xconf keynote speech.
+
+About terms and phrases
