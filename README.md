@@ -1,8 +1,9 @@
 ## About
-This is Jekyll source for my personal blog, http://saikiran.blog.
+This is Jekyll source for my personal blog, 
+https://nsaikiran.github.io/blog/
 
 ## License
-The following directories and their contents are &copy; 2015-2017 Sai Kiran, Naragam.
+The following directories and their contents are &copy; 2015-2019 Sai Kiran, Naragam.
 You may not reuse anything therein without my permission:
 * _posts/
 * _drafts/  
