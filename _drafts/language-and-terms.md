@@ -9,7 +9,10 @@ author: "Sai Kiran"
 
 Language and terms and their effects: based on speech by Usha ramanathan @ away day
 
+Even in general sense, I came to know indtroducing and removing vocabulary will make 
+significant impact. As those phrases are used to discuss about, ideate around that is being named.
 
+TODO: name of book
 Sometimes while using a term I really worried if I know what that name actually means. 
 There are so many names people use daily. Sometimes I'm worried If I should actually know all of 
 the words and their meaning.
