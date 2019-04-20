@@ -8,6 +8,83 @@ author: "Sai Kiran"
 ---
 Wanted to correct the way I use webserver,app server.
 
+*These days while developing web applications, I didn't mind how the request comes till my 
+application code, we assume the we have a request and focus on generating response. But there are
+ lot of things in the middle. How webserver communicates with our code is taken for granted.
+ This time we'll try to learn. Also wanted to understand the terms we use in the process. 
+ Properly understanding the context behind each terms is very important.*
+
+-----
+
+dynamic content gen:
+
+I think the server process is an example of `daemon`. It continuously serves its clients.
+server that understand HTTP is HTTPServer. Sometimes they call HTTPServer as Web Server (I don't 
+mind if u call it that way) ? /
+
+Initially HTTPservers are designed for serving the static contents. But now the requirements are 
+more and we need dynamic content. URL is not representing static content. it represents dynamic 
+response.
+
+For dynamic response generation we have facility scripts written for response generations.
+That is CGI. People used to generate dynamic response with scripts written many 
+interpreted/scripting langs.
+
+Because of limitations they come up with FastCGI. Improved versions.
+
+Now we have frameworks available to help us in quick development and provides lot of boilerplate 
+code in our fav languages. we focus of generating response based on our business logic.
+
+
+In django HTTpreuest object we get and produce HTTPresponse.
+
+the interface takes care of converting it.
+
+Flow in framework is another topic.
+Flow till framework is done by a interface. These interfaces are well defined for each language.
+
+some frameworks will provide a builtin HTTPserver software for dev purpose only. You need to 
+use  a  production ready webserver later.
+
+
+It is easy to write a webserver in your fav language. But these days webservers need to provide lot
+ of functionaltiy for that use well develped ones.
+
+
+Web dev in python [web dev](https://docs.python.org/2/howto/webservers.html) 
+ 
+ FOr example in pytohn writing server.
+ 
+
+WSGI for python. [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
+Servlet container will do in JAVA.
+etc.
+
+
+
+Python WSGI complaint server [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
+
+
+Also while using other software, there will be a need to proplerly understand how it wll be used 
+and configure it. 
+
+
+
+Application server not necessarily talk in HTTP. It can talk in many protocols as required. For 
+me application server is designed for your specific purpose. It may speak HTTP, SMTP, FTP and 
+more based on your requirement. It may provide many services.
+
+
+ 
+
+
+
+[app vs web server][difference].
+
+[CGI, FCGI](https://stackoverflow.com/questions/3937224/differences-and-uses-between-wsgi-cgi-fastcgi-and-mod-python-in-regards-to-py)
+
+[HOWTO Use Python in the web](https://docs.python.org/2/howto/webservers.html)
+
 Why we have so many server implementations? Here I'm talking about webserver implementations.
 I've heard and used apache, a veteran webserver and nginx a new one. These are mainstream 
 webservers.
@@ -96,4 +173,5 @@ https://developer.mozilla.org/en-US/docs/Web
 
 [webserver]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
 [nginx]: https://www.nginx.com/resources/glossary/nginx/
+[difference]: https://www.nginx.com/resources/glossary/application-server-vs-web-server/
 
