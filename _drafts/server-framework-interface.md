@@ -12,6 +12,8 @@ We'll assume we have request and focus on generating a response.
 We don't need to bother how our application code is invoked with necessary data.
 How a web server communicates with our code is taken for granted.
 This time we'll try explore how web server interacts with our application code.*
+
+
 -----
 
 While exploring the bridge between web server and application code, being clear on 
@@ -20,7 +22,6 @@ certain terms is necessary.
 # Web Server
 
 The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. It continuously serves its clients.
-
 A server that communicates using HTTP is *HTTP Server*.
 
 Most of the times web server and http server are interchangeable. 
@@ -46,36 +47,34 @@ Other useful links:
 
 # Application code:
 As there is a requirement for dynamic response generation, 
-we'll program your logic in your a lang.
+we'll program the logic in any chosen language.
 
-Now we have webframeworks, facilitating us to generate dynamic content in our own favorite 
-language we choose.
-Now we have frameworks available to help us in quick development and provides lot of boilerplate 
-code in our fav languages. we focus of generating response based on our business logic.
-You can browse for web frame works in language you work. To name few, django in Python, Spring in
- Java etc.
+We also have lot of web frameworks to assist and simplify our task of generating dynamic content 
+for the request.
+
+You can browse for web frame works in language you work. 
+To name few, django in Python, Spring in Java etc.
  
-In the application code you assume you get a representation of request and you return 
-representation of response. And focus on converting request to response.
-Who defines/converts actual http request/response to the representaion suitable for you. Those 
-are interfaces.
+In the application code, we assume that we have a representation of request and we will focus 
+on generating a representation of response.
+
 some frameworks will provide a builtin HTTPserver software for dev purpose only. You need to 
 use  a  production ready webserver later.
 
 # Interfaces:
-Now we will extend the web server that can serve static content so well and standard features. 
-for dynamic responses. These two are some of interfaces.
+The web server interface defines/converts actual 
+http request/response to the required representation. 
 
+There are several standards of interfaces. 
+Below standards are supported in many languages. 
 - [CGI](https://tools.ietf.org/html/rfc3875)
 - [FastCGI](http://www.mit.edu/~yandros/doc/specs/fcgi-spec.html)
+Explore more about them to know more technical details.
 
-Major web servers have extensions implemented for the language you choose
 
-[CGI, FCGI](https://stackoverflow.com/questions/3937224/differences-and-uses-between-wsgi-cgi-fastcgi-and-mod-python-in-regards-to-py)
-
-Sometiems programming language community might come up with their own standard.
+Sometimes a programming language community might come up with their own standard.
 Python community has come up their own standard, called WSGI to be used for communication between 
-webserver and python application.
+web server and python application. WSGI implementations are available for major web servers.
 
 Now once you have your code ready you need to serve your clients. 
 So there are webserver implementaions in the language we choose to program our web application.
