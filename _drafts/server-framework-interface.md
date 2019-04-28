@@ -97,8 +97,6 @@ using Servlets. Jetty and tomcat are web servers to name a few. For full list re
 - [Servlet Specification](https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf)
 
 # App server:
-[app vs web server][difference].
-
 A server that contains your application code can be called as `application server`. Sometimes 
 they may not use HTTP protocol, or they may use multiple protocols based on requirement, or they 
 may even use proprietary protocols.
@@ -106,11 +104,14 @@ may even use proprietary protocols.
 You may have a HTTP Server that exposes RESTful APIs for application code. You can call that as 
 `application server`.
 
-But these days people use this term to distinguish more then one HTTPServer that is being used.
-For example you can use nginx web server a load balancer/reverse proxy and a HTTP Server to 
-server your business logic.
+People use the term *application server*, to distinguish the HTTP Server executing dynamic 
+response generation from the web server that is used as a reverse proxy. 
+
+**Other useful links**:
+- [Application Server vs. a Web Server?][difference]
 
 -----
+
 Evolution is the answer for why some things are in certain way. Explore the evolution.
 
 **Other useful links**:
