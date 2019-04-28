@@ -8,7 +8,7 @@ author: "Sai Kiran"
 ---
 
 *These days while developing web applications, 
-We'll assume we have request and focus on generating a response.
+we'll assume we have request and focus on generating a response.
 We don't need to bother how our application code is invoked with necessary data.
 How a web server communicates with our code is taken for granted.
 This time we'll try explore how web server interacts with our application code.*
@@ -16,8 +16,8 @@ This time we'll try explore how web server interacts with our application code.*
 
 -----
 
-While exploring the bridge between web server and application code, being clear on 
-certain terms is necessary.
+While exploring the bridge between web server and application code, we'll also try to understand 
+certain terms.
 
 # Web Server
 
@@ -42,7 +42,7 @@ the URL may not representing static content. For every request,
 response may need to be dynamically generated. Being able to serve dynamic response is also 
 an expectation of web server.
 
-Other useful links:
+**Other useful links**:
 - [web server][webserver]
 
 # Application code:
@@ -51,9 +51,8 @@ we'll program the logic in any chosen language.
 
 We also have lot of web frameworks to assist and simplify our task of generating dynamic content 
 for the request.
-
 You can browse for web frame works in language you work. 
-To name few, django in Python, Spring in Java etc.
+To name few, `django` in Python, `Spring` in Java etc.
  
 In the application code, we assume that we have a representation of request and we will focus 
 on generating a representation of response.
@@ -69,66 +68,52 @@ There are several standards of interfaces.
 Below standards are supported in many languages. 
 - [CGI](https://tools.ietf.org/html/rfc3875)
 - [FastCGI](http://www.mit.edu/~yandros/doc/specs/fcgi-spec.html)
-Explore more about them to know more technical details.
 
+Explore more about them to know more technical details.
 
 Sometimes a programming language community might come up with their own standard.
 Python community has come up their own standard, called WSGI to be used for communication between 
 web server and python application. WSGI implementations are available for major web servers.
 
-Now once you have your code ready you need to serve your clients. 
-So there are webserver implementaions in the language we choose to program our web application.
-So you can use that webserver implemented in your own language to run the dynamic content 
-genration code we've written. That would be easier. By the way writing a plain simple webserver 
-in your favorite language is not that hard. 
-
-Also while using other software, there will be a need to proplerly understand how it wll be used 
-and configure it. 
-
-Then there are standards to connect your web frameworks and web severs in each language you choose.
+As a fun task, take a web server written in the language you work, and extend its functionality 
+with your application code.
 
 ### Python:
-- [HOWTO Use Python in the web](https://docs.python.org/2/howto/webservers.html)
+- [How to Use Python in the web](https://docs.python.org/2/howto/webservers.html)
 - [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
 - [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
 
 ### Java:
-Currently, Servlets is the standard way of web dev in Java.
-For application code written in Java, servlet containers takes care of interfacing.
-Jetty and tomcat are examples.
-They takes care of communication in HTTP with outside world and invoking your application code 
-written using Servlet api.
+Currently, Servlets is the standard way of web development in Java. 
+Spring, one of the widely used framework for web development implements Servlets standard.
 
-Incase of Java we have servlet container like Jetty, tomcat and several of them to connect 
-forward the requests to your application code written using a web framework.
+Application code written using Servlets is deployed using web servers written in Java.
+These web servers contain *servlet container* component to invoke the application code written 
+using Servlets. Jetty and tomcat are web servers to name a few. For full list refer 
+[List of Web Containers](https://en.wikipedia.org/wiki/Web_container) 
 
-JAVA: https://en.wikipedia.org/wiki/Web_container
-
-Windows: Internet Server Application Programming Interface ?
-Examples:
-
-When directly working woth spring boot, we are taking everytihg granted. development is is easy. 
-But the underlying setup is this.
-
-Other useful links:
+**Other useful links**:
 - [How web servers work?](https://howtodoinjava.com/tomcat/a-birds-eye-view-on-how-web-servers-work/)
+- [Servlet Specification](https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf)
 
 # App server:
 [app vs web server][difference].
-The confusion starts because, in most of scenarios both the web server and app server talk HTTP.
-Your app server maybe a http server which only generated JSON response.
 
-Application server not necessarily talk in HTTP. It may support more than one protocol. They may 
-talk in a proprietery protocol to serve proprietery clients. 
+A server that contains your application code can be called as `application server`. Sometimes 
+they may not use HTTP protocol, or they may use multiple protocols based on requirement, or they 
+may even use proprietary protocols.
+ 
+You may have a HTTP Server that exposes RESTful APIs for application code. You can call that as 
+`application server`.
 
 But these days people use this term to distinguish more then one HTTPServer that is being used.
-You may use a reverseproxy/load balancer for all other non-business requirements and use a server
- that also talks HTTP but serves your business logic.
+For example you can use nginx web server a load balancer/reverse proxy and a HTTP Server to 
+server your business logic.
 
 -----
 Evolution is the answer for why some things are in certain way. Explore the evolution.
 
-Other useful links:
+**Other useful links**:
 - [Common Questions](https://developer.mozilla.org/en-US/docs/Learn/Common_questions)
 - [server-side](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
 - [Web technology for developers](https://developer.mozilla.org/en-US/docs/Web)
@@ -137,3 +122,5 @@ Other useful links:
 [nginx]: https://www.nginx.com/resources/glossary/nginx/
 [difference]: https://www.nginx.com/resources/glossary/application-server-vs-web-server/
 
+
+[comment]: <> (Windows: Internet Server Application Programming Interface)  
