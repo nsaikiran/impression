@@ -19,6 +19,7 @@ application code, we assume the we have a request and focus on generating respon
 
 # Web Server
 
+[web server][webserver], app server.
 I think the *server* process is an example of `daemon`. It continuously serves its clients.
 server that understand HTTP is *HTTPServer*. You can write your own http server. (link).
 
@@ -54,68 +55,35 @@ etc.,
 
 # Application code:
 Now for generating the dynamic response to the client. YOu'll program your logic in your a 
-language you choose.
-
+language you choose. 
 Now we have webframeworks, facilitating us to generate dynamic content in our own favorite 
 language we choose.
-
 Now we have frameworks available to help us in quick development and provides lot of boilerplate 
 code in our fav languages. we focus of generating response based on our business logic.
-
-Like if you want to program your dynamic content genration in Java, there are framework, the one 
-I'm aware and used is Spring. Incase of Python I've used django a bit. and in ruby I've heard 
-rails is one of the frameworks.
-
 You can browse for web frame works in language you work. To name few, django in Python, Spring in
  Java etc.
  
 In the application code you assume you get a representation of request and you return 
 representation of response. And focus on converting request to response.
-
-
 Who defines/converts actual http request/response to the representaion suitable for you. Those 
 are interfaces.
-
 some frameworks will provide a builtin HTTPserver software for dev purpose only. You need to 
 use  a  production ready webserver later.
 
 # Interfaces:
+Now we will extend the web server that can serve static content so well and standard features. 
+for dynamic responses. These two are some of interfaces.
 
-Now we have a webserver that can extend it to dynamic gene.
-Interfaces are standardized based on which web server you are using, which laguage your app code 
-is in. several factors.
+- [CGI](https://tools.ietf.org/html/rfc3875)
+- [FastCGI](http://www.mit.edu/~yandros/doc/specs/fcgi-spec.html)
 
-For dynamic response generation we have facility scripts written for response generations.
-That is CGI. People used to generate dynamic response with scripts written many 
-interpreted/scripting langs.
-
-Because of limitations they come up with FastCGI. Improved versions.
-
-
-Web dev in python [web dev](https://docs.python.org/2/howto/webservers.html) 
-
-WSGI for python. [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
-Servlet container will do in JAVA.
-etc.
-
-
-Python WSGI complaint server [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
-
-Also while using other software, there will be a need to proplerly understand how it wll be used 
-and configure it. 
+Major web servers have extensions implemented for the language you choose
 
 [CGI, FCGI](https://stackoverflow.com/questions/3937224/differences-and-uses-between-wsgi-cgi-fastcgi-and-mod-python-in-regards-to-py)
 
-[HOWTO Use Python in the web](https://docs.python.org/2/howto/webservers.html)
-
-Why we have so many server implementations? Here I'm talking about webserver implementations.
-I've heard and used apache, a veteran webserver and nginx a new one. These are mainstream 
-webservers.
-
-But then we also have application servers. 
-
-So started understanding meaning of those words. [web server][webserver], app server.
-
+Sometiems programming language community might come up with their own standard.
+Python community has come up their own standard, called WSGI to be used for communication between 
+webserver and python application.
 
 Now once you have your code ready you need to serve your clients. 
 So there are webserver implementaions in the language we choose to program our web application.
@@ -123,71 +91,54 @@ So you can use that webserver implemented in your own language to run the dynami
 genration code we've written. That would be easier. By the way writing a plain simple webserver 
 in your favorite language is not that hard. 
 
-
+Also while using other software, there will be a need to proplerly understand how it wll be used 
+and configure it. 
 
 Then there are standards to connect your web frameworks and web severs in each language you choose.
-To connect any webserver(may be many not be written in pyton) we have WSGI standard to connect 
-the server and the framework code you've written.
 
+### Python:
+- [HOWTO Use Python in the web](https://docs.python.org/2/howto/webservers.html)
+- [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
+- [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
+
+### Java:
+Currently, Servlets is the standard way of web dev in Java.
+For application code written in Java, servlet containers takes care of interfacing.
+Jetty and tomcat are examples.
+They takes care of communication in HTTP with outside world and invoking your application code 
+written using Servlet api.
 
 Incase of Java we have servlet container like Jetty, tomcat and several of them to connect 
 forward the requests to your application code written using a web framework.
 
-
-And the qualities web-server should poses. and app server should poses. 
-
-All those fancy terms of internet can be understood here. [links below]
-server, web-server, web-framework. 
-
-
-The differences between server, webserver and application server
-
-
-Python web applications/frameworks can be connected via WSGI. All WSGI compaliant webservers can 
-be used.
-
-PSGI : Perl Web Server Gateway Interface
-WSGI :
-JavaScript Gateway Interface:
-Simple Common Gateway Interface: 
-FastCGI
-CGI:
-
 JAVA: https://en.wikipedia.org/wiki/Web_container
 
 Windows: Internet Server Application Programming Interface ?
-
-
 Examples:
-
-Django and other webservers. WSGI. Spring and server interaction
-
 
 When directly working woth spring boot, we are taking everytihg granted. development is is easy. 
 But the underlying setup is this.
 Se
 
 # App server:
-
 [app vs web server][difference].
-The confusion starts because both of them speak HTTP.
+The confusion starts because, in most of scenarios both the web server and app server talk HTTP.
 Your app server maybe a http server which only generated JSON response.
 
-I would give Jetty is app server. It talks http, contains your
+Application server not necessarily talk in HTTP. It may support more than one protocol. They may 
+talk in a proprietery protocol to serve proprietery clients. 
 
-
-Application server not necessarily talk in HTTP. It can talk in many protocols as required. For 
-me application server is designed for your specific purpose. It may speak HTTP, SMTP, FTP and 
-more based on your requirement. It may provide many services.
+But these days people use this term to distinguish more then one HTTPServer that is being used.
+You may use a reverseproxy/load balancer for all other non-business requirements and use a server
+ that also talks HTTP but serves your business logic.
 
 --- 
 Evolution is the answer for why some things are in certain way. Explore the evolution.
 
-
-https://developer.mozilla.org/en-US/docs/Learn/Common_questions
-https://developer.mozilla.org/en-US/docs/Learn/Server-side
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction
-https://developer.mozilla.org/en-US/docs/Web
+Other useful links:
+- [Common Questions](https://developer.mozilla.org/en-US/docs/Learn/Common_questions)
+- [server-side](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
+- [Web technology for developers](https://developer.mozilla.org/en-US/docs/Web)
 
 [webserver]: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
 [nginx]: https://www.nginx.com/resources/glossary/nginx/
