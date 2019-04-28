@@ -1,61 +1,53 @@
 ---
 layout: post
-title:  "Behind the magic curtains: Web server interface"
-description: "How web server and web-framework interact"
-categories: ["tech", "cs"]
-tags: ["execution-models"]
+title:  "Behind the magic curtains: Web server interfaces"
+description: "Interaction between web server and application code"
+categories: ["tech"]
+tags: ["web"]
 author: "Sai Kiran"
 ---
 
-Wanted to correct the way I use webserver,app server.
-
-*These days while developing web applications, I didn't mind how the request comes till my 
-application code, we assume the we have a request and focus on generating response. But there are
- lot of things in the middle. How webserver communicates with our code is taken for granted.
- This time we'll try to learn. Also wanted to understand the terms we use in the process. 
- Properly understanding the context behind each terms is very important.*
-
+*These days while developing web applications, 
+We'll assume we have request and focus on generating a response.
+We don't need to bother how our application code is invoked with necessary data.
+How a web server communicates with our code is taken for granted.
+This time we'll try explore how web server interacts with our application code.*
 -----
+
+While exploring the bridge between web server and application code, being clear on 
+certain terms is necessary.
 
 # Web Server
 
-[web server][webserver], app server.
-I think the *server* process is an example of `daemon`. It continuously serves its clients.
-server that understand HTTP is *HTTPServer*. You can write your own http server. (link).
+The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. It continuously serves its clients.
 
-Build your own webserver in [Building webserver](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
+A server that communicates using HTTP is *HTTP Server*.
 
-Most of the times web server and http server are interchageable.
+Most of the times web server and http server are interchangeable. 
+But Web server is a HTTP server with other features that addresses issues 
+found in the internet. For example, security, high concurrency, resource friendly, compression 
+and handling static content effectively.
 
-It is easy to write a webserver in your fav language. But these days webservers need to provide lot
- of functionaltiy for that use well develped ones.  I would think the web server gives you lot of
-  general capabilities that can used out of the box. Like securites measures, static content 
-  serving best way. I think web servers are http servers that serves content for web browser use,
-   because most of the http headers are obeyed by browsres if not all clients.
-   
-If a server delivers web content. that is webserver? Most of webserver talk HTTP. 
-I happen to read [nginx](https://www.aosabook.org/en/nginx.html). understood many aspects that a 
-web server needs to deal with. They do lot of things in good way.
+For implementing a basic HTTP Server in your favorite language, refer [Build Your Own X](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
 
-Initially web servers are designed for serving the static contents. Initially the web content 
-used to be static. But now the requirements are 
-more and we need dynamic content. URL is not representing static content. it represents dynamic 
-response.
+Apache and Nginx are standard web server I've used. 
+I was going through [the reason behind nginx creation](https://www.aosabook.org/en/nginx.html) 
+and came to know the expectations of modern web servers.
 
-dynamic response need to be generated programatically. Many efforts are made to produce dynamic 
-content.
+Initially web servers are designed for serving the static contents. At that time we dn't 
+even have many verbs. Explore evolution of HTTP to know more.
+Web Servers evolved with HTTP. But now we have more verbs and 
+the URL may not representing static content. For every request, 
+response may need to be dynamically generated. Being able to serve dynamic response is also 
+an expectation of web server.
 
-So a static web server is generally assumes the resources as static and serves them as-is.
-
-Previously people used to extend the functionality of static webserver by extending it, to serve 
-the dynamic content. A technique was to use CGI standard. where in some scripts are executed to get 
-get the dynamic content. Lot of scripting languages supported that feature, like python and perl 
-etc.,
-
+Other useful links:
+- [web server][webserver]
 
 # Application code:
-Now for generating the dynamic response to the client. YOu'll program your logic in your a 
-language you choose. 
+As there is a requirement for dynamic response generation, 
+we'll program your logic in your a lang.
+
 Now we have webframeworks, facilitating us to generate dynamic content in our own favorite 
 language we choose.
 Now we have frameworks available to help us in quick development and provides lot of boilerplate 
@@ -118,7 +110,9 @@ Examples:
 
 When directly working woth spring boot, we are taking everytihg granted. development is is easy. 
 But the underlying setup is this.
-Se
+
+Other useful links:
+- [How web servers work?](https://howtodoinjava.com/tomcat/a-birds-eye-view-on-how-web-servers-work/)
 
 # App server:
 [app vs web server][difference].
@@ -132,7 +126,7 @@ But these days people use this term to distinguish more then one HTTPServer that
 You may use a reverseproxy/load balancer for all other non-business requirements and use a server
  that also talks HTTP but serves your business logic.
 
---- 
+-----
 Evolution is the answer for why some things are in certain way. Explore the evolution.
 
 Other useful links:
