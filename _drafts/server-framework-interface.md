@@ -22,28 +22,29 @@ application code, we assume the we have a request and focus on generating respon
 I think the *server* process is an example of `daemon`. It continuously serves its clients.
 server that understand HTTP is *HTTPServer*. You can write your own http server. (link).
 
+Build your own webserver in [Building webserver](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
+
+Most of the times web server and http server are interchageable.
+
 It is easy to write a webserver in your fav language. But these days webservers need to provide lot
  of functionaltiy for that use well develped ones.  I would think the web server gives you lot of
   general capabilities that can used out of the box. Like securites measures, static content 
-  serving best way.
-
+  serving best way. I think web servers are http servers that serves content for web browser use,
+   because most of the http headers are obeyed by browsres if not all clients.
+   
 If a server delivers web content. that is webserver? Most of webserver talk HTTP. 
 I happen to read [nginx](https://www.aosabook.org/en/nginx.html). understood many aspects that a 
 web server needs to deal with. They do lot of things in good way.
-
 
 Initially web servers are designed for serving the static contents. Initially the web content 
 used to be static. But now the requirements are 
 more and we need dynamic content. URL is not representing static content. it represents dynamic 
 response.
 
-
 dynamic response need to be generated programatically. Many efforts are made to produce dynamic 
 content.
 
-
 So a static web server is generally assumes the resources as static and serves them as-is.
-the application server is used to produce dynamic content based the context of request.
 
 Previously people used to extend the functionality of static webserver by extending it, to serve 
 the dynamic content. A technique was to use CGI standard. where in some scripts are executed to get 
@@ -52,9 +53,11 @@ etc.,
 
 
 # Application code:
+Now for generating the dynamic response to the client. YOu'll program your logic in your a 
+language you choose.
+
 Now we have webframeworks, facilitating us to generate dynamic content in our own favorite 
 language we choose.
-
 
 Now we have frameworks available to help us in quick development and provides lot of boilerplate 
 code in our fav languages. we focus of generating response based on our business logic.
@@ -63,30 +66,22 @@ Like if you want to program your dynamic content genration in Java, there are fr
 I'm aware and used is Spring. Incase of Python I've used django a bit. and in ruby I've heard 
 rails is one of the frameworks.
 
-In django HTTpreuest object we get and produce HTTPresponse.
+You can browse for web frame works in language you work. To name few, django in Python, Spring in
+ Java etc.
+ 
+In the application code you assume you get a representation of request and you return 
+representation of response. And focus on converting request to response.
 
-the interface takes care of converting it.
 
-Flow in framework is another topic.
-Flow till framework is done by a interface. These interfaces are well defined for each language.
+Who defines/converts actual http request/response to the representaion suitable for you. Those 
+are interfaces.
 
 some frameworks will provide a builtin HTTPserver software for dev purpose only. You need to 
 use  a  production ready webserver later.
 
-# App server:
-
-[app vs web server][difference].
-The confusion starts because both of them speak HTTP.
-Your app server maybe a http server which only generated JSON response.
-
-
-Application server not necessarily talk in HTTP. It can talk in many protocols as required. For 
-me application server is designed for your specific purpose. It may speak HTTP, SMTP, FTP and 
-more based on your requirement. It may provide many services.
-
-
 # Interfaces:
 
+Now we have a webserver that can extend it to dynamic gene.
 Interfaces are standardized based on which web server you are using, which laguage your app code 
 is in. several factors.
 
@@ -98,11 +93,6 @@ Because of limitations they come up with FastCGI. Improved versions.
 
 
 Web dev in python [web dev](https://docs.python.org/2/howto/webservers.html) 
- 
- FOr example in pytohn writing server.
- 
- Build your own webserver in [Building webserver](https://github
- .com/danistefanovic/build-your-own-x#build-your-own-web-server)
 
 WSGI for python. [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
 Servlet container will do in JAVA.
@@ -177,7 +167,20 @@ When directly working woth spring boot, we are taking everytihg granted. develop
 But the underlying setup is this.
 Se
 
+# App server:
 
+[app vs web server][difference].
+The confusion starts because both of them speak HTTP.
+Your app server maybe a http server which only generated JSON response.
+
+I would give Jetty is app server. It talks http, contains your
+
+
+Application server not necessarily talk in HTTP. It can talk in many protocols as required. For 
+me application server is designed for your specific purpose. It may speak HTTP, SMTP, FTP and 
+more based on your requirement. It may provide many services.
+
+--- 
 Evolution is the answer for why some things are in certain way. Explore the evolution.
 
 
