@@ -7,6 +7,10 @@ tags: ["web"]
 author: "Sai Kiran"
 ---
 
+
+*To understand the web server interfaces, we need to understand why we need then in the first place
+and what are we interfacing with.*
+
 *Lot of services are added to the web day by day.
 While web app developing we come across terms like, 
 web server, application 
@@ -61,6 +65,8 @@ specified entity. ** list verbs**.
 
 
 **TODO: Picture with server + application cod**
+![server-application]({{'/assets/images/server-interface/server application.jpeg' | absolute_url }})
+
 Now the resources are simply not pre-generated static files. They might be stored in a database. 
 You are giving access to those resources. HTTP servers can give access to pre-generated files or 
 resouces that are dynamic. For every request of a resource, we'll need to query the disk/database
@@ -75,7 +81,7 @@ When the complexity of application code and requirements of the web are increasi
 We wanted to focus on each of individual tasks. Those are that part that takes in requests and 
 the one generating and dynamic response.
 
-**TODO:Picture with server and app code seperated**
+![server-application]({{'/assets/images/server-interface/seperation.jpg' | absolute_url }})
 
 We have web frameworks that aid us programming the dynamic response generation part. and 
 specialized server that can handle all technical complexity of being entry point to the web.
