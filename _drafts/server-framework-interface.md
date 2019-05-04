@@ -48,72 +48,52 @@ Now I'll share how I got convincing explanation for the those terms.
 To understand those terms, we need to focus on  to the [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
 
 
-### Need for interfaces
+# Need for interfaces
 
-The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. It continuously serves its clients.
+The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. 
+It continuously serves its clients.
 A server that communicates using HTTP is *HTTP Server*.
-
-Server program that commuincates in HTTP is HTTP Server.
-
 For implementing a basic HTTP Server in your favorite language, refer [Build Your Own X](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
 
-As initial version of HTTP has only GET verb, the http server need just to 
-serve 
-some static HTML document that is stored on disk and send it to client.
-
+As initial version of HTTP has only GET 
+verb, the http server need just to 
+serve some static HTML document that is stored on disk and send it to client.
 With later versions, HTTP got extended with more verbs and header fields.
 
-Initially web servers are designed for serving the static contents. At that time we dn't 
-even have many verbs. 
-Web Servers evolved with HTTP. But now we have more verbs and 
-the URL may not representing static content. For every request, 
-response may need to be dynamically generated. 
-
-Over the web, resources(document, blog post, user, etcs) are identified. operations of those 
-HTTP verbs standardize the operations on those resources.
-
-We have server software that provides access to the resources it has. They are HTTP servers. You 
-can write your own HTTP Server in any favorite language.
-
+HTTP verbs standardize the operations on the resources of the web.
 HTTP Server should understand the HTTP verbs and carryout operation enforced by the HTTP verb on 
-specified entity. ** list verbs**.
+specified entity. **list verbs**. 
+
+Now, the resources are not pre-generated static files. 
+They might be stored in a database. The operations are carried out on those resources.
+Hence, for every request we need to generate the response 
+dynamically &mdash may be by querying the database. This is called dynamic response generation. 
+For example, JSON representation or HTML document or any specific representation of a 
+resource can be generated. 
+
+Hence, the HTTP Server application should contains two parts: code that responds to internet by 
+taking in 
+requests 
+and sending out response, and code that operates on our resources according to the verbs.
+We name the code that actually operates on resources as *application code*.
 
 
 ![server-application]({{'/assets/images/server-interface/server application.jpeg' | absolute_url }})
 server + application code
 
 
-Now the resources are simply not pre-generated static files. They might be stored in a database. 
-You are giving access to those resources. HTTP servers can give access to pre-generated files or 
-resouces that are dynamic. For every request of a resource, we'll need to query the disk/database
- and do the specified operation. This is called dynamic response generation. You might be 
- generating JSON representation or HTML document or any representation that the client requested 
- for. Now your HTTP Server application contain code that takes in requests from internet and code
-  that know how to operate on our resources according to the verbs. Server code and application 
-  code.
-  
-The application code started to become complex.  
-The "technical" 
-expectations
- of the 
-servers
-changed. For example, they are expected to be very fast and are prone to attacks. The story 
-behind creation of nginx describes the expectations of modere
-
-It made a single problem of serving the web into two: developing servers with those 
-ever increasing "technical expectations" met and 
-development of manageable web application development.
-
-To solve the former problem, people started building "generic" server software. They called it as
- a "web server". [the reason behind nginx creation](https://www.aosabook.org/en/nginx.html) 
- describes the expectations of web server. Some of those expectations are ability to handle maximum 
- number of 
- requests per unit time, 
- protecting the resources from the attacks, 
-effective handling of static files, buffering response to clients with low bandwidth, HTTPS 
-support, etc.,
-These web servers don't actually understand the HTTP 
- verbs. 
+Soon, the "technical" expectations of the servers changed. For example, they are expected to be 
+very fast and robust. The application code started to become complex. Development teams needed 
+help. Now there are two problems to solve: developing servers with ever increasing "technical 
+expectations" met, and developing tools for manageable web application development.
+Significant efforts have been made in to producing specialized solutions to these two problems.
+ 
+To solve the former problem, people started building "generic" server software.
+They called it as a "web server".
+[The reason behind nginx creation](https://www.aosabook.org/en/nginx.html) describes the expectations of a modern web server. 
+Some of those expectations are: the ability to handle maximum number of requests per unit time, 
+protecting the resources from the attacks, effective handling of static files, 
+buffering response to clients with low bandwidth, HTTPS support, etc.,
  
 To solve the latter problem, people started to build web frameworks to help fasten the dynamic 
 response generation. 
@@ -127,9 +107,9 @@ just a configuration away.
 
 As the goal of web servers is not to "understand" the request, for them every request is 
 equivalent to a GET request. Application code is responsible to
- understand the request and carryout necessary operation. HTTP verbs drive our application code.
+ understand the request and carryout the necessary operation. HTTP verbs drive our application code.
 
-### Interfaces
+# Interfaces
 Once we have web servers and application, we need to *interface* them.
 As the web server are "generic", any application can be interfaced. But the interfacing methods 
 depend on type of the application.
@@ -143,7 +123,12 @@ Sometimes a programming language community might come up with their own standard
 Python community has come up their own standard, called WSGI to be used for communication between 
 web server and python application. WSGI implementations are available for major web servers.
 
-### Application
+A HTTP Server, which may not possess all the qualities that of a web server can be used to run 
+the application code. This HTTP Server can be called as *application server*. Web server can be 
+configured to be reverse proxy to the application server. [Usage of the term *application server* 
+can be contextual.](https://howtodoinjava.com/tomcat/a-birds-eye-view-on-how-web-servers-work/)
+
+# Application
 We can program the web application in any programming language. We have many web frameworks 
 available in major languages. `django` in Python and `Spring` in Java are examples of web 
 frameworks.
@@ -173,11 +158,6 @@ using Servlets. Jetty and tomcat are web servers to name a few. For full list re
 The service can be just few scripts, or it can be a HTTP Server that fully understands the verbs 
 and process the requests.
 
-If you have another server which serves the application code, that can be called as application 
-server. This servers need not support all the above mentioned features of web servers. They are 
-supposed handle the request that are forwareded.
-
-
 The serving part is web server. Web servers are keeper of gates.
  
 When we look at HTTP verbs creates expectation. Over the web we'll identify the resources 
@@ -194,100 +174,14 @@ extra [Brief history of HTTP](https://hpbn.co/brief-history-of-http/)
 
 
 [Understanding HTTP PUT](https://www.w3.org/blog/2008/10/understanding-http-put/)
------
-
-While exploring the bridge between web server and application code, we'll also try to understand 
-certain terms.
-
-# Web Server
-
-The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. It continuously serves its clients.
-A server that communicates using HTTP is *HTTP Server*.
-
-Most of the times web server and http server are interchangeable. 
-But Web server is a HTTP server with other features that addresses issues 
-found in the internet. For example, security, high concurrency, resource friendly, compression 
-and handling static content effectively.
-
-For implementing a basic HTTP Server in your favorite language, refer [Build Your Own X](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
-
-Apache and Nginx are standard web server I've used. 
-I was going through [the reason behind nginx creation](https://www.aosabook.org/en/nginx.html) 
-and came to know the expectations of modern web servers.
-
-Initially web servers are designed for serving the static contents. At that time we dn't 
-even have many verbs. Explore evolution of HTTP to know more.
-Web Servers evolved with HTTP. But now we have more verbs and 
-the URL may not representing static content. For every request, 
-response may need to be dynamically generated. Being able to serve dynamic response is also 
-an expectation of web server.
 
 **Other useful links**:
 - [web server][webserver]
-
-# Application code:
-As there is a requirement for dynamic response generation, 
-we'll program the logic in any chosen language.
-
-We also have lot of web frameworks to assist and simplify our task of generating dynamic content 
-for the request.
-You can browse for web frame works in language you work. 
-To name few, `django` in Python, `Spring` in Java etc.
- 
-In the application code, we assume that we have a representation of request and we will focus 
-on generating a representation of response.
-
-some frameworks will provide a builtin HTTPserver software for dev purpose only. You need to 
-use  a  production ready webserver later.
-
-# Interfaces:
-The web server interface defines/converts actual 
-http request/response to the required representation. 
-
-There are several standards of interfaces. 
-Below standards are supported in many languages. 
-- [CGI](https://tools.ietf.org/html/rfc3875)
-- [FastCGI](http://www.mit.edu/~yandros/doc/specs/fcgi-spec.html)
-
-Explore more about them to know more technical details.
-
-Sometimes a programming language community might come up with their own standard.
-Python community has come up their own standard, called WSGI to be used for communication between 
-web server and python application. WSGI implementations are available for major web servers.
-
-As a fun task, take a web server written in the language you work, and extend its functionality 
-with your application code.
-
-### Python:
-- [How to Use Python in the web](https://docs.python.org/2/howto/webservers.html)
-- [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
-- [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
-- [Apache, FastCGI and Python](https://www.electricmonk.nl/docs/apache_fastcgi_python/apache_fastcgi_python.html)
-- [Understanding uwsgi, threads, processes, and GIL](https://www.reddit.com/r/Python/comments/4s40ge/understanding_uwsgi_threads_processes_and_gil/)
-
-### Java:
-Currently, Servlets is the standard way of web development in Java. 
-Spring, one of the widely used framework for web development implements Servlets standard.
-
-Application code written using Servlets is deployed using web servers written in Java.
-These web servers contain *servlet container* component to invoke the application code written 
-using Servlets. Jetty and tomcat are web servers to name a few. For full list refer 
-[List of Web Containers](https://en.wikipedia.org/wiki/Web_container) 
 
 **Other useful links**:
 - [How web servers work?](https://howtodoinjava.com/tomcat/a-birds-eye-view-on-how-web-servers-work/)
 - [Servlet Specification](https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf)
 
-# App server:
-A server that contains your application code can be called as `application server`. Sometimes 
-they may not use HTTP protocol, or they may use multiple protocols based on requirement, or they 
-may even use proprietary protocols.
- 
-You may have a HTTP Server that exposes RESTful APIs for application code. You can call that as 
-`application server`.
-
-People use the term *application server*, to distinguish the HTTP Server executing dynamic 
-response generation from the web server that is used as a reverse proxy. 
 
 **Other useful links**:
 - [Application Server vs. a Web Server?][difference]
