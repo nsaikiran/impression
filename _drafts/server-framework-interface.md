@@ -8,8 +8,8 @@ author: "Sai Kiran"
 ---
 
 
-*To understand the web server interfaces, we need to understand why we need then in the first place
-and what are we interfacing with.*
+*To understand the web server interfaces, we need to understand why we needed them and what are we 
+interfacing web servers with.*
 
 *Lot of services are added to the web day by day.
 While web app developing we come across terms like, 
@@ -31,28 +31,43 @@ Looking at the evolution of HTTP and HTML gave me a good understanding.
 
 HTTP and HTML have evolved a lot to accommodate the needs of web.
 
+Understanding the evolution process helps to get certain questions clarified.
+For example, I have questions about the terms like web server, application server, web frameworks. 
+And needed convincing answers. 
+We need to keep in mind that usage of some terms are bound to certain "context", 
+some terms may become irrelavent in the course of evolution.
+
+
 The linked nature of [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) documents 
-introduced the word "web". Web is continuosly evolving since its inception. When you get 
-questions like "why certains things are the way thery are right now"? the answer lies in 
-evolution process. HTTP and HTML being major building blocks of the web. Understand their 
-evolution clarifes some questions. Most of the times I wanted to be convinced about the terms used.
-Understanding those terms gives lot of insights. FOr example, I wanted have a convincing 
-explanation of terms like web server, application server, web frameworks. We also need to 
-understand that usage of those terms are bound to some "context", some terms may be irrelavent in 
-the course of evolution. Now I'll share how I got convincing explanation for the those terms.
+introduced the word "web". Web is continuosly evolving since its inception.  
+HTTP and HTML being major building blocks of the web, understand their 
+evolution clarifes some questions.
+
+Now I'll share how I got convincing explanation for the those terms.
+
+To understand those terms, we need to focus on  to the [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
 
 
-To understand those terms, we need to look at the evolution of HTTP. It is a simple protocol. 
-Check the [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
-to understand more.
+### Need for interfaces
+
+The *server* process is an example of *[daemon](http://www.linfo.org/daemon.html)*. It continuously serves its clients.
+A server that communicates using HTTP is *HTTP Server*.
 
 Server program that commuincates in HTTP is HTTP Server.
 
-We'll focus on HTTP. As initial version of HTTP has only GET verb, the http server need just to 
+For implementing a basic HTTP Server in your favorite language, refer [Build Your Own X](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
+
+As initial version of HTTP has only GET verb, the http server need just to 
 serve 
 some static HTML document that is stored on disk and send it to client.
 
 With later versions, HTTP got extended with more verbs and header fields.
+
+Initially web servers are designed for serving the static contents. At that time we dn't 
+even have many verbs. 
+Web Servers evolved with HTTP. But now we have more verbs and 
+the URL may not representing static content. For every request, 
+response may need to be dynamically generated. 
 
 Over the web, resources(document, blog post, user, etcs) are identified. operations of those 
 HTTP verbs standardize the operations on those resources.
@@ -64,8 +79,9 @@ HTTP Server should understand the HTTP verbs and carryout operation enforced by 
 specified entity. ** list verbs**.
 
 
-**TODO: Picture with server + application cod**
 ![server-application]({{'/assets/images/server-interface/server application.jpeg' | absolute_url }})
+server + application code
+
 
 Now the resources are simply not pre-generated static files. They might be stored in a database. 
 You are giving access to those resources. HTTP servers can give access to pre-generated files or 
@@ -76,62 +92,95 @@ resouces that are dynamic. For every request of a resource, we'll need to query 
   that know how to operate on our resources according to the verbs. Server code and application 
   code.
   
-When the complexity of application code and requirements of the web are increasing.
+The application code started to become complex.  
+The "technical" 
+expectations
+ of the 
+servers
+changed. For example, they are expected to be very fast and are prone to attacks. The story 
+behind creation of nginx describes the expectations of modere
 
-We wanted to focus on each of individual tasks. Those are that part that takes in requests and 
-the one generating and dynamic response.
+It made a single problem of serving the web into two: developing servers with those 
+ever increasing "technical expectations" met and 
+development of manageable web application development.
 
-![server-application]({{'/assets/images/server-interface/seperation.jpg' | absolute_url }})
-
-We have web frameworks that aid us programming the dynamic response generation part. and 
-specialized server that can handle all technical complexity of being entry point to the web.
-
-
-As we are separating the serving functionality from application code, the requirement to 
-understand the HTTP verbs has been moved to the application code. Your appplication code needs to
- understand the verbs not the serving part. That is the whole part.
-
-
-Now when you seperate these things, you need to connect them, right.
-One that is entry point to your sevice and another piece is the service itself. 
-The service can be just few scripts, or it can be a HTTP Server that fully understands the verbs 
-and process the requests.
-
-Connecting the server part and application:
-
-CGI 
-FastCGI
-Proxy pass etc.,
-
-
-We call those serving entities that focuses on ever increasing technical complexities of being the
-entry point to services: taking maximum number of requests, protecting from the attacks, 
+To solve the former problem, people started building "generic" server software. They called it as
+ a "web server". [the reason behind nginx creation](https://www.aosabook.org/en/nginx.html) 
+ describes the expectations of web server. Some of those expectations are ability to handle maximum 
+ number of 
+ requests per unit time, 
+ protecting the resources from the attacks, 
 effective handling of static files, buffering response to clients with low bandwidth, HTTPS 
 support, etc.,
-They are called as web servers. The gate keepers of our services to the web.
-Famous web servers out there are nginx, apache and IIS. The features of these web servers are 
-just a configuration away. These web server may not understand the request.
+These web servers don't actually understand the HTTP 
+ verbs. 
+ 
+To solve the latter problem, people started to build web frameworks to help fasten the dynamic 
+response generation. 
+ 
+![server-application]({{'/assets/images/server-interface/seperation.jpg' | absolute_url }})
 
+Web servers are the keepers of our services to the web.
+Famous web servers out there are nginx, apache and IIS. 
+The features of these web servers are 
+just a configuration away. 
+
+As the goal of web servers is not to "understand" the request, for them every request is 
+equivalent to a GET request. Application code is responsible to
+ understand the request and carryout necessary operation. HTTP verbs drive our application code.
+
+### Interfaces
+Once we have web servers and application, we need to *interface* them.
+As the web server are "generic", any application can be interfaced. But the interfacing methods 
+depend on type of the application.
+
+Below are some widely used interfaces:
+- [CGI](https://tools.ietf.org/html/rfc3875)
+- [FastCGI](http://www.mit.edu/~yandros/doc/specs/fcgi-spec.html)
+- [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy)
+
+Sometimes a programming language community might come up with their own standard.
+Python community has come up their own standard, called WSGI to be used for communication between 
+web server and python application. WSGI implementations are available for major web servers.
+
+### Application
+We can program the web application in any programming language. We have many web frameworks 
+available in major languages. `django` in Python and `Spring` in Java are examples of web 
+frameworks.
+ 
+Some web frameworks provide you with a *development server* to avoid the overhead of installing a 
+web server during development.
+
+Examples of web application development:
+#### Python:
+- [How to Use Python in the web](https://docs.python.org/2/howto/webservers.html)
+- [An introduction into the WSGI ecosystem](https://www.ultravioletsoftware.com/single-post/2017/03/23/An-introduction-into-the-WSGI-ecosystem)
+- [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/index.html)
+- [Apache, FastCGI and Python](https://www.electricmonk.nl/docs/apache_fastcgi_python/apache_fastcgi_python.html)
+- [Understanding uwsgi, threads, processes, and GIL](https://www.reddit.com/r/Python/comments/4s40ge/understanding_uwsgi_threads_processes_and_gil/)
+
+#### Java:
+Currently, Servlets is the standard way of web development in Java. 
+Spring, one of the widely used framework for web development implements Servlets standard.
+
+Application code written using Servlets is deployed using web servers written in Java.
+These web servers contain *servlet container* component to invoke the application code written 
+using Servlets. Jetty and tomcat are web servers to name a few. For full list refer 
+[List of Web Containers](https://en.wikipedia.org/wiki/Web_container) 
+
+
+
+The service can be just few scripts, or it can be a HTTP Server that fully understands the verbs 
+and process the requests.
 
 If you have another server which serves the application code, that can be called as application 
 server. This servers need not support all the above mentioned features of web servers. They are 
 supposed handle the request that are forwareded.
 
 
-
 The serving part is web server. Web servers are keeper of gates.
  
-
- 
-
- 
-
-
-
 When we look at HTTP verbs creates expectation. Over the web we'll identify the resources 
-
-
- 
 HTTP is used to as communication protocl.
 Those documents are served to the user and user explores web using 
 a webclient.
