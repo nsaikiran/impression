@@ -7,27 +7,50 @@ tags: ["web"]
 author: "Sai Kiran"
 ---
 
+*Lot of services are added to the web day by day.
+While web app developing we come across terms like, 
+web server, application 
+server, web 
+frameworks among serveral others. While programming the application, whatever the language it may
+ be,
+ we assume that a web request is handed over to us and we focus on generating a web response. 
+This time we'll try to understand
+This is an attempt to be convinced with whatever I've been doing.*
+ 
 *These days while developing web applications, 
 we'll assume we have request and focus on generating a response.
 We don't need to bother how our application code is invoked with necessary data.
 How a web server communicates with our code is taken for granted.
 This time we'll try explore how web server interacts with our application code.*
 
-The linked nature of [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) documents 
-introduced the word "web".
+Looking at the evolution of HTTP and HTML gave me a good understanding.
 
 HTTP and HTML have evolved a lot to accommodate the needs of web.
 
-We'll focus on HTTP. As initial version of HTTP has only GET verb, the server need just to serve 
+The linked nature of [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) documents 
+introduced the word "web". Web is continuosly evolving since its inception. When you get 
+questions like "why certains things are the way thery are right now"? the answer lies in 
+evolution process. HTTP and HTML being major building blocks of the web. Understand their 
+evolution clarifes some questions. Most of the times I wanted to be convinced about the terms used.
+Understanding those terms gives lot of insights. FOr example, I wanted have a convincing 
+explanation of terms like web server, application server, web frameworks. We also need to 
+understand that usage of those terms are bound to some "context", some terms may be irrelavent in 
+the course of evolution. Now I'll share how I got convincing explanation for the those terms.
+
+
+To understand those terms, we need to look at the evolution of HTTP. It is a simple protocol. 
+Check the [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
+to understand more.
+
+Server program that commuincates in HTTP is HTTP Server.
+
+We'll focus on HTTP. As initial version of HTTP has only GET verb, the http server need just to 
+serve 
 some static HTML document that is stored on disk and send it to client.
 
 With later versions, HTTP got extended with more verbs and header fields.
 
-Check the [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
-to understand more.
-
-
-Over the web, resources(document, blog post, user, etcs) are identified operations of those 
+Over the web, resources(document, blog post, user, etcs) are identified. operations of those 
 HTTP verbs standardize the operations on those resources.
 
 We have server software that provides access to the resources it has. They are HTTP servers. You 
@@ -36,6 +59,8 @@ can write your own HTTP Server in any favorite language.
 HTTP Server should understand the HTTP verbs and carryout operation enforced by the HTTP verb on 
 specified entity. ** list verbs**.
 
+
+**TODO: Picture with server + application cod**
 Now the resources are simply not pre-generated static files. They might be stored in a database. 
 You are giving access to those resources. HTTP servers can give access to pre-generated files or 
 resouces that are dynamic. For every request of a resource, we'll need to query the disk/database
@@ -50,6 +75,7 @@ When the complexity of application code and requirements of the web are increasi
 We wanted to focus on each of individual tasks. Those are that part that takes in requests and 
 the one generating and dynamic response.
 
+**TODO:Picture with server and app code seperated**
 
 We have web frameworks that aid us programming the dynamic response generation part. and 
 specialized server that can handle all technical complexity of being entry point to the web.
@@ -58,6 +84,34 @@ specialized server that can handle all technical complexity of being entry point
 As we are separating the serving functionality from application code, the requirement to 
 understand the HTTP verbs has been moved to the application code. Your appplication code needs to
  understand the verbs not the serving part. That is the whole part.
+
+
+Now when you seperate these things, you need to connect them, right.
+One that is entry point to your sevice and another piece is the service itself. 
+The service can be just few scripts, or it can be a HTTP Server that fully understands the verbs 
+and process the requests.
+
+Connecting the server part and application:
+
+CGI 
+FastCGI
+Proxy pass etc.,
+
+
+We call those serving entities that focuses on ever increasing technical complexities of being the
+entry point to services: taking maximum number of requests, protecting from the attacks, 
+effective handling of static files, buffering response to clients with low bandwidth, HTTPS 
+support, etc.,
+They are called as web servers. The gate keepers of our services to the web.
+Famous web servers out there are nginx, apache and IIS. The features of these web servers are 
+just a configuration away. These web server may not understand the request.
+
+
+If you have another server which serves the application code, that can be called as application 
+server. This servers need not support all the above mentioned features of web servers. They are 
+supposed handle the request that are forwareded.
+
+
 
 The serving part is web server. Web servers are keeper of gates.
  
@@ -72,7 +126,7 @@ When we look at HTTP verbs creates expectation. Over the web we'll identify the 
 
 
  
- HTTP is used to as communication protocl.
+HTTP is used to as communication protocl.
 Those documents are served to the user and user explores web using 
 a webclient.
 makes the internet 
