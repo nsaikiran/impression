@@ -18,7 +18,8 @@ application code.*
 ----
 
 To understand web server interfaces, I had to understand terms like web server, 
-application server, dynamic response generation and web framework. To understand these terms 
+application code, dynamic response generation, web framework and application server. 
+To understand these terms 
 I needed to go through the evolution of web. 
 
 # The need for interfaces
@@ -26,15 +27,16 @@ I needed to go through the evolution of web.
 It continuously serves its clients.
 A server that communicates using [HTTP](https://www.w3.org/Protocols/rfc2616/rfc2616.html) is *HTTP Server*.
 For implementing a basic HTTP Server in your favorite language, refer [Build Your Own X](https://github.com/danistefanovic/build-your-own-x#build-your-own-web-server)
-
 As initial version of HTTP has only GET 
 verb, the HTTP Server need to serve some static HTML document that is stored on disk.
 With later versions, [HTTP got extended](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP) with more verbs and header fields.
 
-[HTTP verbs](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) standardize the operations on the resources of the web.
-HTTP Server should understand the HTTP verbs and carryout operation enforced by the HTTP verb on 
+Let us say we have *a web service*, through which the resources are made available to the web. 
+As, [HTTP verbs](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) standardize the operations 
+on the resources of the web, the web service should understand the HTTP verbs and carryout 
+operation 
+enforced by the HTTP verb on 
 specified entity. 
-
 Now, the resources are not pre-generated static files. 
 They might be stored in a database. The operations are carried out on those resources.
 Hence, for every request we need to generate the response 
@@ -42,14 +44,14 @@ dynamically &mdash; may be by querying the database. This is called dynamic resp
 For example, JSON representation or HTML document or any specific representation of a 
 resource can be generated. 
 
-Hence, the HTTP Server application should contains two parts: code that responds to internet by 
+Hence, the web service application should contains two parts: code that responds to internet by 
 taking in 
 requests 
 and sending out response, and code that operates on our resources according to the verbs.
 We name the code that actually operates on resources as *application code*.
 
 
-![server-application]({{'/assets/images/server-interface/server application.jpeg' | absolute_url }})
+![web service]({{'/assets/images/server-interface/web service.jpg' | absolute_url }})
 
 
 Soon, the "technical" expectations of the servers changed; they are expected to be 
@@ -66,10 +68,10 @@ Some of those expectations are: the ability to handle maximum number of requests
 protecting the resources from the attacks, effective handling of static files, 
 buffering response to clients with low bandwidth, HTTPS support, etc.,
  
-To solve the latter problem, people started to build web frameworks to help fasten the dynamic 
+To solve the latter problem, people started to build web frameworks to simplify the dynamic 
 response generation. 
  
-![server-application]({{'/assets/images/server-interface/seperation.jpg' | absolute_url }})
+![web service seperated into server and application]({{'/assets/images/server-interface/server-application.jpg' | absolute_url }})
 
 Web servers are the gate keepers of our services.
 Famous web servers out there are [nginx](https://www.nginx.com/), 
@@ -92,6 +94,9 @@ equivalent to a GET request, application code is expected to
 Once we have web servers and application, we need to *interface* them.
 As the web server are "generic", any application can be interfaced. But the interfacing methods 
 depend on type of the application.
+
+
+![web server interface]({{'/assets/images/server-interface/interface.jpg' | absolute_url }})
 
 Below are some widely used interfaces:
 - [CGI](https://tools.ietf.org/html/rfc3875)
