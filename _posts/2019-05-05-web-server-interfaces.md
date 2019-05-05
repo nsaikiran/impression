@@ -156,6 +156,7 @@ These servers can be called as *application servers*.
 - [server-side](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
 - [Web technology for developers](https://developer.mozilla.org/en-US/docs/Web)
 - [Application Server vs. a Web Server?][difference]
+- [Web Characterization Terminology & Definitions Sheet](https://www.w3.org/1999/05/WCA-terms/)
 
 *Behind the magic curtains* is a series of writings. 
 Checkout [Behind the magic curtains: Spring Boot]({{'tech/2017/10/07/Spring-Boot.html' | absolute_url}})
