@@ -49,8 +49,6 @@ taking in
 requests 
 and sending out response, and code that operates on our resources according to the verbs.
 The former is HTTP Server code and the latter is *application code*.
-
-
 ![web service]({{'/assets/images/server-interface/web service.jpg' | absolute_url }})
 
 
@@ -70,7 +68,6 @@ buffering response to clients with low bandwidth, HTTPS support, etc.,
  
 To solve the latter problem, people started to building *web frameworks* to simplify the dynamic 
 response generation. 
- 
 ![web service seperated into server and application]({{'/assets/images/server-interface/server-application.jpg' | absolute_url }})
 
 Web servers are the qualified gate keepers of our services.
@@ -96,7 +93,6 @@ Once we have a web server and a application, we need to *interface* them.
 As the web server are "generic", any application can be interfaced. 
 But the interfacing methods depend on the type of the application. 
 For example, the application can be a group of *script files* or a standalone service.
-
 ![web server interface]({{'/assets/images/server-interface/interface.jpg' | absolute_url }})
 
 Below are some widely used interfaces:
