@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "**Computers"
-description: "Understanding computers"
+title:  "**Feeling so close to computers""
+description: "Feeling so close to computers"
 categories: ["cs"]
 tags: ["execution-models"]
 author: "Sai Kiran"
@@ -25,7 +25,10 @@ Concepts of computers:
 - Abstraction: [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
 - concurrent vs parallel
     - [Concurrent vs parallel](https://blog.golang.org/concurrency-is-not-parallelism): Mention ideas
-- starting from multi programming, multi-user os, and essential ideas about conconcurreny and prallelism. 
+- starting from multi programming, multi-user os, and essential ideas about conconcurreny and prallelism.
+    - [Multi Programming](https://www.youtube.com/watch?v=MB0yDMQj1lU)
+    - [Multithreading](https://www.youtube.com/watch?v=7ENFeb-J75k)
+    - [Additional Processors](https://www.youtube.com/watch?v=CDpL9wOQcus)
 - recursion
 - bootstrapping
     - [Bootstrapping](https://www.youtube.com/watch?v=nslY1s0U9_c)
