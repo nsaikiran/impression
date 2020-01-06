@@ -37,3 +37,7 @@ Concepts of computers:
 - interrupts
 - computational difficulty
     - [Computational complexity](https://www.youtube.com/watch?v=moPtwq_cVH8)
+    
+    
+    
+Make use of this; https://overreacted.io/things-i-dont-know-as-of-2018/
