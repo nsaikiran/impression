@@ -23,6 +23,13 @@ How all other data structures fit in this model.
 Built-in data types of different languges.
 Data structure support in different languges.
 
+The concept of *private heap*, a managed heap space.
+https://docs.python.org/2/c-api/memory.html
+
+
+OS, in its memory management, does protect memory from being accessed by other running programs.
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8_MainMemory.html
+
 
 
 
