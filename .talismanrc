@@ -1,0 +1,16 @@
+fileignoreconfig:
+- filename: assets/images/server-interface/interface.jpg
+  checksum: 5ce91fbfe551132108c785cfb3b68e148a8a2cb41f9ab1e55b5da7f5553c3985
+  ignore_detectors: []
+- filename: assets/images/server-interface/server-application.jpg
+  checksum: 0c75ede758fa4a49718d513447b2257d4a9f3633486fbb402f30b5129352d596
+  ignore_detectors: []
+- filename: assets/images/server-interface/web service.jpg
+  checksum: 8dc8df184b308b92c936363e7158adff0aee613724a141458c9f487786bda733
+  ignore_detectors: []
+- filename: _drafts/how-computers-work-bottom-to-top.md
+  checksum: dcea7f201b3f7eee8910e21dcd26d951691ebe2e19d6a3aa41443a10a9c053c1
+  ignore_detectors: []
+- filename: _drafts/how-computers-work-bottom-to-top.md
+  checksum: 9a5a5fb77299b26bced3b1df9e274652df273576637bd4d3f2214d0a2ef7989e
+  ignore_detectors: []
