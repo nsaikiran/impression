@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "**Feeling so close to computers""
+title:  "**Feeling so close to computers"
 description: "Feeling so close to computers"
 categories: ["cs"]
 tags: ["execution-models"]
