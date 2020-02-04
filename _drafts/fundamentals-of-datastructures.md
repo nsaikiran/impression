@@ -14,6 +14,23 @@ Pointer based structuring. - heap.
 *Refer the notes and other references.*
 
 "call stack" vs heap memory
+call stack - https://www.youtube.com/watch?v=aCPkszeKRa4
+https://en.wikipedia.org/wiki/Stack_(abstract_data_type)#Software_stacks
+
+
+
+traversing array is better than traversing LL?
+https://www.quora.com/Is-it-faster-to-iterate-through-an-array-or-a-linked-list
+
+Know about implicit-datastructures. array is implicit DS for heaps.
+https://en.wikipedia.org/wiki/Implicit_data_structure
+
+static vs dynamic data structures.
+array is static. length is fixed.
+list is dynamic it can grow or shrink
+
+
+
 
 How all other data structures fit in this model.
 
@@ -30,6 +47,9 @@ https://docs.python.org/2/c-api/memory.html
 OS, in its memory management, does protect memory from being accessed by other running programs.
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/8_MainMemory.html
 
+Handling big data in problem solving. http://homes.sice.indiana.edu/yye/lab/teaching/spring2014-C343/datatoobig.php
+External algorithms
+
 
 
 
@@ -44,4 +64,5 @@ How programming languages like python provies implementations to the datastructu
 - https://wiki.python.org/moin/TimeComplexity
 
 
+Dynamic storage allocation: https://users.cs.northwestern.edu/~pdinda/ics-s05/doc/dsa.pdf
 
