@@ -1,11 +1,204 @@
 ---
-layout: post
+layout: plain
 title:  "**Fundamentals of datastructures"
-description: "Till we meet on the otherside"
+description: "fundamentals of data strucures"
 categories: ["cs"]
 tags: ["execution-models"]
 author: "Sai Kiran"
 ---
+
+# Introduction
+The generic idea of computer is that it (takes in some data and )operates on data. 
+And to operate on data it takes certtain amount of time. When learning data structures our goal is to keep the time spent reasonable.
+After all, we don't want to stare at screen till the problem is solved.
+
+Computers have memory to store data under opration. ie. main memory. How we organize data in memory affects the time to finish certain operation. 
+Hence we explore how to better organize the data in memory.
+
+# RAM
+As there are many varieties of computers produced by various vendors, and have different capabilities. But we want our prolesm to be solved by all of them.
+For that we want to pick a better DS or algorithm. Hence, to make our analysis indepedent of machine,
+To explore this we use a need simple (abstract)model of computer probably therotical one. We take RAM model of computer.
+Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
+
+But I'm also listing provoerties here:
+
+- Each simple operation (+, *, -, =, if, call) takes exactly 1 time step.
+- Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
+- Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis.   
+
+Because RAM should only read data from Ram memenory, and computations done in registers is constant. Hence we are more focused on accessing data from ram memory.
+As descibed above RAM has memroy in which data is stored. 
+- The memroy is byte addressible. It has indexes sarting from 0. We can access any byte with its index
+- Each byte can be accessded independtly.
+- Accessing anybyte takes a same amount time.
+- index of a byte can be stored in another 
+
+
+RAM takes some time to finish the operation. Our goal is to minimize the time. The way data is organized affects the time it takes to finish.
+
+Pointer is an address of a byte. We point to first byte of the record usually. To go to next object, we jump to address of first byte of the next record. 
+We do this by adding the current pointer with no. of byte current occupies.
+
+## Accounting on RAM
+As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
+For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.
+Mention asysmptotic analysis and give links here.
+https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
+
+## Organizing data on memory
+Assume we are working at at time with on ly one problem. 
+The data is related to a bpoblem.
+As we use memory of RAM to store data under operaton, we read and write the to the memory. 
+For the sake of ease of explaning, I'll consider data under operaion to be group of objects.
+Data strcture is group of objects with a specific way to traversing them.
+
+Each reacord/object is the basic element of data structure.
+
+Hence the basic operations will be be adding more objects, deleting existing objects, modify existing ones and finding objects with required attributes.
+For now assume all records in DS are of same type and has same size.
+
+### linear/contigous
+Lets explore organizin data under processing in RAM and check the time to take all basic operations:
+The first way to organize the data is storing records linear/consecutive. Here, every element is stored next to its previsou element.
+
+While traversing the DS, may be to find an object with a specific key, we jump to the next object, until we read end of DS or we found our target object.
+Another advantage here, is if you want to access nth element the next address to jump can be calculated. And the nth element can be accessed in constant time.
+But what about delete? Deleting someting in middle destroys the assumption that the next element can be found just beside.
+You can easly insert at the end. finiding takes O(n) time.
+https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/
+### non-linear/linked
+To facilitate the deletion, we can need to use another way of organzing data, a non-linear/non-contigous ways.
+Where each record will store the address of next record. Linked list. single/double. your wish.
+But here we loose the benefit of accessing nth element in constant time.
+
+See, find/seach are such an importatnt operation as it may be subproblem of every operation.
+Hence we try to optimize.
+
+#### trees
+https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/
+If you traverse the DS linearly, then we may call it linaer DS. Ex: array, LL, and ADTs constructed with these. Find/search will be of linear in the size of input.
+Hence tree is an example of non-linear DS.
+Considering our goal of reducing time, we are more interested in a DS like BBST. Where you'll have find/search operation in logarithmic of input. 
+In this DS we store 
+We may be storing he elements the order we received into linear structure and finding an element in that is of linear tiem.
+
+
+But if we were to arrange data in such a way that the find operation we want will be fast.
+Hence we need to rearrage the items/ or create a specific DS that helps to achie our goal. One such example is BBST or height balanced BST.
+First we understand BST. every node has two children right childre in greater and left children is lesser than the key.
+By this, the key under seach is greater you make a right move, with this you've reduced your search space to only the right subtree of the no de.
+
+When the height is balanced, every steap we take we are reducing the searchs pace by half. Which is similar to binary search.
+
+We shoud make sure that before and after any operation that alters the DS, the DS is in which it caters the initial need. For example to get the 
+benefit we need the BST to be always balanced. so, we will spend time to make it balance every time we didi a operation.
+
+Reference: https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson4_1.htm
+
+More generilized structres are also there.
+B trees, B+ trees that has wide usage in the databaeses.
+
+DS is the way we traverse the DS. We now see trees, wheere every record has two hildren, wile traverse sing we choose a child. This is similar to binary seach. Wheere it reduces search space by half on each choince.
+So, it gives us logarthmic complexity.
+But they must be balance to ge the benefit everytime. Hence we make sure after every operation like insert or delete we make sure it is balanced.
+There are many variants of tree. binary trees is an example.
+
+
+As we discussed fundametal DSs. linear (array, linked list) and non-linear (trees)
+linked list and array are different, as the items are stored non-linearly but accessed lineary in linked list.
+
+As the computers we use are general purpose computers, more than ope progrems's data is stored in data. 
+Hence, we alsys need to be deterministic aobu the size of linear block we need. So that those many consecutive blocks can be serached for and allocated. Hence for creating a array of objects we need to specif t the size of array upfromn.t
+But the linked lists are nonlinear stored hence space. the items are not stored consecutivley hence we don't need to mention the size.
+
+
+Data tyes:
+The objects with their operations is type. values and operations on those values are data types.
+ADT. Where implemenation is not mentioend. 
+Stack, Queue, Circuar queue, Priority queue, graph. min-max-heap, heap, hash map, hash table, hash set, dict, dynamic array.
+
+Note: (afer list is discussed in RAM)
+In general purpose computers, where, you have memroy limited and more than one DS lives in the memory (more thatn one problem may be solved).
+So, probmising a contilous blocks is little tricky. So, we mention maximum size we want, so that only that much is allocted for us.
+
+
+# DS in programming languages
+
+many high level programm alngauges are providing lot of datastructures as buildtin. For example in pytion, js, we dont need to implement ds. For jaba and C+= u get eveuting in stadn librau.
+these lnagues are moreinteresting as to how they define the builtin types. for example pyton has dict, list as builtin tpes.  these are very generic dta strucres though.
+any tupe of data can be stored, even then we get the enefit of ds.
+
+list is dynamic array. used talble doubling to achive this. the idea of containers. the container that can grow/ adjust its size by not wasting lot of memroty but giving consstan accessing. is a adt. use this
+
+talk about python modle of copuation. why some operations are standard. Ram is the baisc model of commputaoin . pytohng omdel of computaton. what operation take less time.
+and what not.
+
+Eric lecture on models of computation.
+
+
+
+If we wan to insert new object, we need to find a place for it, if we wan to delete/update we first need to find it.
+The structre (how do we traverse or relation among elements) governs the way 
+
+Importance of find/search operation:
+find/search is so importatnt. it is prerequisite to other operations. For eaxmple, to insert in a position
+
+
+ We explore how to better organize the data in memroy to achieve reasonalbe time.
+
+As we
+We are much interested in reaching the data we need.
+Data is stored,
+
+So, now assume we are solving a problem, simple one. A record.
+
+
+
+
+
+
+Computer takes certain amount of time to do an operation on the data. 
+Our goal when we talk about DS is that to make sure the time to do an operation is reasonable.
+We don't want to wait to see the operation to be finished.
+
+
+So it has a place to store the data. It is called Random Access Memory or main memory or simply memroy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Contigous memory: why should we mention size of memory while requesting?
 determinism
