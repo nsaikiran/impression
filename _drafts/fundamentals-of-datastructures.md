@@ -15,9 +15,14 @@ After all, we don't want to stare at screen till the problem is solved.
 Computers have memory to store data under opration. ie. main memory. How we organize data in memory affects the time to finish certain operation. 
 Hence we explore how to better organize the data in memory.
 
+We always ideate on different datastructures that provide a specific operation. And analyse the time each DS takes, and by comparing those we decide on the best DS and pick that. Hence the analysis is importatnt.
+
 # RAM
 As there are many varieties of computers produced by various vendors, and have different capabilities. But we want our prolesm to be solved by all of them.
-For that we want to pick a better DS or algorithm. Hence, to make our analysis indepedent of machine,
+For that we want to pick a better DS or algorithm. 
+Faster computers will be faster, than the ones which have less computing resources. But the analysis we do is regardless of the harware. Hence we should reason the the time/space complexity independent of the machine specifics, memory hierarichies, no. of processors, amount of memory, processor speed etc.
+If we choose a better algorithm it will be better for any machine. As there are many varieties of computers, we don't consider the specifics of computers in reasoning about time to finish operations.
+Hence, to make our analysis indepedent of machine,
 To explore this we use a need simple (abstract)model of computer probably therotical one. We take RAM model of computer.
 Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
 
@@ -41,12 +46,18 @@ Pointer is an address of a byte. We point to first byte of the record usually. T
 We do this by adding the current pointer with no. of byte current occupies.
 
 ## Accounting on RAM
+The running time is a function. It is a funciton of input.
+By choosing RAM model we've removed the machine specifics from the analysis (analysis to choose the best DS), this is the first major step in analysis.
+And we are also intersted in the runtime when the input is very large, we call this asymptotic analysis. Because it gives us the worst-case running time.
+So, we produce worst-case running-time function, best-case running-time funciton and average-case running time function after the analysis. Thought most of the time we are interested in worst-case running-time function.
 As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
 For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.
 Mention asysmptotic analysis and give links here.
 https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
 
 ## Organizing data on memory
+Data is organized in memory.
+How we organize the data affects the time it takes to finish certain operations.
 Assume we are working at at time with on ly one problem. 
 The data is related to a bpoblem.
 As we use memory of RAM to store data under operaton, we read and write the to the memory. 
@@ -58,6 +69,7 @@ Each reacord/object is the basic element of data structure.
 Hence the basic operations will be be adding more objects, deleting existing objects, modify existing ones and finding objects with required attributes.
 For now assume all records in DS are of same type and has same size.
 
+We explore the well known data structures.
 ### linear/contigous
 Lets explore organizin data under processing in RAM and check the time to take all basic operations:
 The first way to organize the data is storing records linear/consecutive. Here, every element is stored next to its previsou element.
@@ -67,6 +79,8 @@ Another advantage here, is if you want to access nth element the next address to
 But what about delete? Deleting someting in middle destroys the assumption that the next element can be found just beside.
 You can easly insert at the end. finiding takes O(n) time.
 https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/
+Array is traversed linearly and data is organized in memory contigously.
+So, if you are storing the data contigously, then you need to specify the max. amount of size, as we need to check for that much of contigous memeory. We need to reserve tat much of memory.
 ### non-linear/linked
 To facilitate the deletion, we can need to use another way of organzing data, a non-linear/non-contigous ways.
 Where each record will store the address of next record. Linked list. single/double. your wish.
@@ -74,6 +88,7 @@ But here we loose the benefit of accessing nth element in constant time.
 
 See, find/seach are such an importatnt operation as it may be subproblem of every operation.
 Hence we try to optimize.
+Linked lists are traversed lineraly and stored non-contigously.
 
 #### trees
 https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/
@@ -113,7 +128,7 @@ Hence, we alsys need to be deterministic aobu the size of linear block we need. 
 But the linked lists are nonlinear stored hence space. the items are not stored consecutivley hence we don't need to mention the size.
 
 
-Data tyes:
+# Abstract Data tyes:
 The objects with their operations is type. values and operations on those values are data types.
 ADT. Where implemenation is not mentioend. 
 Stack, Queue, Circuar queue, Priority queue, graph. min-max-heap, heap, hash map, hash table, hash set, dict, dynamic array.
