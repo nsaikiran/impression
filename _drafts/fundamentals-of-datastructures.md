@@ -7,7 +7,62 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
+This post depicts the how I tried to achieve "connected" understanding of datastructures. You are assumed to have some basic knowledge on standrad DS. 
+To understand computers we need to understand the memory, an important component.
+The memory or main-memory is where computer stores data under process. CPU fetches/store the data from/to memory as it works. So, obviously how fast we are able to fetch/store the data will affect the overall time to finish certain operation on the data. Hence, data structues is organizing the data in memory for efficient retrieval/storing.
+
+To better organize the data we need to understand how memory looks like, we may need to compare various data structures based on the constraints/requirements etc. 
+Memory is a gaint array of byes. 
+We compare various DS on the basis of time they take to finish certain operations. Because we always want to minimize the time taken.
+To compare various DS we need a theoretical computer, on which we calculate time each operation takes. 
+Why a theoritical omputer? Because we've computers with various hardware configuration like computers with more clock speed, more/less RAM, various levels of cache, these days we've multi-core processors. So, to simplify the analysis, to make a common ground for benchmarking we choose a theoritical model, RAM model of computation.
+So, with RAM model, we are avoiding the influence of hardware config on analysis. 
+
+
+# RAM
+
+simpliefied computer: single procesor, no cache, each basic insttuction take constant time.
+Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
+
+But I'm also listing provoerties here:
+
+- Each simple operation (+, *, -, =, if, call) takes exactly 1 time step.
+- Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
+- Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis. 
+
+
+# Accounting
+## Accounting on RAM
+we alwasy take a relative decision. We choose an Algo/DS which is relatively better than the one we had. So, alwasys comeup with as mamay Also/DS as yo ucan and relatively choose whichever is better on RAM.
+For a particular DS/Algo, we generally need the time it takes to finish an operation and how much actual memory our DS takes (in reality memory is also a scarse resource like time) to compare it with other DS/Algo. So, as we are using RAM as our only computer on which we benchmark everything, the only factor that affects the runtime of algorithm is size of the datastruture/size of data incase of algorithms. For example, to fetch the last element on linked list with 10 elements will take us 10 memory accesse, if the size if 5 then 5. etc.
+So, the time complexity is functino of input.
+
+## asymptotic 
+As computers are operating more and more on large amounts of data we use what is called as asysmptocic analysis while comparing two algo/DS. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis.
+
+(
+The running time is a function. It is a funciton of input.
+By choosing RAM model we've removed the machine specifics from the analysis (analysis to choose the best DS), this is the first major step in analysis.
+And we are also intersted in the runtime when the input is very large, we call this asymptotic analysis. Because it gives us the worst-case running time.
+So, we produce worst-case running-time function, best-case running-time funciton and average-case running time function after the analysis. Thought most of the time we are interested in worst-case running-time function.
+As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
+For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.
+Mention asysmptotic analysis and give links here.
+https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
+
+How are we gonna compare the data structures? by runn
+To do that we need a theoretical model
+)
+
+
+## Organizing data on memory
+We know memroy is a gaint array of bytes. For the east of discussion, let us define, group of bytes to be an object and group of objects to be DS.
+
+
+
 # Introduction
+This is hyper-linked notes I took for DS.
+Computers operates on data. By studying various DS, their strenghs and drawbacks helps us 
 The generic idea of computer is that it (takes in some data and )operates on data. 
 And to operate on data it takes certtain amount of time. When learning data structures our goal is to keep the time spent reasonable.
 After all, we don't want to stare at screen till the problem is solved.
@@ -127,6 +182,8 @@ As the computers we use are general purpose computers, more than ope progrems's 
 Hence, we alsys need to be deterministic aobu the size of linear block we need. So that those many consecutive blocks can be serached for and allocated. Hence for creating a array of objects we need to specif t the size of array upfromn.t
 But the linked lists are nonlinear stored hence space. the items are not stored consecutivley hence we don't need to mention the size.
 
+## Furthur Reading on DS:
+Watch an interesting talk on DS by Sean Parent: https://www.youtube.com/watch?v=sWgDk-o-6ZE. Here he explains deriving various possible relationships on the data we are working with and using those relation ships to construct better performing DS for our specific usecase.
 
 # Abstract Data tyes:
 The objects with their operations is type. values and operations on those values are data types.
