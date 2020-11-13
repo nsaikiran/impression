@@ -33,12 +33,14 @@ But I'm also listing provoerties here:
 
 # Accounting
 ## Accounting on RAM
-we alwasy take a relative decision. We choose an Algo/DS which is relatively better than the one we had. So, alwasys comeup with as mamay Also/DS as yo ucan and relatively choose whichever is better on RAM.
+This accounting is same analysing run-time of the operations on a data structre and 
+we alwasy take a relative decision. As all analysis is based on RAM, so the decision always is a relative one. Our aim is to choose a relatively better Algo/DS so that it works better in any real computer. We choose an Algo/DS which is relatively better than the one we had. So, alwasys comeup with as mamay Also/DS as yo ucan and relatively choose whichever is better on RAM.
 For a particular DS/Algo, we generally need the time it takes to finish an operation and how much actual memory our DS takes (in reality memory is also a scarse resource like time) to compare it with other DS/Algo. So, as we are using RAM as our only computer on which we benchmark everything, the only factor that affects the runtime of algorithm is size of the datastruture/size of data incase of algorithms. For example, to fetch the last element on linked list with 10 elements will take us 10 memory accesse, if the size if 5 then 5. etc.
 So, the time complexity is functino of input.
+As algorithms and data structures exists together, we analyse algorithms in the samey way. 
 
 ## asymptotic 
-As computers are operating more and more on large amounts of data we use what is called as asysmptocic analysis while comparing two algo/DS. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis.
+As computers are operating more and more on large amounts of data we use what is called as asysmptocic analysis while comparing two algo/DS. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
 
 (
 The running time is a function. It is a funciton of input.
@@ -54,10 +56,66 @@ How are we gonna compare the data structures? by runn
 To do that we need a theoretical model
 )
 
+## Operations of data
 
 ## Organizing data on memory
-We know memroy is a gaint array of bytes. For the east of discussion, let us define, group of bytes to be an object and group of objects to be DS.
 
+As we have a way to analyse runtime for the operations we perform
+contigous or non-contigous/linked:
+
+Array:
+[The RAM allows to us store the address of a locaton in a cell. Wi
+As we request memeory of a particular size, when we want memory for some number of objects. 
+We can request memroy that is sufficient for those objects.
+In an array objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
+
+Linked List:
+But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached.
+
+These two are very fundamental options we have. Array can also be two-dimensional.
+(Also in real computers, duroimng the executoin the data can be stored in call-stack or freestore/heap memory)
+
+How we can fasten our data structures?
+### imporatnace of relations
+Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (consider we do this opeartion very often)But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value -- an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of Height Balanced Binary Search Trees, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree. 
+
+I would highly recommend watching [Sean Parent "Better Code: Data Structures"](https://www.youtube.com/watch?v=sWgDk-o-6ZE), which helped me concretise this.
+
+Hashing is where we bring correlation between representaton of object and its location. (Describe)
+
+(Should we mention that the number of basic operatons will be propotional to the real time, hence we need to minimize the memroy access/ or operations)
+
+( We know memroy is a gaint array of bytes. For the ease of discussion, let us define, group of bytes to be an object. We work on  a collection of objects. WHat shall we do with collection? We may create an new object and add it to the collection, deleting an existing one, change an existing one and find/search for an object in the collection. These are the fundamental operations. Our goal is to organize these objects in memory such that the above mentioned operations can be perfomred quickly. This is the crucial part. Because the memroy is an array. How to store the objects and how to traverse the objects. To do that we think about relations, relation b/w objects: value relations or physical relations etc,. and see if we can bring correlation among such relations so that we can device a plan to organize and traverse the objects on memeory. And this organizatino should be suitable for our usecase. For example: Let us take an example of searching an object in an array. If we were give an array of objects, searhcing an object will take liner time. From the beginning, each object is stored next to the previsous object physically. But when we sort the objects we've established correlation between value and physical relation -- all elements lesser or equal to a given value will be stored left side and greater value objects will be stored right side. With this, we can search for a given object in a logarthmic time. )
+
+(You may not be interested in all of those operations, because frequency of all those operations may not be same in your usecase. DS/Algo that is optimized for very frequent operations would be preferreable for example. 
+
+Essentially you would learn as many DS as possible, and keep them in your toolbox. Understand your problem very well, interms what is the nature of data you would handle: sorted, radom, range can be bounded?, any duplicates etc.
+
+Picture of toolbox and understanding of data. Would give better DS understanding.)
+
+
+# Abstract Data tyes:
+In the course of problem solving, we first need to decide the operations on objects. Then we try to implement a data structure that supports those operations with a reasonable amount of complexity. SO, we define the operations on the objects that theoretical definition is called ADT. This is data type is abstract because we didn't yet implement this. This definition helps to look for various implementaions and pick the best one.
+Some common ADTs that may be incorporated into the solution are Stack, Queue, Circuar queue, Priority queue, graph, min-max-heap, hash map, hash table, hash set, dict, dynamic array. Rarely you'll have to implement you ADT yourself, because the implementation is not availble for you or if it avialable it may not be suitable for your usecase.
+Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth looking at the actual implementation if you've not implemented it.
+
+Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
+
+`list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33), so that it can have fast insert and delete operations on both the sides. And, `Deque` can be used as a Circular Queue aswell.
+
+Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
+
+# DS in programming languages
+
+many high level programm alngauges are providing lot of datastructures as buildtin. For example in pytion, js, we dont need to implement ds. For jaba and C+= u get eveuting in stadn librau.
+these lnagues are moreinteresting as to how they define the builtin types. for example pyton has dict, list as builtin tpes.  these are very generic dta strucres though.
+any tupe of data can be stored, even then we get the enefit of ds.
+
+
+
+
+==========================================================
+ROUGH NOTES:
 
 
 # Introduction
@@ -182,9 +240,6 @@ As the computers we use are general purpose computers, more than ope progrems's 
 Hence, we alsys need to be deterministic aobu the size of linear block we need. So that those many consecutive blocks can be serached for and allocated. Hence for creating a array of objects we need to specif t the size of array upfromn.t
 But the linked lists are nonlinear stored hence space. the items are not stored consecutivley hence we don't need to mention the size.
 
-## Furthur Reading on DS:
-Watch an interesting talk on DS by Sean Parent: https://www.youtube.com/watch?v=sWgDk-o-6ZE. Here he explains deriving various possible relationships on the data we are working with and using those relation ships to construct better performing DS for our specific usecase.
-
 # Abstract Data tyes:
 The objects with their operations is type. values and operations on those values are data types.
 ADT. Where implemenation is not mentioend. 
@@ -215,15 +270,6 @@ The structre (how do we traverse or relation among elements) governs the way
 
 Importance of find/search operation:
 find/search is so importatnt. it is prerequisite to other operations. For eaxmple, to insert in a position
-
-
- We explore how to better organize the data in memroy to achieve reasonalbe time.
-
-As we
-We are much interested in reaching the data we need.
-Data is stored,
-
-So, now assume we are solving a problem, simple one. A record.
 
 
 
