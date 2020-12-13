@@ -7,9 +7,40 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
-This post depicts the how I tried to achieve "connected" understanding of datastructures. You are assumed to have some basic knowledge on standrad DS. 
+We use computers to offload our work. Computers are dumb. They must be instructed precisely. When we understand how computers work always make us a better programmer. Now computers are ubiquitous, we've already built great solutions to our tasks. As physically computers are ubiquitous, the software that is solves our tasks and complex software systems that aids the programmers and makes best out of computers is invisible. Through software we either make the best out of the physical computer or the worst out of it. These days we rarely program or instrcut the actual physical computer which is really a tough job. We've built complex software systems -- compilers, interpreters, operating systems, VMS, IDEs that makes our job or programming easier. We program those software systems which intern program other software systems or the actual computers. But at the end, we've to do the thinking, we've to solve the problem. Once we've the solution ready, we tell it computer. Computers good at precisely doing what's beeing told, nothing more. We not only think to solve the problem. We should ensure that our solution on a computer effectively uses the resources. Make most of the computer.
+
+So, algorithm is a written solution for computer. If our solution needs storing and retriving data as well then we use data structures so that storing and retriving is done effectively (there by boosing our solution). (some algo may not need DS).
+
+## Better solution
+We can produce many algorithms for the very same problem but we tend to choose the one that takes comparatively less resouses like time, memory etc. (With high data needs memory is also a constraint.).
+
+https://cs.lmu.edu/~ray/notes/algds/
+
+
+
+-------------------
+We structure the data so that If our solution requires data related operations like storing, retrieving Most of the times algorithm the solution may work on the input data -- storing, retrive sometimes large amounts of data less Some algorithms are and data structures are the tools to reason about our solutions.  Some algorithms work
+
+
+  it would be easier to  various physical componentsIt is a good thing to understand various physical components of computer and the way these components are used to follow. 
+Importatnt ref: 
+
+----------------------
+
+Solving problems with computers involves manipulating data in memory
+If your problem requires to work on a group of objects.
+When your solution or algorithm involves data related operations
+Computers take time when we .
+We study data structures to understand how program execution time is affected by data structure used.
+The reason we strudy data strures is that program execution time is affected by the data structure used.
+The memory or main-memory is where computer stores data an important component of Computer. Data is fetched from and written to main-memory during execution. So, Data Structure is the way the data is 
+Computer store data in main-memory
+Data Structrus is the way we organize group of 
+
 To understand computers we need to understand the memory, an important component.
-The memory or main-memory is where computer stores data under process. CPU fetches/store the data from/to memory as it works. So, obviously how fast we are able to fetch/store the data will affect the overall time to finish certain operation on the data. Hence, data structues is organizing the data in memory for efficient retrieval/storing.
+ under process. CPU fetches/store the data from/to memory as it works. So, obviously how fast we are able to fetch/store the data will affect the overall time to finish certain operation on the data. Hence, data structues is organizing the data in memory for efficient retrieval/storing.
+
+(Usually while solving problems we deal with data that is stored on memory. As part of our solution we will perform certain operations on data. How fast we finish those operations affects the time our solution take to finish. So, DS is aobut how we organize data such a way that desired opeations on the data is fast.)
 
 To better organize the data we need to understand how memory looks like, we may need to compare various data structures based on the constraints/requirements etc. 
 Memory is a gaint array of byes. 
@@ -18,7 +49,15 @@ To compare various DS we need a theoretical computer, on which we calculate time
 Why a theoritical omputer? Because we've computers with various hardware configuration like computers with more clock speed, more/less RAM, various levels of cache, these days we've multi-core processors. So, to simplify the analysis, to make a common ground for benchmarking we choose a theoritical model, RAM model of computation.
 So, with RAM model, we are avoiding the influence of hardware config on analysis. 
 
+Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time, which higly depends on Runtime of our solution depends on 
 
+Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time which highly depends on the algorithm and data structure used. Along with time we may also want to minimize the memory required, because general purpose computers have limited memory which may be shared among different processes(rewrite?).  Algorithms and data structures exists together. The time it takes to solve a problem is propotional to the no. of `physical operations` in the solution. Our goal is to reduce the no. of those physical operations. We produce various solutions to solve a particular problem. We finalize a solution which takes less time and utilize less memory. The solutions will be comprised of algorithms and data structures. To pick the best solution for a particular problem irrespective of hardware it is run on, we benchmark all solutions on a simplified, theoretical computer. It is RAM machine of computer
+
+But, we do not want to execute 
+Further reading: https://softwareengineering.stackexchange.com/questions/239045/what-is-the-relationship-between-data-structures-and-algorithms
+Fruther reading: https://www.unf.edu/~wkloster/3540/wiki_book.pdf
+Further reading: https://www.youtube.com/watch?v=V5he1JXiQbg
+Studying DS will be useful in efficient use of computer resources.
 # RAM
 
 simpliefied computer: single procesor, no cache, each basic insttuction take constant time.
@@ -227,42 +266,10 @@ Reference: https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson4_1
 More generilized structres are also there.
 B trees, B+ trees that has wide usage in the databaeses.
 
-DS is the way we traverse the DS. We now see trees, wheere every record has two hildren, wile traverse sing we choose a child. This is similar to binary seach. Wheere it reduces search space by half on each choince.
-So, it gives us logarthmic complexity.
-But they must be balance to ge the benefit everytime. Hence we make sure after every operation like insert or delete we make sure it is balanced.
-There are many variants of tree. binary trees is an example.
 
 
 As we discussed fundametal DSs. linear (array, linked list) and non-linear (trees)
 linked list and array are different, as the items are stored non-linearly but accessed lineary in linked list.
-
-As the computers we use are general purpose computers, more than ope progrems's data is stored in data. 
-Hence, we alsys need to be deterministic aobu the size of linear block we need. So that those many consecutive blocks can be serached for and allocated. Hence for creating a array of objects we need to specif t the size of array upfromn.t
-But the linked lists are nonlinear stored hence space. the items are not stored consecutivley hence we don't need to mention the size.
-
-# Abstract Data tyes:
-The objects with their operations is type. values and operations on those values are data types.
-ADT. Where implemenation is not mentioend. 
-Stack, Queue, Circuar queue, Priority queue, graph. min-max-heap, heap, hash map, hash table, hash set, dict, dynamic array.
-
-Note: (afer list is discussed in RAM)
-In general purpose computers, where, you have memroy limited and more than one DS lives in the memory (more thatn one problem may be solved).
-So, probmising a contilous blocks is little tricky. So, we mention maximum size we want, so that only that much is allocted for us.
-
-
-# DS in programming languages
-
-many high level programm alngauges are providing lot of datastructures as buildtin. For example in pytion, js, we dont need to implement ds. For jaba and C+= u get eveuting in stadn librau.
-these lnagues are moreinteresting as to how they define the builtin types. for example pyton has dict, list as builtin tpes.  these are very generic dta strucres though.
-any tupe of data can be stored, even then we get the enefit of ds.
-
-list is dynamic array. used talble doubling to achive this. the idea of containers. the container that can grow/ adjust its size by not wasting lot of memroty but giving consstan accessing. is a adt. use this
-
-talk about python modle of copuation. why some operations are standard. Ram is the baisc model of commputaoin . pytohng omdel of computaton. what operation take less time.
-and what not.
-
-Eric lecture on models of computation.
-
 
 
 If we wan to insert new object, we need to find a place for it, if we wan to delete/update we first need to find it.
@@ -270,10 +277,6 @@ The structre (how do we traverse or relation among elements) governs the way
 
 Importance of find/search operation:
 find/search is so importatnt. it is prerequisite to other operations. For eaxmple, to insert in a position
-
-
-
-
 
 
 Computer takes certain amount of time to do an operation on the data. 
