@@ -7,6 +7,23 @@ tags: ["execution-models"]
 author: "Sai Kiran"
 ---
 
+# Motivation (why DS and Algo)
+
+Computers are ubiquitous. For many people they are already integral part of daily life. (As a programmer,) our goal should be to get most out of the computer (i.e, hardware.) (hardware is made from resources) .Through good software we can do that. very Carefully crafted software utilizes the resources to optimum. As computers lack intelligence(dumb), they must be precisely instruted. So, we write down an algorithm for them to execute. The important thing to note here is that for producing an algirthm, we've to do the thinking, we've to first solve the problem ourselves. Once we've the solution ready, we write down an algorithm. For producing algorithms a good understanding how computers wrok, is also necessary.
+
+There are problems that demand certain operations on data(collection of primitive or user-defined objects). Those operations may include searching for an object in the data, adding an object to and deleting an object from the data with other problem specific queries on the data. To accommodate these operations effectively, we choose a suitable data structure. For this we study various existing data structures and should be able to create data structure that satisfeid our requirement. As these operations of the data affects the overall performace of the algorithm
+
+(Some problems are about working with data(collection of primitive or user-defined types) rather Some solutions, rather than being a  computation As part of our solution, we may have to store the data and perform such operations as: store more elements, delete elements, update existing elements and more importantly find required element. (For example, while working on a solution for token allocatoin system  and CRUD operations on the data improvise?). As these operations on data affects the overal effectiveness of an algorithm, we always ensure those operations are effective by picking suitable data structure. Solutions that just need numerical computation may not any data structure. Calculating GCD, Prime number checking etc. are some examples to give an idea.)
+
+Now with this motivation let us explore..
+
+
+# RAM model of computation
+probles have many solutions, pick best one.
+
+
+
+
 We use computers to offload our work. Computers are dumb. They must be instructed precisely. When we understand how computers work always make us a better programmer. Now computers are ubiquitous, we've already built great solutions to our tasks. As physically computers are ubiquitous, the software that is solves our tasks and complex software systems that aids the programmers and makes best out of computers is invisible. Through software we either make the best out of the physical computer or the worst out of it. These days we rarely program or instrcut the actual physical computer which is really a tough job. We've built complex software systems -- compilers, interpreters, operating systems, VMS, IDEs that makes our job or programming easier. We program those software systems which intern program other software systems or the actual computers. But at the end, we've to do the thinking, we've to solve the problem. Once we've the solution ready, we tell it computer. Computers good at precisely doing what's beeing told, nothing more. We not only think to solve the problem. We should ensure that our solution on a computer effectively uses the resources. Make most of the computer.
 
 So, algorithm is a written solution for computer. If our solution needs storing and retriving data as well then we use data structures so that storing and retriving is done effectively (there by boosing our solution). (some algo may not need DS).
