@@ -7,7 +7,7 @@ tags: ["data-structures, algorithms"]
 author: "Sai Kiran"
 ---
 
-# Motivation (why DS and Algo)
+# Motivation (why DS and Algorithms)
 
 Computers are ubiquitous. They help us solving so many problems and for many people they are already integral part of daily life. We expect them to be fast and effectivelu utilize computer hardware. We can achieve these goals through carefully crafted software.
 
@@ -22,7 +22,7 @@ We can produce many solutions to a problem, but we want the best of those: in te
 RAM is a simpliefied computer: it has single procesor, no cache, each basic instruction take constant time.
 Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
 
-But I'm also listing provoerties here:
+But I'm also listing properties here:
 
 - Each simple operation (+, *, -, =, if, call) takes exactly 1 time step.
 - Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
@@ -33,13 +33,19 @@ We analyse the properties of various algorithms(Remember, algorithms includes da
 
 We formulate the properties(for ex: run-time, memory utilization) of all algorithms for the problem interms of no. of constant-time(low-level) operations. Properties of RAM model guides the formulation.
 
+TODO: worst-case, average-case and best case analysis
+
 ## Asymptotic analysis
 As computers are running steps of complex solutions(which operates of large amounts of data), we use asymptotic analysis to compare the algorithms. The output of this analysis will be the algorithm that performs relatively better for problem instaces where the input data is very large. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
 
-Refer: https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
+Refer: [Big-O Notation](https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm)
 
 # Data structures
 Solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
+
+The RAM memory is a gaint array of memory locations which can be randomly accessed(More info?). 
+
+## Fundamental ways to organize data in memory
 
 Fundamentally we can store the data contigously (as an array of objects) or non-contigous/linked (linked objects).
 
@@ -48,19 +54,89 @@ As the objects stored as an array are stored contigously, randomly accessing an 
 
 In an array, objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
 
-### Linked List:
-But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached.
+### Linked objects:
+But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached. Eamples: Single linked list, double-linked list.
 
-These two are very fundamental options we have. Array can also be two-dimensional.
-(Also in real computers, duroimng the executoin the data can be stored in call-stack or freestore/heap memory)
+Where do we place the data structure: either stack area or heap area depends on the life time of the data(function scope or program scope) and the size of data as well(stack will be limited).
 
-How we can fasten our data structures?
-### imporatnace of relations
+## Imporatnace of relations
 Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (consider we do this opeartion very often)But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value -- an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of Height Balanced Binary Search Trees, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree. 
 
 I would highly recommend watching [Sean Parent "Better Code: Data Structures"](https://www.youtube.com/watch?v=sWgDk-o-6ZE), which helped me concretise this.
 
 Hashing is where we bring correlation between representaton of object and its location. (Describe)
+
+TODO: Try to give more examples.
+
+# Abstract data tyes:
+In the course of problem solving, we first need to decide the operations on objects. Then we try to implement a data structure that supports those operations with a reasonable amount of complexity. So, we define the operations on the objects that theoretical definition is called ADT. This is data type is abstract because we didn't yet implement this. _This definition helps to look for various implementaions and pick the best one_.
+Some common ADTs that may be incorporated into the solution are Stack, Queue, Circuar queue, Priority queue, graph, min-max-heap, hash map, hash table, hash set, dict, dynamic array. Rarely you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implementions that suits your need.
+Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
+
+Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
+
+`list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33), so that it can have fast insert and delete operations on both the sides. And, `Deque` can be used as a Circular Queue aswell.
+
+Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
+
+Trees can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list (array of pointers? to array)
+
+Variable sized array can be implemented with linked objects aswell.
+
+Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
+
+TODO: give more examples
+
+## Data structuers in programming lanauges
+Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. C++ and Java have a library. Understand memory model of each language. 
+
+TODO: more in this section?
+
+# Algorithms
+TODO: update this section
+
+General problem solving techniques:
+- Divide and conquer
+- Greedy
+- Dynamic programming
+- etc
+- Explain the relation among those.
+
+Give reference to examples of these:
+- Recursion
+- Back tracking 
+- Search algorithms
+- Sort algorithms
+- Graph algorithms
+  - Exploration algorithms
+    - BFS, DFS
+  - Shortest path algorithms (generic cases to specific cases (positive weighted, negative weighted, negative weighted with cycles))
+  - [Union-find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) and Hacker rank union-find
+  - Famous problems (TSP, Knapsack)
+
+Talk about these terms:
+- Invariant
+- Correctness
+- Reductions
+
+## Computablility
+Introduce Computatability of problem, NP-Completeness?
+
+# References:
+## Videos
+1. Must watch course: [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+
+## Text
+1. CLRS
+2. Algorithm Design Manual
+
+# Further Reading:
+TODO: Update
+
+<!---
+==========================================================
+EDITING NOTES:
+
 
 (Should we mention that the number of basic operatons will be propotional to the real time, hence we need to minimize the memroy access/ or operations)
 
@@ -72,29 +148,6 @@ Essentially you would learn as many DS as possible, and keep them in your toolbo
 
 Picture of toolbox and understanding of data. Would give better DS understanding.)
 
-
-# Abstract Data tyes:
-In the course of problem solving, we first need to decide the operations on objects. Then we try to implement a data structure that supports those operations with a reasonable amount of complexity. SO, we define the operations on the objects that theoretical definition is called ADT. This is data type is abstract because we didn't yet implement this. This definition helps to look for various implementaions and pick the best one.
-Some common ADTs that may be incorporated into the solution are Stack, Queue, Circuar queue, Priority queue, graph, min-max-heap, hash map, hash table, hash set, dict, dynamic array. Rarely you'll have to implement you ADT yourself, because the implementation is not availble for you or if it avialable it may not be suitable for your usecase.
-Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth looking at the actual implementation if you've not implemented it.
-
-Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
-
-`list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33), so that it can have fast insert and delete operations on both the sides. And, `Deque` can be used as a Circular Queue aswell.
-
-Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
-
-# DS in programming languages
-
-many high level programm alngauges are providing lot of datastructures as buildtin. For example in pytion, js, we dont need to implement ds. For jaba and C+= u get eveuting in stadn librau.
-these lnagues are moreinteresting as to how they define the builtin types. for example pyton has dict, list as builtin tpes.  these are very generic dta strucres though.
-any tupe of data can be stored, even then we get the enefit of ds.
-
-
-
-
-==========================================================
-ROUGH NOTES:
 
 
 # Introduction
@@ -397,3 +450,4 @@ And we are also intersted in the runtime when the input is very large, we call t
 So, we produce worst-case running-time function, best-case running-time funciton and average-case running time function after the analysis. Thought most of the time we are interested in worst-case running-time function.
 As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
 For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.]
+-->
