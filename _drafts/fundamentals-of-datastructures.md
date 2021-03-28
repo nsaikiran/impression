@@ -1,83 +1,25 @@
 ---
 layout: plain
-title:  "**Fundamentals of datastructures"
+title:  "**Fundamentals of datastructures and algorithms"
 description: "fundamentals of data strucures"
 categories: ["cs"]
-tags: ["execution-models"]
+tags: ["data-structures, algorithms"]
 author: "Sai Kiran"
 ---
 
 # Motivation (why DS and Algo)
 
-Computers are ubiquitous. For many people they are already integral part of daily life. (As a programmer,) our goal should be to get most out of the computer (i.e, hardware.) (hardware is made from resources) .Through good software we can do that. very Carefully crafted software utilizes the resources to optimum. As computers lack intelligence(dumb), they must be precisely instruted. So, we write down an algorithm for them to execute. The important thing to note here is that for producing an algirthm, we've to do the thinking, we've to first solve the problem ourselves. Once we've the solution ready, we write down an algorithm. For producing algorithms a good understanding how computers wrok, is also necessary.
+Computers are ubiquitous. They help us solving so many problems and for many people they are already integral part of daily life. We expect them to be fast and effectivelu utilize computer hardware. We can achieve these goals through carefully crafted software.
 
-There are problems that demand certain operations on data(collection of primitive or user-defined objects). Those operations may include searching for an object in the data, adding an object to and deleting an object from the data with other problem specific queries on the data. To accommodate these operations effectively, we choose a suitable data structure. For this we study various existing data structures and should be able to create data structure that satisfeid our requirement. As these operations of the data affects the overall performace of the algorithm
+Computers are dumb. They are capable of only following instructions precisely and storing data. They don't actually solve the problems, we have the solve the problem and provide them with steps of solution. Those steps of solutions are algoritms. For producing algorithms a good understanding how computers wrok, is also necessary.
 
-(Some problems are about working with data(collection of primitive or user-defined types) rather Some solutions, rather than being a  computation As part of our solution, we may have to store the data and perform such operations as: store more elements, delete elements, update existing elements and more importantly find required element. (For example, while working on a solution for token allocatoin system  and CRUD operations on the data improvise?). As these operations on data affects the overal effectiveness of an algorithm, we always ensure those operations are effective by picking suitable data structure. Solutions that just need numerical computation may not any data structure. Calculating GCD, Prime number checking etc. are some examples to give an idea.)
+Computers have memory to store instructions and data(collection of primitive or user-defined objects). Our solutions needs data and various operations on data (add more objects, delete objects, updating objects and more importantly searching for an object). Remember, computers just stores the data we've to understand how computers work, solve those operations ourselves and include them in the algorithm. We use concept of data structures to produce solutions to required operations of data in the problem's context in a reasonable amount of time. Data structures are a part of the solution. Hence, the data structure we choose will eventually affect the properties of our solution(i.e, algorithm) such as time complexity and space complexity. 
 
-Now with this motivation let us explore..
+We can produce many solutions to a problem, but we want the best of those: in terms of various properties (such as runtime and memory consumption). To do that, we need to _compare_ those possible solutions. To simplify the analysis, to make a common ground for benchmarking we choose a theoritical computer, *the RAM model of computation*.
 
+# Random Access Machine
 
-# RAM model of computation
-probles have many solutions, pick best one.
-
-
-
-
-We use computers to offload our work. Computers are dumb. They must be instructed precisely. When we understand how computers work always make us a better programmer. Now computers are ubiquitous, we've already built great solutions to our tasks. As physically computers are ubiquitous, the software that is solves our tasks and complex software systems that aids the programmers and makes best out of computers is invisible. Through software we either make the best out of the physical computer or the worst out of it. These days we rarely program or instrcut the actual physical computer which is really a tough job. We've built complex software systems -- compilers, interpreters, operating systems, VMS, IDEs that makes our job or programming easier. We program those software systems which intern program other software systems or the actual computers. But at the end, we've to do the thinking, we've to solve the problem. Once we've the solution ready, we tell it computer. Computers good at precisely doing what's beeing told, nothing more. We not only think to solve the problem. We should ensure that our solution on a computer effectively uses the resources. Make most of the computer.
-
-So, algorithm is a written solution for computer. If our solution needs storing and retriving data as well then we use data structures so that storing and retriving is done effectively (there by boosing our solution). (some algo may not need DS).
-
-## Better solution
-We can produce many algorithms for the very same problem but we tend to choose the one that takes comparatively less resouses like time, memory etc. (With high data needs memory is also a constraint.).
-
-https://cs.lmu.edu/~ray/notes/algds/
-
-
-
--------------------
-We structure the data so that If our solution requires data related operations like storing, retrieving Most of the times algorithm the solution may work on the input data -- storing, retrive sometimes large amounts of data less Some algorithms are and data structures are the tools to reason about our solutions.  Some algorithms work
-
-
-  it would be easier to  various physical componentsIt is a good thing to understand various physical components of computer and the way these components are used to follow. 
-Importatnt ref: 
-
-----------------------
-
-Solving problems with computers involves manipulating data in memory
-If your problem requires to work on a group of objects.
-When your solution or algorithm involves data related operations
-Computers take time when we .
-We study data structures to understand how program execution time is affected by data structure used.
-The reason we strudy data strures is that program execution time is affected by the data structure used.
-The memory or main-memory is where computer stores data an important component of Computer. Data is fetched from and written to main-memory during execution. So, Data Structure is the way the data is 
-Computer store data in main-memory
-Data Structrus is the way we organize group of 
-
-To understand computers we need to understand the memory, an important component.
- under process. CPU fetches/store the data from/to memory as it works. So, obviously how fast we are able to fetch/store the data will affect the overall time to finish certain operation on the data. Hence, data structues is organizing the data in memory for efficient retrieval/storing.
-
-(Usually while solving problems we deal with data that is stored on memory. As part of our solution we will perform certain operations on data. How fast we finish those operations affects the time our solution take to finish. So, DS is aobut how we organize data such a way that desired opeations on the data is fast.)
-
-To better organize the data we need to understand how memory looks like, we may need to compare various data structures based on the constraints/requirements etc. 
-Memory is a gaint array of byes. 
-We compare various DS on the basis of time they take to finish certain operations. Because we always want to minimize the time taken.
-To compare various DS we need a theoretical computer, on which we calculate time each operation takes. 
-Why a theoritical omputer? Because we've computers with various hardware configuration like computers with more clock speed, more/less RAM, various levels of cache, these days we've multi-core processors. So, to simplify the analysis, to make a common ground for benchmarking we choose a theoritical model, RAM model of computation.
-So, with RAM model, we are avoiding the influence of hardware config on analysis. 
-
-Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time, which higly depends on Runtime of our solution depends on 
-
-Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time which highly depends on the algorithm and data structure used. Along with time we may also want to minimize the memory required, because general purpose computers have limited memory which may be shared among different processes(rewrite?).  Algorithms and data structures exists together. The time it takes to solve a problem is propotional to the no. of `physical operations` in the solution. Our goal is to reduce the no. of those physical operations. We produce various solutions to solve a particular problem. We finalize a solution which takes less time and utilize less memory. The solutions will be comprised of algorithms and data structures. To pick the best solution for a particular problem irrespective of hardware it is run on, we benchmark all solutions on a simplified, theoretical computer. It is RAM machine of computer
-
-But, we do not want to execute 
-Further reading: https://softwareengineering.stackexchange.com/questions/239045/what-is-the-relationship-between-data-structures-and-algorithms
-Fruther reading: https://www.unf.edu/~wkloster/3540/wiki_book.pdf
-Further reading: https://www.youtube.com/watch?v=V5he1JXiQbg
-Studying DS will be useful in efficient use of computer resources.
-# RAM
-
-simpliefied computer: single procesor, no cache, each basic insttuction take constant time.
+RAM is a simpliefied computer: it has single procesor, no cache, each basic instruction take constant time.
 Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
 
 But I'm also listing provoerties here:
@@ -86,46 +28,27 @@ But I'm also listing provoerties here:
 - Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
 - Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis. 
 
-
-# Accounting
 ## Accounting on RAM
-This accounting is same analysing run-time of the operations on a data structre and 
-we alwasy take a relative decision. As all analysis is based on RAM, so the decision always is a relative one. Our aim is to choose a relatively better Algo/DS so that it works better in any real computer. We choose an Algo/DS which is relatively better than the one we had. So, alwasys comeup with as mamay Also/DS as yo ucan and relatively choose whichever is better on RAM.
-For a particular DS/Algo, we generally need the time it takes to finish an operation and how much actual memory our DS takes (in reality memory is also a scarse resource like time) to compare it with other DS/Algo. So, as we are using RAM as our only computer on which we benchmark everything, the only factor that affects the runtime of algorithm is size of the datastruture/size of data incase of algorithms. For example, to fetch the last element on linked list with 10 elements will take us 10 memory accesse, if the size if 5 then 5. etc.
-So, the time complexity is functino of input.
-As algorithms and data structures exists together, we analyse algorithms in the samey way. 
+We analyse the properties of various algorithms(Remember, algorithms includes data structure used) of a single problem and compare them to pick relatively better algorithm.
 
-## asymptotic 
-As computers are operating more and more on large amounts of data we use what is called as asysmptocic analysis while comparing two algo/DS. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
+We formulate the properties(for ex: run-time, memory utilization) of all algorithms for the problem interms of no. of constant-time(low-level) operations. Properties of RAM model guides the formulation.
 
-(
-The running time is a function. It is a funciton of input.
-By choosing RAM model we've removed the machine specifics from the analysis (analysis to choose the best DS), this is the first major step in analysis.
-And we are also intersted in the runtime when the input is very large, we call this asymptotic analysis. Because it gives us the worst-case running time.
-So, we produce worst-case running-time function, best-case running-time funciton and average-case running time function after the analysis. Thought most of the time we are interested in worst-case running-time function.
-As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
-For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.
-Mention asysmptotic analysis and give links here.
-https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
+## Asymptotic analysis
+As computers are running steps of complex solutions(which operates of large amounts of data), we use asymptotic analysis to compare the algorithms. The output of this analysis will be the algorithm that performs relatively better for problem instaces where the input data is very large. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
 
-How are we gonna compare the data structures? by runn
-To do that we need a theoretical model
-)
+Refer: https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm
 
-## Operations of data
+# Data structures
+Solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
 
-## Organizing data on memory
+Fundamentally we can store the data contigously (as an array of objects) or non-contigous/linked (linked objects).
 
-As we have a way to analyse runtime for the operations we perform
-contigous or non-contigous/linked:
+### Array: 
+As the objects stored as an array are stored contigously, randomly accessing an object based on its index takes constant time. But insert/delete operations will take more work. We also need to know the no. of objects upfront to be able to allocate the required memory. 
 
-Array:
-[The RAM allows to us store the address of a locaton in a cell. Wi
-As we request memeory of a particular size, when we want memory for some number of objects. 
-We can request memroy that is sufficient for those objects.
-In an array objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
+In an array, objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
 
-Linked List:
+### Linked List:
 But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached.
 
 These two are very fundamental options we have. Array can also be two-dimensional.
@@ -397,3 +320,80 @@ How programming languages like python provies implementations to the datastructu
 
 Dynamic storage allocation: https://users.cs.northwestern.edu/~pdinda/ics-s05/doc/dsa.pdf
 
+
+
+================== for editing =================
+
+
+There are problems that demand certain operations on given data(collection of primitive or user-defined objects). Those operations may include searching for an object in the data, adding an object to and deleting an object from the data with other problem specific queries on the data. To accommodate these operations effectively, we choose a suitable data structure. For this we study various existing data structures and should be able to create data structure that satisfeid our requirement. As these operations of the data affects the overall performace of the algorithm
+
+(Some problems are about working with data(collection of primitive or user-defined types) rather Some solutions, rather than being a  computation As part of our solution, we may have to store the data and perform such operations as: store more elements, delete elements, update existing elements and more importantly find required element. (For example, while working on a solution for token allocatoin system  and CRUD operations on the data improvise?). As these operations on data affects the overal effectiveness of an algorithm, we always ensure those operations are effective by picking suitable data structure. Solutions that just need numerical computation may not any data structure. Calculating GCD, Prime number checking etc. are some examples to give an idea.)
+
+
+
+# RAM model of computation
+
+We use computers to offload our work. Computers are dumb. They must be instructed precisely. When we understand how computers work always make us a better programmer. Now computers are ubiquitous, we've already built great solutions to our tasks. As physically computers are ubiquitous, the software that is solves our tasks and complex software systems that aids the programmers and makes best out of computers is invisible. Through software we either make the best out of the physical computer or the worst out of it. These days we rarely program or instrcut the actual physical computer which is really a tough job. We've built complex software systems -- compilers, interpreters, operating systems, VMS, IDEs that makes our job or programming easier. We program those software systems which intern program other software systems or the actual computers. But at the end, we've to do the thinking, we've to solve the problem. Once we've the solution ready, we tell it computer. Computers good at precisely doing what's beeing told, nothing more. We not only think to solve the problem. We should ensure that our solution on a computer effectively uses the resources. Make most of the computer.
+
+So, algorithm is a written solution for computer. If our solution needs storing and retriving data as well then we use data structures so that storing and retriving is done effectively (there by boosing our solution). (some algo may not need DS).
+
+## Better solution
+We can produce many algorithms for the very same problem but we tend to choose the one that takes comparatively less resouses like time, memory etc. (With high data needs memory is also a constraint.).
+
+https://cs.lmu.edu/~ray/notes/algds/
+
+
+
+-------------------
+We structure the data so that If our solution requires data related operations like storing, retrieving Most of the times algorithm the solution may work on the input data -- storing, retrive sometimes large amounts of data less Some algorithms are and data structures are the tools to reason about our solutions.  Some algorithms work
+
+
+  it would be easier to  various physical componentsIt is a good thing to understand various physical components of computer and the way these components are used to follow. 
+Importatnt ref: 
+
+----------------------
+
+Solving problems with computers involves manipulating data in memory
+If your problem requires to work on a group of objects.
+When your solution or algorithm involves data related operations
+Computers take time when we .
+We study data structures to understand how program execution time is affected by data structure used.
+The reason we strudy data strures is that program execution time is affected by the data structure used.
+The memory or main-memory is where computer stores data an important component of Computer. Data is fetched from and written to main-memory during execution. So, Data Structure is the way the data is 
+Computer store data in main-memory
+Data Structrus is the way we organize group of 
+
+To understand computers we need to understand the memory, an important component.
+ under process. CPU fetches/store the data from/to memory as it works. So, obviously how fast we are able to fetch/store the data will affect the overall time to finish certain operation on the data. Hence, data structues is organizing the data in memory for efficient retrieval/storing.
+
+(Usually while solving problems we deal with data that is stored on memory. As part of our solution we will perform certain operations on data. How fast we finish those operations affects the time our solution take to finish. So, DS is aobut how we organize data such a way that desired opeations on the data is fast.)
+
+To better organize the data we need to understand how memory looks like, we may need to compare various data structures based on the constraints/requirements etc. 
+Memory is a gaint array of byes. 
+We compare various DS on the basis of time they take to finish certain operations. Because we always want to minimize the time taken.
+To compare various DS we need a theoretical computer, on which we calculate time each operation takes. 
+Why a theoritical omputer? Because we've computers with various hardware configuration like computers with more clock speed, more/less RAM, various levels of cache, these days we've multi-core processors. So, to simplify the analysis, to make a common ground for benchmarking we choose a theoritical model, RAM model of computation.
+So, with RAM model, we are avoiding the influence of hardware config on analysis. 
+
+Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time, which higly depends on Runtime of our solution depends on 
+
+Studying DS and Algo will be useful in efficient use of computer resources. Solving a problem with a computer takes time which highly depends on the algorithm and data structure used. Along with time we may also want to minimize the memory required, because general purpose computers have limited memory which may be shared among different processes(rewrite?).  Algorithms and data structures exists together. The time it takes to solve a problem is propotional to the no. of `physical operations` in the solution. Our goal is to reduce the no. of those physical operations. We produce various solutions to solve a particular problem. We finalize a solution which takes less time and utilize less memory. The solutions will be comprised of algorithms and data structures. To pick the best solution for a particular problem irrespective of hardware it is run on, we benchmark all solutions on a simplified, theoretical computer. It is RAM machine of computer
+
+But, we do not want to execute 
+Further reading: https://softwareengineering.stackexchange.com/questions/239045/what-is-the-relationship-between-data-structures-and-algorithms
+Fruther reading: https://www.unf.edu/~wkloster/3540/wiki_book.pdf
+Further reading: https://www.youtube.com/watch?v=V5he1JXiQbg
+Studying DS will be useful in efficient use of computer resources.
+
+
+RAM:
+
+[So, as we are using RAM as our only computer on which we benchmark everything, the only factor that affects the runtime of algorithm is size of the datastruture/size of data incase of algorithms. For example, to fetch the last element on linked list with 10 elements will take us 10 memory accesse, if the size if 5 then 5. etc.
+So, the time complexity is functino of input.]
+
+[The running time is a function. It is a funciton of input.
+By choosing RAM model we've removed the machine specifics from the analysis (analysis to choose the best DS), this is the first major step in analysis.
+And we are also intersted in the runtime when the input is very large, we call this asymptotic analysis. Because it gives us the worst-case running time.
+So, we produce worst-case running-time function, best-case running-time funciton and average-case running time function after the analysis. Thought most of the time we are interested in worst-case running-time function.
+As it is a theoretical model and we cover a problem not a specific instalce of the proglem. We mention time and space needed to finish operation in function of input. 
+For example accessing memory takes a unit time. If we needed to do 10 such operations to finish an operation. Genrelizing it makes O(n) - descibe it.]
