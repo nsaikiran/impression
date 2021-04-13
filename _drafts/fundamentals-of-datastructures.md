@@ -7,7 +7,9 @@ tags: ["data-structures, algorithms"]
 author: "Sai Kiran"
 ---
 
-# Motivation (why DS and Algorithms)
+# Fundamentals of datastructures and algorithms
+
+## Motivation (why DS and Algorithms)
 
 Computers are ubiquitous. They help us solving so many problems and for many people they are already integral part of daily life. We expect them to be fast and effectivelu utilize computer hardware. We can achieve these goals through carefully crafted software.
 
@@ -17,7 +19,7 @@ Computers have memory to store instructions and data(collection of primitive or 
 
 We can produce many solutions to a problem, but we want the best of those: in terms of various properties (such as runtime and memory consumption). To do that, we need to _compare_ those possible solutions. To simplify the analysis, to make a common ground for benchmarking we choose a theoritical computer, *the RAM model of computation*.
 
-# Random Access Machine
+## Random Access Machine
 
 RAM is a simpliefied computer: it has single procesor, no cache, each basic instruction take constant time.
 Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
@@ -28,38 +30,38 @@ But I'm also listing properties here:
 - Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
 - Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis. 
 
-## Accounting on RAM
+### Accounting on RAM
 We analyse the properties of various algorithms(Remember, algorithms includes data structure used) of a single problem and compare them to pick relatively better algorithm.
 
 We formulate the properties(for ex: run-time, memory utilization) of all algorithms for the problem interms of no. of constant-time(low-level) operations. Properties of RAM model guides the formulation.
 
 TODO: worst-case, average-case and best case analysis
 
-## Asymptotic analysis
+### Asymptotic analysis
 As computers are running steps of complex solutions(which operates of large amounts of data), we use asymptotic analysis to compare the algorithms. The output of this analysis will be the algorithm that performs relatively better for problem instaces where the input data is very large. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
 
 Refer: [Big-O Notation](https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm)
 
-# Data structures
+## Data structures
 Solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
 
 The RAM memory is a gaint array of memory locations which can be randomly accessed(More info?). 
 
-## Fundamental ways to organize data in memory
+### Fundamental ways to organize data in memory
 
 Fundamentally we can store the data contigously (as an array of objects) or non-contigous/linked (linked objects).
 
-### Array: 
+#### Array: 
 As the objects stored as an array are stored contigously, randomly accessing an object based on its index takes constant time. But insert/delete operations will take more work. We also need to know the no. of objects upfront to be able to allocate the required memory. 
 
 In an array, objects are stored contigously. As an array objects are of same type and are stored contigously, is very easy to index into an array -- you can always calculate the position of object if you know the index of the object in that array. But inserting into an array would be a costlier operation, because to make room for the extra object. Array is suitable if we the data is of fixed size known at the time of allocation and we perform indexing operation often.
 
-### Linked objects:
+#### Linked objects:
 But if we want to be able to insert/delete objects often or we don't know the size of data upfront. We can go for Linked objects, where objects are linked to each other. In this objects may not be stored contigously. As the physical location of the objects are not evident, we can't index into Linked objects as quickly we did in an array. Each object stores position of object(s) that can be reached. Eamples: Single linked list, double-linked list.
 
 Where do we place the data structure: either stack area or heap area depends on the life time of the data(function scope or program scope) and the size of data as well(stack will be limited).
 
-## Imporatnace of relations
+### Imporatnace of relations
 Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (consider we do this opeartion very often)But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value -- an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of Height Balanced Binary Search Trees, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree. 
 
 I would highly recommend watching [Sean Parent "Better Code: Data Structures"](https://www.youtube.com/watch?v=sWgDk-o-6ZE), which helped me concretise this.
@@ -68,7 +70,7 @@ Hashing is where we bring correlation between representaton of object and its lo
 
 TODO: Try to give more examples.
 
-# Abstract data tyes:
+## Abstract data tyes:
 In the course of problem solving, we first need to decide the operations on objects. Then we try to implement a data structure that supports those operations with a reasonable amount of complexity. So, we define the operations on the objects that theoretical definition is called ADT. This is data type is abstract because we didn't yet implement this. _This definition helps to look for various implementaions and pick the best one_.
 Some common ADTs that may be incorporated into the solution are Stack, Queue, Circuar queue, Priority queue, graph, min-max-heap, hash map, hash table, hash set, dict, dynamic array. Rarely you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implementions that suits your need.
 Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
@@ -87,12 +89,39 @@ Explore trees: Height balanced binary search trees(AVL or Red black trees), B-tr
 
 TODO: give more examples
 
-## Data structuers in programming lanauges
+### Data structuers in programming lanauges
 Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. C++ and Java have a library. Understand memory model of each language. 
 
 TODO: more in this section?
 
-# Algorithms
+## Algorithms
+As discussed, for producing algorithms for computers, we need good understanding on how computers work. Algorithm must be correct, and we should be able to check/prove the correctness before using it(For all problem instances it should produce correct result). Out of all correct algorithms (candidate algorithms), we pick the optimal one(in our context). So, we should always focus on producing correct algorithms, and then we can think about optimations.
+
+Refer Chapter 1.1 of CLRS. (CLRS 3rd Ed)
+
+Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
+
+Understanding problem and the input data verywell can help producing contextually proper
+### Various common problems and algorithms:
+
+#### Searching problems:
+- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted.
+
+#### Sorting problems:
+- Insertion sort: in-place, optimal for almost sorted data. Anyother properties of data are unknown, then suitable for small number of data items.
+- Quick sort: D&C
+- Merge sort: D&C
+- Heap sort: 
+- Counting/bucket sort: Linear time sorting, data assumptions
+- Lower bounds for searching or sorting.
+
+### Graph algorithms
+
+<!---
+problem, problem instance, solutions, candidate solution
+Algorithm (for computer) is the steps of solution that a computer can perform. We can produce many *correct* algorithms for a problem, we call them *candidate algorithms*. And we pick one of those *candidate algorithms* that takes less time to produce result and(or or both) consumes less memory. 
+-->
+
 TODO: update this section
 
 General problem solving techniques:
@@ -119,18 +148,18 @@ Talk about these terms:
 - Correctness
 - Reductions
 
-## Computablility
+### Computablility
 Introduce Computatability of problem, NP-Completeness?
 
-# References:
-## Videos
+## References:
+### Videos
 1. Must watch course: [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-## Text
+### Text
 1. CLRS
 2. Algorithm Design Manual
 
-# Further Reading:
+## Further Reading:
 TODO: Update
 
 <!---
