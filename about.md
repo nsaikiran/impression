@@ -8,4 +8,4 @@ title: About
 ##### Software craftsman. Artist. Writer. Photographer.
 
 Systems Programming, Programming Languages and Software Architecture Enthusiast.
-Currently, software developer at [ThoughtWorks](https://www.thoughtworks.com).
+Currently, software developer at [Adobe](https://www.adobe.com/), previously at [ThoughtWorks](https://www.thoughtworks.com).
