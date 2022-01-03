@@ -1,13 +1,11 @@
 ---
-layout: plain
+layout: post
 title:  "**Notes on datastructures and algorithms"
 description: "My notes on fundamentals of data strucures and algorithms"
 categories: ["cs"]
 tags: ["data-structures", "algorithms", "data structure"]
 author: "Sai Kiran"
 ---
-
-# Notes on datastructures and algorithms
 
 ## Motivation (why DS and Algorithms)
 <!-- Rename the heading -->
@@ -108,6 +106,7 @@ Refer Chapter 1.1 of CLRS. (CLRS 3rd Ed)
 Some important points:
 - Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
 - Understanding the problem context and the input data very well can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
+
 <!-- Give more exmaples for context based best things -->
 ### Various common problems and solutions/algorithms:
 Some well-known problems and their solutions are listed here.
