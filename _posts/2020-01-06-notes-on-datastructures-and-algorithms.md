@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on datastructures and algorithms"
+title:  "Notes on data structures and algorithms"
 description: "My notes on fundamentals of data strucures and algorithms"
 categories: ["cs"]
 tags: ["data-structures", "algorithms", "data structure"]
