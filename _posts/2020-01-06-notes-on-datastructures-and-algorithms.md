@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "**Notes on datastructures and algorithms"
+title:  "Notes on datastructures and algorithms"
 description: "My notes on fundamentals of data strucures and algorithms"
 categories: ["cs"]
 tags: ["data-structures", "algorithms", "data structure"]
 author: "Sai Kiran"
 ---
 
-## Motivation (why DS and Algorithms)
-<!-- Rename the heading -->
+## Motivation 
+<!-- (why DS and Algorithms) Rename this?-->
 Computers are ubiquitous. They help us solving so many problems and for many people they are already integral part of daily life. We expect them to be fast and use hardware resources effectively. We can achieve these goals through carefully crafted software.
 
 Computers are dumb and they have only two fundamental capabilities: following instructions precisely and storing data. They don't actually solve the problems, we have to  solve the problem and provide them with steps of solution. Those steps of solution is called an algoritm. As the algorithm is written for computer, we should have a good understanding of how computers work.
