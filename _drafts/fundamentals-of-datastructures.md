@@ -49,9 +49,7 @@ The analysis made for large inputs might not be suitable for small inputs (For e
 Refer: [Big-O Notation](https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm)
 
 ## Data structures
-As discussed, solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
-
-The memory of RAM, is a gaint array of memory locations which can be _randomly_ accessed. We store/organize the data in it and operate.
+As discussed, solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures. The memory of RAM, is a gaint array of memory locations which can be _randomly_ accessed. We store/organize the data in it and operate.
 <!-- (More info?).  -->
 
 ### Fundamental ways to organize data in memory
@@ -79,26 +77,25 @@ Another example is _Hashing_: where we bring correlation between representaton o
 TODO: Try to give more examples.
 
 ## Abstract data tyes:
-In the course of problem solving, we first need to decide the operations on objects. Then we try to implement a data structure that supports those operations with a reasonable amount of complexity. So, we define the operations on the objects that theoretical definition is called ADT. This is data type is abstract because we didn't yet implement this. _This definition helps to look for various implementaions and pick the best one_.
-Some common ADTs that may be incorporated into the solution are Dynamic array, Stack, Queue, Circuar queue, Priority queue, Graph, Min-Max-heap, Hash map, Hash table, Hash set and Dictionary etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implementions that suits your need.
+For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
+Some common ADTs that may be incorporated into the solution are Dynamic array, Stack, Queue, Circuar queue, Priority queue, Graph, Min-Max-heap, Hash map, Hash table, Hash set and Dictionary etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
 Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
 
 Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
 
-`list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33), so that it can have fast insert and delete operations on both the sides. And, `Deque` can be used as a Circular Queue aswell.
+`list` is an example of dynamic array or variable sized array. Variable sized array can be implemented as linked objects as well as contigously stored objects.  If indexing operation is required then Variable sized array should be implemented with contigously stored objects.  But it is little tricky to implement Variable sized array with contigously stored objects. In [this lecture](https://www.youtube.com/watch?v=BRO7mVIFt08) Prof. Erik Demaine explains implementing Variable sized array as contigously stored objects using Table Doubling. [Python's `list` data type is backed by table doubling implementation](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) where as [`Deque` is implemented as double-linked data objects](https://github.com/python/cpython/blob/v3.8.1/Modules/_collectionsmodule.c#L33). Both can grow to variable length, but Deque can do insert and delete operations on both the sides effectively. And, `Deque` can be used as a Circular Queue aswell.
 
 Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
 
-Trees can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list (array of pointers? to array)
-
-Variable sized array can be implemented with linked objects aswell.
+Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list 
+<!-- (array of pointers? to array) -->
 
 Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
 
 TODO: give more examples
 
 ### Data structuers in programming lanauges
-Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. C++ and Java have a library. Understand memory model of each language. 
+Many high level programming lanauges provide abstract data types built-in and other will have a library where we can pick up. For ex: Python, Javascript have common ADTs as built-in. For C++ and Java, you can use from their standard library. Maybe try to Understand the _memory model_ of each the language you are using. 
 
 TODO: more in this section?
 
@@ -109,7 +106,8 @@ Refer Chapter 1.1 of CLRS. (CLRS 3rd Ed)
 
 Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
 
-Understanding problem and the input data verywell can help producing contextually proper
+Understanding problem and the input data verywell can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
+<!-- Give more exmaples for context based best things -->
 ### Various common problems and algorithms:
 
 #### Searching problems:
