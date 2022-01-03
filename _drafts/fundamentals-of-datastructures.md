@@ -1,13 +1,13 @@
 ---
 layout: plain
-title:  "**Fundamentals of datastructures and algorithms"
-description: "fundamentals of data strucures"
+title:  "**Notes on datastructures and algorithms"
+description: "My notes on fundamentals of data strucures and algorithms"
 categories: ["cs"]
-tags: ["data-structures, algorithms"]
+tags: ["data-structures, algorithms, "data structure"]
 author: "Sai Kiran"
 ---
 
-# Fundamentals of datastructures and algorithms
+# Notes on datastructures and algorithms
 
 ## Motivation (why DS and Algorithms)
 <!-- Rename the heading -->
@@ -100,21 +100,23 @@ Many high level programming lanauges provide abstract data types built-in and ot
 TODO: more in this section?
 
 ## Algorithms
-As discussed, for producing algorithms for computers, we need good understanding on how computers work. Algorithm must be correct, and we should be able to check/prove the correctness before using it(For all problem instances it should produce correct result). Out of all correct algorithms (candidate algorithms), we pick the optimal one(in our context). So, we should always focus on producing correct algorithms, and then we can think about optimations.
+As discussed, for producing algorithms for computers, we need good understanding on how computers work. Algorithm must be correct, and we should be able to check/prove the correctness before using it(For all problem instances it should produce correct result). There are techniques to prove that given algorithm is correct. Out of all correct algorithms (candidate algorithms), we pick the optimal one(in our context). So, we should always focus on producing correct algorithms, and then we can think about optimations.
 
 Refer Chapter 1.1 of CLRS. (CLRS 3rd Ed)
+<!-- what to check in this chapter -->
 
-Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
-
-Understanding problem and the input data verywell can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
+Some important points:
+- Understanding *recursion* is important, because for reusing/parameterizing the code, we break the code in functions. *Recursion* is very useful in breaking down the problems into smaller problems of easy analysis. 
+- Understanding the problem context and the input data very well can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
 <!-- Give more exmaples for context based best things -->
-### Various common problems and algorithms:
+### Various common problems and solutions/algorithms:
+Some well-known problems and their solutions are listed here.
 
 #### Searching problems:
 - [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted.
 
 #### Sorting problems:
-- Insertion sort: in-place, optimal for almost sorted data. Anyother properties of data are unknown, then suitable for small number of data items.
+- Insertion sort: in-place, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
 - Quick sort: D&C
 - Merge sort: D&C
 - Heap sort: 
@@ -161,7 +163,7 @@ Introduce Computatability of problem, NP-Completeness?
 ### Videos
 1. Must watch course: [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-### Text
+### Textbooks
 1. CLRS
 2. Algorithm Design Manual
 
