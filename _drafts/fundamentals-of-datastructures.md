@@ -3,7 +3,7 @@ layout: plain
 title:  "**Notes on datastructures and algorithms"
 description: "My notes on fundamentals of data strucures and algorithms"
 categories: ["cs"]
-tags: ["data-structures, algorithms, "data structure"]
+tags: ["data-structures", "algorithms", "data structure"]
 author: "Sai Kiran"
 ---
 
@@ -161,7 +161,7 @@ Introduce Computatability of problem, NP-Completeness?
 
 ## References:
 ### Videos
-1. Must watch course: [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+1. [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
 ### Textbooks
 1. CLRS
