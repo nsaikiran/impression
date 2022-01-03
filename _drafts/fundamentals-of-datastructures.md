@@ -31,27 +31,28 @@ RAM is a simpliefied computer: it has single procesor, no cache, each basic inst
 Get to know more about RAM [here](https://www8.cs.umu.se/kurser/TDBA77/VT06/algorithms/BOOK/BOOK/NODE12.HTM#SECTION02131000000000000000) and [here](https://www.cse.cuhk.edu.hk/~taoyf/course/comp3506/lec/ram.pdf).
 
 But I'm also listing properties here:
-
 - Each simple operation (+, *, -, =, if, call) takes exactly 1 time step.
-- Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for ``sort'' to be asingle-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogramdepends upon the number of loop iterations or the specific nature of the subprogram.  
+- Loops and subroutines are not considered simple operations. Instead, they are the composition of many single-step operations. It makes no sense for _sort_ to be a single-step operation, since sorting 1,000,000 items will take much longer than sorting 10 items. The time it takes to run through a loop or execute a subprogram depends upon the number of loop iterations or the specific nature of the subprogram.  
 - Each memory access takes exactly one time step, and we have as much memory as we need. The RAM model takes no notice of whether an item is in cache or on the disk, which simplifies the analysis. 
 
 ### Accounting on RAM
-We analyse the properties of various algorithms(Remember, algorithms includes data structure used) of a single problem and compare them to pick relatively better algorithm.
+We calculate time and space complexity of various algorithms for a problem and compare them to pick a _relatively better_ algorithm. Those calculations are formulated interms of number of constant-time(low-level) operations needed on RAM(for some amount of data).
 
-We formulate the properties(for ex: run-time, memory utilization) of all algorithms for the problem interms of no. of constant-time(low-level) operations. Properties of RAM model guides the formulation.
-
-TODO: worst-case, average-case and best case analysis
+TODO: worst-case, average-case and best case analysis somewhere
 
 ### Asymptotic analysis
-As computers are running steps of complex solutions(which operates of large amounts of data), we use asymptotic analysis to compare the algorithms. The output of this analysis will be the algorithm that performs relatively better for problem instaces where the input data is very large. So, after formulating the the time compleity, we then simplify it assuming that the input is very large, (close to infy). This will further simplify our analysis. The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort.).
+Sometimes we are interested in solving the problem assuming that we are working on _large amount of input data_, because these days computers are operating on huge volumes of data.
+If that is the case, we use _asymptotic analysis_ to simplify the complexity calculation of an algorithm. Once we've formulated the complexities, as part of _asymptotic analysis_ we simplify the formulation assuming that the input is very large, i.e. close to infinify. With this, our process of selecting a relatively better algorithm will be easier.
+
+The analysis made for large inputs might not be suitable for small inputs (For ex: the insertion sort is better for small inputs than merge sort which asymptoticallly better than insertion sort).
 
 Refer: [Big-O Notation](https://www.cs.cmu.edu/~clo/www/CMU/DataStructures/Lessons//lesson9_1.htm)
 
 ## Data structures
-Solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
+As discussed, solutions that just need numerical computation may not any data structure per se. For example, calculating GCD, Check if given number is prime number or not? etc. But many other solutions do need data structures.
 
-The RAM memory is a gaint array of memory locations which can be randomly accessed(More info?). 
+The memory of RAM, is a gaint array of memory locations which can be _randomly_ accessed. We store/organize the data in it and operate.
+<!-- (More info?).  -->
 
 ### Fundamental ways to organize data in memory
 
