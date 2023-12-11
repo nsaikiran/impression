@@ -3,6 +3,7 @@ layout: post
 title:  "Store weak pointer to self"
 description: "weak pointer to self: c++ smart pointer"
 categories: ["c++"]
+date: 11-12-2023
 author: "Sai Kiran"
 ---
 

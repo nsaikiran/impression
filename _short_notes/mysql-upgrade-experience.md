@@ -3,6 +3,7 @@ layout: post
 title:  "Upgrade MySQL from 5.7 to 8.34"
 description: "A method to release the source code"
 categories: ["release-technique"]
+date: 11-12-2023
 author: "Sai Kiran"
 ---
 We use MySQL RDS for one of our services. When we wanted to purchase reserved instances to reduce the expenses. We needed to upgrade the MySQL RDS instance type and MySQL engine version.

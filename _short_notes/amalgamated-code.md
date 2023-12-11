@@ -3,6 +3,7 @@ layout: post
 title:  "Amalgamated code"
 description: "A method to release the source code"
 categories: ["release-technique"]
+date: 11-12-2023
 author: "Sai Kiran"
 ---
 

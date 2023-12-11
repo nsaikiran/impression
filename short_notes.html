@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: short-notes
+---
+<section>
+    <ul class="post-list">
+        {% for post in site.short_notes %}
+        <li>
+            <a class="post-item" href="{{ post.url | relative_url }}">
+                <div class="post-title">{{ post.title | append: "*" }}</div>
+                <div class="post-date">{{ post.date | date: "%d %B, %Y" }}</div>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
