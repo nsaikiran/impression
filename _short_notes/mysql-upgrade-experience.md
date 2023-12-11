@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Upgrade MySQL from 5.7 to 8.34"
-description: "A method to release the source code"
+title:  "Upgrade MySQL from 5.7.38 to 8.0.34"
+description: "MySQL upgrade experience"
 categories: ["release-technique"]
 date: 11-12-2023
 author: "Sai Kiran"
