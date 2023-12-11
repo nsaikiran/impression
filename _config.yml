@@ -34,7 +34,7 @@ collections:
   drafts:
     output: true
     permalink: /:collection/:name
-  short_notes:
+  short-notes:
     output: true
     permalink: /:collection/:name
 
