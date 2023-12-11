@@ -34,9 +34,9 @@ collections:
   drafts:
     output: true
     permalink: /:collection/:name
-  short-notes:
+  short_notes:
     output: true
-    permalink: /:collection/:name
+    permalink: /short-notes/:name
 
 
 google_analytics_id: UA-89879231-1
