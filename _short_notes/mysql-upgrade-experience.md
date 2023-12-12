@@ -20,7 +20,7 @@ In our case, the as the column type of source DB is different from that of the n
 For validation of the setup before switching over to new instance:
 1. We've created data in production database via the app service calls and queried the same id in the new instance, to confirm the data is getting replicated.
 2. We also wanted to validate whether the row count of all tables matches in both instances. [The row count available as part of the information schema table is not reliable.](https://dev.mysql.com/doc/mysql-infoschema-excerpt/5.7/en/information-schema-tables-table.html), and we felt running the count(*) command takes time and slows down the prodction database (we could get the number of rows in the new instance because long running queries in this instance won't impact production traffic).
-3. Then I thought, we could get the number of rows in the new instance before switchover and after the switch over we can get the row count of the old instance (as the traffic is directed to new instance now). We didn't do this, but this could one less disruptive way.
+3. Then I thought, we could get the number of rows in the new instance before switchover and after the switch over we can get the row count of the old instance (as the traffic is directed to new instance now). We didn't do this, but this could one less disruptive way to validate number of rows.
 
 Learnings:
 
