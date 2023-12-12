@@ -17,7 +17,13 @@ For execution, we wanted to use Amazon RDS blue-green deployments.
 This method creates a clone of the database and configures it as a read-replica, with this, we can create our new MySQL server with desirable configuration (like upgraded instance type, upgraded mysql engine) and do the required changes to schema, while data-wise, both old and new instances are in sync. As we do changes to the schema, [we needed to do the "replication compatible changes" or tell how mysql can do the replication if it can't proceed with replication.](https://dev.mysql.com/doc/mysql-replication-excerpt/5.7/en/replication-features-different-data-types.html)
 In our case, the as the column type of source DB is different from that of the new database (old database has utf8mb3 column type and for new one, we've changed it to utf8mb4), hence, we needed configure [sysvar_slave_type_conversions](https://dev.mysql.com/doc/refman/8.0/en/replication-options-replica.html#sysvar_slave_type_conversions) system variable with [ALL_NO_LOSSY](https://dev.mysql.com/doc/mysql-replication-excerpt/5.7/en/replication-features-different-data-types.html) value. This setting lets us proceed with replication without data loss.
 
+For validation of the setup before switching over to new instance:
+1. We've created data in production database via the app service calls and queried the same id in the new instance, to confirm the data is getting replicated.
+2. We also wanted to validate whether the row count of all tables matches in both instances. [The row count available as part of the information schema table is not reliable.](https://dev.mysql.com/doc/mysql-infoschema-excerpt/5.7/en/information-schema-tables-table.html), and we felt running the count(*) command takes time and slows down the prodction database (we could get the number of rows in the new instance because long running queries in this instance won't impact production traffic).
+3. Then I thought, we could get the number of rows in the new instance before switchover and after the switch over we can get the row count of the old instance (as the traffic is directed to new instance now). We didn't do this, but this could one less disruptive way.
+
 Learnings:
+
 1. Character set, collation of columns of CHAR/VARCHAR type and how to pick relevant charset and collation for our use case.
 2. Amazon RDS blue-green deployments.
 3. Parameters groups of AWS (system variables of MySQL). For ex: read_only=true, if instance is read-only.
