@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "1 month pics"
+title:  "Baby pics"
 description: "baby photos"
 categories: ["personal"]
 tags: ["personal"]
