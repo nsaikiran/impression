@@ -19,6 +19,9 @@ There are differences between those. Each one has its own pros and cons. We need
 
 This is a rough notes to record my learnings.
 
+![Image that explains server-side, client-side rendering and static side generation]({{'/assets/images/sys-design-the-web/slide.jpg' | absolute_url }})
+This is taken from [ AWS re:Invent 2023 - Scaling on AWS for the first 10 million users (ARC206) ](https://www.youtube.com/watch?v=JzuNJ8OUht0&t=2188s) refer slides at [slideshare](https://www.slideshare.net/search?searchfrom=header&q=+Scaling+on+AWS+for+the+First+10+Million+Users+&page=2) for 2023 AWS event.
+
 ## Footnotes
 ### Server-side rendering
 ![Server-side rendering](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*CgrMqqxMCltl4BVjGgFRKA.png)
