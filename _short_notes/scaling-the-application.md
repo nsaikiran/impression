@@ -19,3 +19,12 @@ Software applications should be able to serve increased users and load with reas
 3. [It's all a numbers game](https://www.youtube.com/watch?v=1KRYH75wgy4) Try to get the numbers for the system by having clear understanding, numbers don't lie and they'll give a chance to unambiguous and informed scaling decision.
 
 Go through these and list down concepts and describe those concepts.
+
+## Important links to go through
+- [What is ..aaS?](https://web.archive.org/web/20190327064546/http://www.lecloud.net/post/11380869305/what-is-aas)
+- [Applying Back Pressure When Overloaded](https://mechanical-sympathy.blogspot.com/2012/05/apply-back-pressure-when-overloaded.html)
+- [Overview of Single vs. Multi Server Architecture](https://lethain.com/overview-of-single-vs-multi-server-architecture/) and [Measuring Single and Multi Server Performance](https://lethain.com/measuring-server-performance-single-vs-multi/)
+- [Google Architecture](https://highscalability.com/google-architecture/)
+- [Google File system](https://research.google/pubs/the-google-file-system/)
+- [Introduction to Microservices]( https://www.nginx.com/blog/introduction-to-microservices/)
+- [Webinar 2012: 7 Steps to Select the Right Architecture for Your Web Application on AWS](https://www.youtube.com/watch?v=Ypwi1Ics91Y)
