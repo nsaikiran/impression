@@ -74,10 +74,10 @@ Another example is _Hashing_: where we bring correlation between representaton o
 
 TODO: Try to give more examples.
 
-## Abstract data tyes:
+## Abstract data types:
 For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
-Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), Circuar queue, Priority queue, Graph, Min-Max-heap, Hash map, Hash table, Hash set, Dictionary and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
-Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
+Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), Circular queue/Ring Buffer, Priority queue, Graph, Min-Max-heap, Hash map, Hash set, Dictionary and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
+Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily available implementations_ before using them in your particular case.
 
 Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
 
@@ -115,10 +115,10 @@ Some well-known problems and their solutions are listed here.
 - [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted.
 
 #### Sorting problems:
-- Insertion sort: in-place, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
-- Quick sort: D&C
+- Insertion sort: in-place, _stable_, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
+- [Quick sort](https://www.enjoyalgorithms.com/blog/quick-sort-algorithm): D&C
 - Merge sort: D&C
-- Heap sort: 
+- Heap sort: Using heap data structure.
 - Counting/bucket sort: Linear time sorting, data assumptions
 - Lower bounds for searching or sorting.
 
@@ -161,13 +161,14 @@ Introduce Computatability of problem, NP-Completeness?
 ## References:
 ### Videos
 1. [MIT 6.006 Introduction to Algorithms, Fall 2011](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-
+2. [Better Code series by Sean Parent](https://developer.adobe.com/cpp/training/)
 ### Textbooks
 1. CLRS
 2. Algorithm Design Manual
 
 ## Further Reading:
-TODO: Update
+- [What is Datastructure](https://web.archive.org/web/20230924100056/https://www.enjoyalgorithms.com/blog/introduction-to-data-structures)
+- TODO: Update
 
 <!---
 ==========================================================
