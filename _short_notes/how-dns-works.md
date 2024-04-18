@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "How DNS works"
-description: "How DNS works"
-categories: ["release-technique"]
-date: 18-04-2023
+title:  "Anycast is used in DNS and CDNs"
+description: "Anycast protocol"
+categories: ["notes"]
+date: 18-04-2024
 author: "Sai Kiran"
 ---
 
