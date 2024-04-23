@@ -76,8 +76,8 @@ TODO: Try to give more examples.
 
 ## Abstract data types:
 For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
-Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), Circular queue/Ring Buffer, Priority queue, Graph, Min-Max-heap, Hash map, Hash set, Dictionary and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
-Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily available implementations_ before using them in your particular case.
+Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/Queue.html#the-circular-queue), Priority queue, Graph, Min-Max-heap, Hash map, Hash table, Hash set, Dictionary and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
+Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
 
 Let us take an example of [list](https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython) type provided by Python. [Though `list` can be used as both Stack and Queue, `list` is not an optimal option as Queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues). [Deque](https://docs.python.org/2/library/collections.html#collections.deque) from Python's collections library is more suitable as Queue.
 
@@ -89,6 +89,10 @@ Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional
 <!-- (array of pointers? to array) -->
 
 Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
+
+### Example
+- [LRU cache implementation]()
+- [Sortedd Set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html)
 
 TODO: give more examples
 
@@ -157,6 +161,10 @@ Talk about these terms:
 
 ### Computablility
 Introduce Computatability of problem, NP-Completeness?
+
+### Preperation for interviews
+- (Several Coding Patterns for Solving Data Structures and Algorithms Problems during Interviews)[https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews]
+- (Coding Interview University)[https://github.com/jwasham/google-interview-university/blob/master/README.md#google-interview-university]
 
 ## References:
 ### Videos
