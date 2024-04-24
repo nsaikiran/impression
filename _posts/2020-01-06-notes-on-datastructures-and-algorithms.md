@@ -163,6 +163,7 @@ Talk about these terms:
 Introduce Computatability of problem, NP-Completeness?
 
 ### Preperation for interviews
+- (Top 5 Data Structures)[https://www.youtube.com/watch?v=DDRo29ptFwE] and (Top 5 Algorithms)[https://www.youtube.com/watch?v=EM8IgIIiOdY]
 - (Several Coding Patterns for Solving Data Structures and Algorithms Problems during Interviews)[https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews]
 - (Coding Interview University)[https://github.com/jwasham/google-interview-university/blob/master/README.md#google-interview-university]
 
