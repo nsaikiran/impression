@@ -15,6 +15,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - Quick sort and merge sort code. Review once and write. How the merge step and pivot selection and placing it in right spot helps.
 - H-Index problem: https://leetcode.com/problems/h-index/description/
 - LRU cache implementation - ADT
+- [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/)
 - Application of Ordered Set and its implementation. Python has OrderedDict,deque. Differences and their benefits.
 - NGE using stacks
 - Problems from https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews
@@ -22,7 +23,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 
 
 
-Previous questions:
+## Previous questions
 - Given a set of cartesian points, generate the bounding box that includes all the points.
 - Given two strings, and we can cut the strings at same position. After cut we take the left half of the first string and right part of the second string and join them to form a new string. How many of those new strings are plindromes - https://cs.stackexchange.com/questions/109662/divide-two-strings-to-form-palindrome 
 - Given a string with limited number of characters repeating. Find the number of substrings where the count of all allowed characters is same in the substring.
@@ -32,3 +33,6 @@ Previous questions:
 - Given a dictionary of words, suggest the user words based first few characters typed, like the functionality in mobile phone typing scenario.
 
 
+
+### Blog remodeling
+- https://reverie.pages.dev/
