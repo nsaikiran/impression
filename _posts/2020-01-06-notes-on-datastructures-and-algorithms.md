@@ -98,11 +98,15 @@ Read:
 ### Map
 For example, a key to value _map_ can be implemented with hashing which is called as [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) (in Python it is Dictionary) or with a balanced BST which can be called as [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html). These different implementations have different characteristics.
 
+#### Examples
+- [LRU](https://www.enjoyalgorithms.com/blog/implement-least-recently-used-cache) using HashMap and DLL
+- [LFU cache implementation - ADT](https://arpitbhayani.me/blogs/lfu/) using HashMap and DLL
+
 ### Set
 A set of items can be implemented with Hashing, which is [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) or a balanced BST, which is [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html). The characteristics of HashSet and TreeSet are different such as the ordering of elements stored, HashSet doesn't gurantee the sorted order of items but TreeSet does. If we want to _remember_ the insertion order of items into the set(while traversing through the elements), then [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html) maybe used.
 
 
-# Heap
+### Heap
 
 Read:
 - [Learning to Love Heaps by Vaidehi Joshi](https://medium.com/basecs/learning-to-love-heaps-cef2b273a238)
