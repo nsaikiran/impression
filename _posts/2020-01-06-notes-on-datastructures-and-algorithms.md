@@ -66,6 +66,7 @@ Where do we place the data structure: either stack area or heap area depends on 
 
 Read:
 - [What’s a Linked List, Anyway? [Part 1]](https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d)
+
 ### Imporatnace of relations
 Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (Consider we do this opeartion very often) But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value &mdash; an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of _Height Balanced Binary Search Trees_, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree(which may be ignored if changes to the tree is lesser compared to read/find operations). 
 
@@ -193,9 +194,9 @@ Talk about these terms:
 Introduce Computatability of problem, NP-Completeness?
 
 ### Preperation for interviews
-- (Top 5 Data Structures)[https://www.youtube.com/watch?v=DDRo29ptFwE] and (Top 5 Algorithms)[https://www.youtube.com/watch?v=EM8IgIIiOdY]
-- (Several Coding Patterns for Solving Data Structures and Algorithms Problems during Interviews)[https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews]
-- (Coding Interview University)[https://github.com/jwasham/google-interview-university/blob/master/README.md#google-interview-university]
+- [Top 5 Data Structures](https://www.youtube.com/watch?v=DDRo29ptFwE) and [Top 5 Algorithms](https://www.youtube.com/watch?v=EM8IgIIiOdY)
+- [Several Coding Patterns for Solving Data Structures and Algorithms Problems during Interviews] (https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews)
+- [Coding Interview University](https://github.com/jwasham/google-interview-university/blob/master/README.md#google-interview-university)
 
 ## References:
 ### Videos
