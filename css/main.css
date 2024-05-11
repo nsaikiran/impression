@@ -43,8 +43,8 @@ a:hover {
 .site {
     font-size: 1rem;
     text-align: justify;
-    max-width: 40em;
-    margin: 0 auto;
+    width: 40em;
+    margin: 2em auto 2em auto;
 }
 
 .header {
