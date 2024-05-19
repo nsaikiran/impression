@@ -1,7 +1,6 @@
-title: "Leap"
-description: Impression
+title: "Impression"
 url: "https://nsaikiran.github.io/"
-baseurl: "/leap"
+baseurl: "/impression"
 
 markdown: kramdown
 plugins:
