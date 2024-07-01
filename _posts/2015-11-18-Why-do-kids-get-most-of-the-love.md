@@ -3,7 +3,6 @@ layout: post
 title:  "Why do kids get most of the love?"
 description: "Why do kids get most of the love?"
 date:   2015-11-18 19:45:31 +0530
-categories: ["impression"]
 author: "Sai Kiran"
 ---
 

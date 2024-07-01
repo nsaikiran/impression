@@ -2,7 +2,6 @@
 layout: post
 title:  "Luck and choice"
 date:   2024-05-28
-categories: ["impression"]
 author: "Sai Kiran"
 ---
 
